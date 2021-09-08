@@ -3,6 +3,7 @@ import { Nav, NavMenu, NavLink, BottomNav } from "./NavbarStyles";
 import { SDCIcon } from "../Logo";
 
 const Navbar = () => {
+
     return (
         <>
             <Nav>
@@ -29,7 +30,6 @@ const Navbar = () => {
                         </NavLink>
                     </BottomNav>
                 </NavMenu>
-                
             </Nav>
         </>
     );
