@@ -92,16 +92,63 @@ $base: 0.6rem;
  }
 }
 
+.line-1{
+  position: relative;
+  top: 0%;
+  right: 20%;
+  width: 24em;
+  flex-direction: column;
+  margin: 0 auto;
+  border-right: 2px solid rgba(255,255,255,.75);
+  font-size: 180%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);    
+}
 
+/* Animation */
 .anim-typewriter{
-  animation: typewriter 1.5s steps(44) 1s 1 normal both,
-  linkTextCursor 500ms steps(44) infinite normal;
+animation: typewriter 2s steps(44) 1s 1 normal both,
+           blinkTextCursor 500ms steps(44) 13 normal;
 }
 @keyframes typewriter{
-  from{width: 0;}
-  to{width: 24em;}
+from{width: 0;}
+to{width: 24em;}
 }
 @keyframes blinkTextCursor{
-  from{border-right-color: rgba(255,255,255,.75);}
-  to{border-right-color: transparent;}
+from{border-right-color: rgba(255,255,255,.75);}
+to{border-right-color: transparent;}
+}
+
+/* Animation 2 */
+.anim-typewriter2{
+animation: typewriter 2s steps(44) 3s 1 normal both,
+           blinkTextCursor 500ms steps(44) 4s 5 normal;
+}
+@keyframes typewriter{  
+from{width: 0;}
+to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+from{border-right-color: rgba(255,255,255,.75);}
+to{border-right-color: transparent;}
+}
+
+
+
+div {
+  color: white;
+}
+
+.contentDivider {
+  right: 20%;
+  width: 24em;
+  height: 7em;
+}
+
+
+.infoTextTitle {
+  font-size: 150%;
+  font-weight: 600;
 }

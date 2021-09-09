@@ -14,7 +14,8 @@ export const Nav = styled.nav`
     :hover {
         background: rgba(255,255,255,1);
         transition: all 0.5s ease-in-out;
-        background-color: ${theme.primary};
+        background-color: #0F151A;
+/*         border-bottom: 1px solid #774062; */
         box-shadow: 0 1px 40px -8px rgb(0 0 0 / 50%);
 	}
 `;

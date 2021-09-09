@@ -26,7 +26,7 @@ const Navbar = () => {
                             Statistics
                         </NavLink>
                         <NavLink to='/about' activeStyle>
-                            About
+                            About Us
                         </NavLink>
                     </BottomNav>
                 </NavMenu>
