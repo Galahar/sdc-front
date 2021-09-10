@@ -6,6 +6,7 @@ import { Element } from "react-scroll";
 
 /* import coolLeague1Image from "../assets/illustrations/coolLeague1.jpg"; */
 import coolLeague2Image from "../assets/illustrations/coolLeague2.jpg";
+import Ruined2 from "../assets/illustrations/Ruined2.jpeg";
 /* import sgImage from "../assets/illustrations/sgImage.jpg";
 import eliseImage from "../assets/illustrations/elise1.jpg";
 import ahriImage from "../assets/illustrations/ahri1.jpg"; */
@@ -87,6 +88,18 @@ export const DownArrowContainer = styled.div`
     
 `; */
 
+export const ContentFilter = styled.div`
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    break-inside: avoid;
+    overflow-x: hidden;
+    background-color: rgba(55, 55, 55, 0.6);
+`;
+
 export const ContentContainer = styled(Element)`
     width: 100%;
     height: 1000px;
@@ -96,6 +109,11 @@ export const ContentContainer = styled(Element)`
     justify-content: center;
     align-items: center;
     overflow-x: hidden;
+    background-image: url(${Ruined2});
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: ${theme.primary};
 `;
 
 
@@ -137,8 +155,8 @@ export const InfoContainer = styled.div`
 export const InfoContent = styled.div`
     width: 45%;
     height: 24%;
-    /* background-color: grey; */
-    /* border-top: 2px solid #1C6EA4; */
+/*     background-color: grey;
+    border-top: 2px solid #1C6EA4; */
 `;
 
 export const InfoText = styled.div`

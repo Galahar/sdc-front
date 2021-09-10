@@ -1,8 +1,9 @@
 import React from "react";
 import Navbar from "../components/Navbar";
+import { Footer } from "../components/Footer";
 import { BackgroundFilter, ContentContainer, TopContainer, TextContainer, TitleText, 
     SeasonText, MoreInfoContainer, DownArrowContainer, ContentTextContainer, InfoContainer, 
-    ContentText, InfoContent, InfoText } from "../pageStyles/homepage";
+    ContentText, InfoContent, InfoText, ContentFilter } from "../pageStyles/homepage";
 import { Button } from "../components/Button";
 import { scroller } from "react-scroll";
 import "../pageStyles/homestyle.scss";
@@ -44,6 +45,7 @@ const Homepage = () => {
             </TopContainer>
             <Navbar />
             <ContentContainer name="contentSection">
+                <ContentFilter>
                 <ContentTextContainer>
                     <ContentText>
                         <div className="anim-typewriter line-1">The Seasonal Draft Championship, SDC is</div>
@@ -73,9 +75,6 @@ const Homepage = () => {
                         <C1Icon />
                     </InfoContent>
                     <InfoContent>
-                        <D1Icon />
-                    </InfoContent>
-                    <InfoContent>
                         <InfoText>
                             <span style={{ fontSize: 25, fontWeight: 600, textDecoration: 'underline', color: '#F3633F', fontFamily: 'Yusei Magic', letterSpacing: '.1em'}}>Drafted Players Compete</span>
                             <br />
@@ -87,6 +86,12 @@ const Homepage = () => {
                         </InfoText>
                     </InfoContent>
                     <InfoContent>
+                        <D1Icon />
+                    </InfoContent>
+                    <InfoContent>
+                        <H1Icon />
+                    </InfoContent>
+                    <InfoContent>
                         <InfoText>
                             <span style={{ fontSize: 25, fontWeight: 600, textDecoration: 'underline', color: '#DBFF76', fontFamily: 'Yusei Magic', letterSpacing: '.1em'}}>Round Robin Format</span>
                             <br />
@@ -96,9 +101,6 @@ const Homepage = () => {
                             <br />
                             <span style={{ fontSize: 22 }}>14-17 Games Per Player</span>
                         </InfoText>
-                    </InfoContent>
-                    <InfoContent>
-                        <H1Icon />
                     </InfoContent>
                     <InfoContent>
                         <S1Icon />
@@ -115,7 +117,9 @@ const Homepage = () => {
                         </InfoText>
                     </InfoContent>
                 </InfoContainer>
+                </ContentFilter>
             </ContentContainer>
+            <Footer />
         </>
     );
 };
