@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 const FooterContainer = styled.div`
     width: 100%;
-    height: 150px;
+    height: 125px;
     display: flex;
     flex-direction: row;
     align-items: center;
