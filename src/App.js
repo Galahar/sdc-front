@@ -4,6 +4,9 @@ import Homepage from "./page/homepage";
 import Livepage from "./page/live";
 import Schedulepage from "./page/schedule";
 import Teamspage from "./page/teams";
+import Standingspage from "./page/standings";
+import Statisticspage from "./page/statistics";
+import Aboutuspage from "./page/aboutus";
 import "./App.css";
 import ScrollIntoView from "./components/ScrollIntoView/ScrollIntoView";
 
@@ -17,6 +20,9 @@ function App() {
           <Route path='/live' exact component={Livepage} />
           <Route path='/schedule' exact component={Schedulepage} />
           <Route path='/teams' exact component={Teamspage} />
+          <Route path='/standings' exact component={Standingspage} />
+          <Route path='/statistics' exact component={Statisticspage} />
+          <Route path='/aboutus' exact component={Aboutuspage} />
         </Switch>
         </ScrollIntoView>
       </Router>

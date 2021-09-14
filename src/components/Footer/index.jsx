@@ -56,20 +56,26 @@ export function Footer(props) {
                     </NavLinks>
                 </FooterLinks>
                 <FooterLinks>
-                    Schedule
+                    <NavLinks to="/schedule">
+                        Schedule
+                    </NavLinks>
                 </FooterLinks>
                 <FooterLinks>
-                    Teams
+                    <NavLinks to="/teams">
+                        Teams
+                    </NavLinks>
                 </FooterLinks>
+                    <NavLinks to="/standings">
+                        Standings
+                    </NavLinks>
                 <FooterLinks>
-                    Standings
+                    <NavLinks to="/statistics">
+                        Statistics
+                    </NavLinks>
                 </FooterLinks>
-                <FooterLinks>
-                    Statistics
-                </FooterLinks>
-                <FooterLinks>
+{/*                 <FooterLinks>
                     About us
-                </FooterLinks>
+                </FooterLinks> */}
             </FooterLinksContainer>
             <DiscIcon />
         </FooterContainer>
