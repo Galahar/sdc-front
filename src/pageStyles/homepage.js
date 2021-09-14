@@ -135,8 +135,8 @@ export const ContentTextContainer = styled.div`
 export const ContentText = styled.p`
     position: relative;
     left: 90px;
-    font-size: .8vh;
-    font-size: .8vw;
+        font-size: .8vh;
+        font-size: .8vw;
 `;
 
 

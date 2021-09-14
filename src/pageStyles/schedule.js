@@ -14,13 +14,19 @@ export const BackgroundContainer = styled.div`
 
 export const TopContainer = styled.div`
     width: 100%;
-    height: 150vh;
+    height: 100%;
     background-image: url(${Ruined1});
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-color: ${theme.primary};
 `;
+
+export const TopMarginer = styled.div`
+    width: 100%;
+    height: 100px;
+`;
+
 
 export const ScheduleContainer = styled.div`
     width: 80%;
@@ -31,7 +37,6 @@ export const ScheduleContainer = styled.div`
     justify-content: center;
     margin-top: 140px;
     letter-spacing: .3em;
-    outline: 5px solid green;
     gap: 50px;
 `;
 
@@ -42,7 +47,6 @@ export const HeaderTextContainer = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 1px solid red;
 `;
 
 export const TitleText = styled.h1`
@@ -52,11 +56,12 @@ export const TitleText = styled.h1`
     margin-bottom: 0;
     color: #f2d492;
     text-shadow: 2px 2px 0 black, 1px 1px 0 black, 2px 2px 0 black;
+    overflow: hidden;
 `;
 
 export const ScheduleVersusContainer = styled.div`
-    width: 90%;
-    height: 8%;
+    width: 100%;
+    height: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -64,17 +69,50 @@ export const ScheduleVersusContainer = styled.div`
     background-color: #BAA7B0;
     border-radius: 4px;
     border: 5px solid hsl(0, 0%, 40%);
-    padding: 5px;
+    padding: 3px;
     background: hsl(0, 0%, 20%);
+    gap: 15px;
 `;
+
+
 
 /* Schedule Versus Team Inner Container */
 export const SVTIN = styled.div`
-    width: 20%;
-    height: 50%;
+    width: 100%;
+    height: 10%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    outline: 1px solid orange;
+    font-size: 20px;
+    font-weight: 600;
 `;
+
+/* Individual Day and Team Containers */
+
+export const IDATC = styled.div`
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-direction: row;
+`;
+
+export const IDATCBlueMarginer = styled.div`
+    min-width: 0.2%;
+    min-height: 60px;
+    background-color: #1B998B;
+`;
+
+export const IDATCText = styled.p`
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding-left: 10px;
+    letter-spacing: .09em;
+`;
+
