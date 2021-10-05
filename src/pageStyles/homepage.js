@@ -2,14 +2,8 @@ import styled from "styled-components";
 import { theme } from "../themes.js";
 import { Element } from "react-scroll";
 
-
-
-/* import coolLeague1Image from "../assets/illustrations/coolLeague1.jpg"; */
 import coolLeague2Image from "../assets/illustrations/coolLeague2.jpg";
 import Ruined2 from "../assets/illustrations/Ruined2.jpeg";
-/* import sgImage from "../assets/illustrations/sgImage.jpg";
-import eliseImage from "../assets/illustrations/elise1.jpg";
-import ahriImage from "../assets/illustrations/ahri1.jpg"; */
 
 export const BackgroundFilter = styled.div`
     width: 100%;
@@ -47,6 +41,9 @@ export const TextContainer = styled.div`
     margin-top: 140px;
     letter-spacing: .3em;
     /* outline: 5px solid green; */
+    @media screen and (max-width: 650px) {
+        margin-top: 30px;
+    }
 `;
 
 export const TitleText = styled.h1`
@@ -56,25 +53,49 @@ export const TitleText = styled.h1`
     margin-bottom: 0;
     color: #f2d492;
     text-shadow: 3px 3px 0 black, 1px 1px 0 black, 2px 2px 0 black;
+    @media screen and (max-width: 1024px) {
+        display: none;
+    }
+`;
+
+export const TitleTextResponsive = styled.h1`
+    font-size: 10vh;
+    white-space: nowrap;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #f2d492;
+    text-shadow: 3px 3px 0 black, 1px 1px 0 black, 2px 2px 0 black;
+    @media screen and (min-width: 1024px) {
+        display: none;
+    }
+    @media screen and (max-width: 650px) {
+        font-size: 6vh;
+    }
 `;
 
 export const SeasonText = styled.h2`
     font-size: 10vh;
     white-space: nowrap;
     color: #FFF;
+    @media screen and (max-width: 650px) {
+        font-size: 6vh;
+    }
 `;
 
 export const MoreInfoContainer = styled.div`
-  font-size: 2.7vh;
-  text-transform: uppercase;
-  font-weight: 600;
-  color: #FFF;
-  text-shadow: 1px 1px 0 black, 1px 1px 0 black, 2px 2px 0 black;
+    font-size: 2.7vh;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #FFF;
+    text-shadow: 1px 1px 0 black, 1px 1px 0 black, 2px 2px 0 black;
+    @media screen and (max-width: 650px) {
+        margin-bottom: 0px;
+    }
 `;
 
 export const DownArrowContainer = styled.div`
-  bottom: 25px;
-  left: 50%;
+    bottom: 25px;
+    left: 50%;
 `;
 
 /* export const ContentContainer = styled(Element)`
@@ -129,14 +150,27 @@ export const ContentTextContainer = styled.div`
     letter-spacing: .1em;
     border-top: 13px ridge #0AADFF;
     border-bottom: 13px ridge #0AADFF;
+    @media screen and (max-width: 1024px) {
+        display: none;
+    }
 `;
 /* old color above for border-bottom 1C6EA4 */
 
 export const ContentText = styled.p`
     position: relative;
     left: 90px;
-        font-size: .8vh;
-        font-size: .8vw;
+    font-size: 14px;
+    @media screen and (max-width: 1400px) {
+        left: 50px;
+        font-size: 14px;
+    }
+    @media screen and (max-width: 1260px) {
+        font-size: 10px;
+    }
+    @media screen and (max-width: 1024px) {
+        display: none;
+    }
+    
 `;
 
 
@@ -149,7 +183,10 @@ export const InfoContainer = styled.div`
     align-items: center;
     justify-content: center;
     border-left: 20px ridge #1C6EA4;
-    /* border: 20px double red; */
+    @media screen and (max-width: 1024px) {
+        margin-right: 280px;
+        border-left: none;
+    }
 `;
 
 export const InfoContent = styled.div`
@@ -167,5 +204,21 @@ export const InfoText = styled.div`
     justify-content: center;
     white-space: nowrap;
     line-height: 1.5;
+    @media screen and (max-width: 650px) {
+        left: 40px;
+    }
+`;
+
+export const InfoTextTwo = styled.div`
+    position: relative;
+    top: 20px;
+    left: 10px;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    line-height: 1.5;
+    @media screen and (max-width: 650px) {
+        left: 0px;
+    }
 `;
 

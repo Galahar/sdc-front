@@ -57,6 +57,22 @@ export const TitleText = styled.h1`
     color: #f2d492;
     text-shadow: 2px 2px 0 black, 1px 1px 0 black, 2px 2px 0 black;
     overflow: hidden;
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+`;
+
+export const TitleTextResponsive = styled.h1`
+    font-size: 20px;
+    white-space: nowrap;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #f2d492;
+    text-shadow: 2px 2px 0 black, 1px 1px 0 black, 2px 2px 0 black;
+    overflow: hidden;
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
 `;
 
 export const ScheduleVersusContainer = styled.div`
@@ -86,6 +102,9 @@ export const SVTIN = styled.div`
     justify-content: center;
     font-size: 20px;
     font-weight: 600;
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+    }
 `;
 
 /* Individual Day and Team Containers */
@@ -104,6 +123,10 @@ export const IDATCBlueMarginer = styled.div`
     min-width: 0.2%;
     min-height: 60px;
     background-color: #1B998B;
+    @media screen and (max-width: 768px) {
+        min-width: 100%;
+        min-height: 2px;
+    }
 `;
 
 export const IDATCText = styled.p`

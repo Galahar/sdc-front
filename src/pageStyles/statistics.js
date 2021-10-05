@@ -15,54 +15,72 @@ export const BackgroundContainer = styled.div`
 
 export const TopContainer = styled.div`
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-image: url(${Ruined2});
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-color: ${theme.primary};
-    outline: 1px solid red;
 `;
 
 export const StatisticsContainer = styled.div`
     width: 80%;
-    height: 650px;
+    height: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 0px;
-    margin-left: 170px;
+    margin-top: 260px;
+    margin-left: 0px;
+    @media screen and (max-width: 800px) {
+        margin-left: 40px;
+    }
 `;  
 
 export const StatisticsLinkContainer = styled.div`
     width: 80%;
-    height: 600px;
+    height: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 `;
 
-export const StatsLink = styled(Link)`
-    height: 43px;
+export const StatsLinkHeader = styled.h2`
     color: #f2d492;
     text-transform: uppercase;
     text-align: center;
     text-decoration: none;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 600;
     letter-spacing: .08em;
-    padding: 0 20px;
-    padding-top: 27px;
+`;
 
+export const StatsLinkNormal = styled.p`
+    color: #f2d492;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    font-size: 23px;
+    font-weight: 600;
+    letter-spacing: .08em;
+`;
+
+export const StatsLink = styled(Link)`
+    color: #f2d492;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    font-size: 23px;
+    font-weight: 600;
+    letter-spacing: .08em;
     :after {
         content: "";
         display: block;
         position: relative;
         width: 0% ;
-        padding-top: 18px;
-        border-bottom: 6px solid #A379C9;
+        padding-top: 15px;
+        border-bottom: 5px solid #A379C9;
         transition: width .5s ease, background-color .5s ease;
     }
 
@@ -70,3 +88,30 @@ export const StatsLink = styled(Link)`
         width: 100%;
     }
 `;
+
+export const GoogleSheetsContainer = styled.div`
+    width: 90%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+    margin-top: 150px;
+    outline: 10px solid black;
+    background-color: gray;
+    
+`;  
+
+export const BottomMargin = styled.div`
+    width: 90%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+    margin-top: 0px;
+`;  
+
+

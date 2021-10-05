@@ -11,7 +11,7 @@ const IconContainer = styled.div`
 export function H1Icon(props) {
     return (
         <IconContainer>
-            <img className="img-resizeSuites" src={H1Logo} alt="C1 Card Suites Logo"></img>
+            <img className="img-resizeSuitesTwo" src={H1Logo} alt="C1 Card Suites Logo"></img>
         </IconContainer>
     );
 };

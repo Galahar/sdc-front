@@ -2,8 +2,20 @@
     padding-top: 56.25%;
     position: relative;
     height: 0;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
   }
-  
+  100% {
+      opacity: 1;
+  }
+}
+
 .twitch .twitch-video iframe {
     position: absolute;
     width: 100%;
@@ -13,6 +25,9 @@
 
 .twitch .twitch-chat {
     height: 400px;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
   }
   
 .twitch .twitch-chat iframe {
@@ -39,3 +54,4 @@
       bottom: 0;
     }
 }
+

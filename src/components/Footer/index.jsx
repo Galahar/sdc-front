@@ -14,6 +14,9 @@ const FooterContainer = styled.div`
     justify-content: center;
     background-color: ${theme.primary};
     position: relative;
+    @media screen and (max-width: 1024px) {
+        flex-direction: column;
+    }
 `;
 
 const FooterLinksContainer = styled.div`
@@ -25,6 +28,9 @@ const FooterLinksContainer = styled.div`
     align-items: center;
     justify-content: center;
     line-height: 50px;
+    @media screen and (max-width: 700px) {
+        width: 80%;
+    }
 `;
 
 const FooterLinks = styled.div`

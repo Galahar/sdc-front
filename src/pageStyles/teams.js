@@ -47,7 +47,6 @@ export const TeamsInnerContainer = styled.div`
 export const TeamRowContainer = styled.div`
     width: 90%;
     height: 35%;
-    outline: 2px solid blue;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -59,7 +58,7 @@ export const ITC = styled.div`
     width: 250px;
     height: 280px;
     background-color: #23292E;
-    outline: 1px solid black;
+    outline: 2px solid black;
     display: flex;
     flex-direction: column;
     align-items: center;

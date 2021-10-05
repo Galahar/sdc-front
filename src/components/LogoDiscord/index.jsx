@@ -14,7 +14,8 @@ const IconContainer = styled.div`
 export function DiscIcon(props) {
     return (
         <IconContainer>
-            <Link to="https://discord.com/invite/jUMzGUs">
+            <Link to={{ pathname: "https://www.discord.com/invite/jUMzGUs" }} 
+            target="_blank">
                 <img className="img-resizeDisc" src={DiscLogo} alt="Seasonal Draft Championship Logo"></img>
             </Link>
         </IconContainer>

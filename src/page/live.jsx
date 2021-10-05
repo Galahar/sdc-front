@@ -17,7 +17,7 @@ const Livepage = () => {
                         <div className="twitch-video">
                             <iframe
                                 title="Twitch SDC Livestream"
-                                src="https://player.twitch.tv/?channel=lolworldchampionship&parent=localhost&autoplay=true"
+                                src="https://player.twitch.tv/?channel=riotgames&parent=localhost&autoplay=true"
                                 frameborder="0"
                                 scrolling="no"
                                 allowfullscreen="true"
@@ -30,7 +30,7 @@ const Livepage = () => {
                                 title="Twitch SDC Livestream Chat"
                                 frameborder="0"
                                 scrolling="no"
-                                src="https://www.twitch.tv/embed/lolworldchampionship/chat?darkpopout&parent=localhost"
+                                src="https://www.twitch.tv/embed/riotgames/chat?darkpopout&parent=localhost"
                                 height="100%"
                                 width="100%">
                             </iframe>

@@ -7,6 +7,7 @@ import Teamspage from "./page/teams";
 import Standingspage from "./page/standings";
 import Statisticspage from "./page/statistics";
 import Aboutuspage from "./page/aboutus";
+import Riotpage from "./page/riot";
 import "./App.css";
 import ScrollIntoView from "./components/ScrollIntoView/ScrollIntoView";
 
@@ -23,6 +24,7 @@ function App() {
           <Route path='/standings' exact component={Standingspage} />
           <Route path='/statistics' exact component={Statisticspage} />
           <Route path='/aboutus' exact component={Aboutuspage} />
+          <Route path='/riot.txt' exact component={Riotpage} />
         </Switch>
         </ScrollIntoView>
       </Router>

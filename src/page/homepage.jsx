@@ -1,9 +1,9 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import { Footer } from "../components/Footer";
-import { BackgroundFilter, ContentContainer, TopContainer, TextContainer, TitleText, 
+import { BackgroundFilter, ContentContainer, TopContainer, TextContainer, TitleText, TitleTextResponsive,
     SeasonText, MoreInfoContainer, DownArrowContainer, ContentTextContainer, InfoContainer, 
-    ContentText, InfoContent, InfoText, ContentFilter } from "../pageStyles/homepage";
+    ContentText, InfoContent, InfoText, InfoTextTwo, ContentFilter } from "../pageStyles/homepage";
 import { Button } from "../components/Button";
 import { scroller } from "react-scroll";
 import "../pageStyles/homestyle.scss";
@@ -22,13 +22,22 @@ const Homepage = () => {
         <>
             <TopContainer>
                 <BackgroundFilter>
-                    <TextContainer>
+                    <TextContainer className="loadInAnim">
                         <TitleText style={{ fontFamily: 'Yusei Magic' }}>
                             Seasonal Draft
                         </TitleText>
                         <TitleText style={{ fontFamily: 'Yusei Magic' }}>
                             Championship
                         </TitleText>
+                        <TitleTextResponsive style={{ fontFamily: 'Yusei Magic' }}>
+                            Seasonal
+                        </TitleTextResponsive>
+                        <TitleTextResponsive style={{ fontFamily: 'Yusei Magic' }}>
+                            Draft
+                        </TitleTextResponsive>
+                        <TitleTextResponsive style={{ fontFamily: 'Yusei Magic' }}>
+                            Championship
+                        </TitleTextResponsive>
                         <SeasonText style={{ fontFamily: 'Yusei Magic' }} className="glitch">
                             Season 10
                         </SeasonText>
@@ -92,7 +101,7 @@ const Homepage = () => {
                         <H1Icon />
                     </InfoContent>
                     <InfoContent>
-                        <InfoText>
+                        <InfoTextTwo>
                             <span style={{ fontSize: 25, fontWeight: 600, textDecoration: 'underline', color: '#DBFF76', fontFamily: 'Yusei Magic', letterSpacing: '.1em'}}>Round Robin Format</span>
                             <br />
                             <span style={{ fontSize: 22 }}>198 Regular Season Games</span>
@@ -100,13 +109,13 @@ const Homepage = () => {
                             <span style={{ fontSize: 22 }}>33 Games Per Team</span>
                             <br />
                             <span style={{ fontSize: 22 }}>14-17 Games Per Player</span>
-                        </InfoText>
+                        </InfoTextTwo>
                     </InfoContent>
                     <InfoContent>
                         <S1Icon />
                     </InfoContent>
                     <InfoContent>
-                    <InfoText>
+                        <InfoTextTwo>
                             <span style={{ fontSize: 25, fontWeight: 600, textDecoration: 'underline', color: '#90E0F3', fontFamily: 'Yusei Magic', letterSpacing: '.1em'}}>Multi-Week Finals</span>
                             <br />
                             <span style={{ fontSize: 22 }}>Quarter Finals Best of 5</span>
@@ -114,7 +123,7 @@ const Homepage = () => {
                             <span style={{ fontSize: 22 }}>Semi-Finals and Finals Best of 7</span>
                             <br />
                             <span style={{ fontSize: 22 }}>Play Off Perks</span>
-                        </InfoText>
+                        </InfoTextTwo>
                     </InfoContent>
                 </InfoContainer>
                 </ContentFilter>

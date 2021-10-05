@@ -1,8 +1,3 @@
-.img-resizeTeam {
-    width: 80px;
-    height: auto;
-}
-
 @keyframes fadeInAnimation {
     0% {
         opacity: 0;
@@ -12,7 +7,7 @@
     }
 }
 
-.itcLoadIn {
+.loadInAnim {
     animation: fadeInAnimation ease 1.2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;

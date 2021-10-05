@@ -7,7 +7,7 @@ const Navbar = () => {
     return (
         <>
             <Nav>
-                <NavMenu>
+                <NavMenu className="navbar">
                     <BottomNav>
                         <SDCIcon />
                         <NavLink to='/live' activeStyle>
@@ -36,3 +36,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+

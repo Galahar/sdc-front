@@ -3,9 +3,10 @@ import Navbar from "../components/Navbar";
 import { Footer } from "../components/Footer";
 
 import { TopContainer, BackgroundContainer, ScheduleContainer, ScheduleVersusContainer, 
-    HeaderTextContainer, TitleText, SVTIN, IDATC, IDATCText, TopMarginer, IDATCBlueMarginer } from "../pageStyles/schedule";
+    HeaderTextContainer, TitleText, SVTIN, IDATC, IDATCText, TopMarginer, IDATCBlueMarginer, TitleTextResponsive } from "../pageStyles/schedule";
 
 import "../pageStyles/schedule.js";
+import "../pageStyles/schedule.css";
 
 
 const Schedulepage = () => {
@@ -13,7 +14,7 @@ const Schedulepage = () => {
         <>
             <TopContainer>
                 <BackgroundContainer>
-                    <ScheduleContainer>
+                    <ScheduleContainer className="loadInAnim">
                         <HeaderTextContainer>
                             <TitleText>
                                 SDC Season Ten Regular Season Schedule
@@ -21,6 +22,18 @@ const Schedulepage = () => {
                             <TitleText>
                                 August 28th, 2021 - October 2021
                             </TitleText>
+                            <TitleTextResponsive>
+                                SDC Schedule
+                            </TitleTextResponsive>
+                            <TitleTextResponsive>
+                                August 28th 
+                            </TitleTextResponsive>
+                            <TitleTextResponsive>
+                                through October
+                            </TitleTextResponsive>
+                            <TitleTextResponsive>
+                                2021
+                            </TitleTextResponsive>
                         </HeaderTextContainer>  
                         {/* Week 1 */}<ScheduleVersusContainer>
                             {/* Abbreviations explained in ../pagestyles/schedule.js*/}
@@ -288,7 +301,7 @@ const Schedulepage = () => {
                             <SVTIN>
                                 <IDATC>
                                     <IDATCText style={{ fontWeight: 700, fontSize: '18px', color: '#98DA6C'}}>
-                                        Week 1 - 9/18 Saturday 
+                                        Week 4 - 9/18 Saturday 
                                     </IDATCText>
                                 </IDATC>
                                 <IDATC>
@@ -330,7 +343,7 @@ const Schedulepage = () => {
                             <SVTIN>
                             <IDATC>
                                     <IDATCText style={{ fontWeight: 700, fontSize: '18px', color: '#98DA6C'}}>
-                                        Week 1 - 9/19 Sunday
+                                        Week 4 - 9/19 Sunday
                                     </IDATCText>
                                 </IDATC>
                                 <IDATC>
@@ -375,7 +388,7 @@ const Schedulepage = () => {
                             <SVTIN>
                                 <IDATC>
                                     <IDATCText style={{ fontWeight: 700, fontSize: '18px', color: 'rgb(144, 224, 243)'}}>
-                                        Week 1 - 9/25 Saturday 
+                                        Week 5 - 9/25 Saturday 
                                     </IDATCText>
                                 </IDATC>
                                 <IDATC>
@@ -417,7 +430,7 @@ const Schedulepage = () => {
                             <SVTIN>
                             <IDATC>
                                     <IDATCText style={{ fontWeight: 700, fontSize: '18px', color: 'rgb(144, 224, 243)'}}>
-                                        Week 1 - 9/26 Sunday
+                                        Week 5 - 9/26 Sunday
                                     </IDATCText>
                                 </IDATC>
                                 <IDATC>

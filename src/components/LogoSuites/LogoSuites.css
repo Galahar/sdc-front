@@ -4,3 +4,45 @@
     padding-top: 10px;
     padding-left: 70px;
 }
+
+.img-resizeSuitesTwo {
+    max-width: 135px;
+    height: auto;
+    padding-top: 10px;
+    padding-left: 70px;
+}
+
+.img-resizeSuitesThree {
+    max-width: 135px;
+    height: auto;
+    padding-top: 10px;
+    padding-left: 70px;
+}
+
+@media screen and (max-width: 1450px) {
+    .img-resizeSuites {
+        padding-left: 150px;
+    }
+    .img-resizeSuitesTwo {
+        padding-left: 0px;
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    .img-resizeSuites {
+        padding-left: 250px;
+    }
+    .img-resizeSuitesTwo {
+        padding-left: 0px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .img-resizeSuites {
+        display: none;
+    }
+    .img-resizeSuitesTwo {
+        display: none;
+    }
+}
