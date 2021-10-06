@@ -19,6 +19,72 @@ export const Nav = styled.nav`
 	}
 `;
 
+export const NavMobile = styled.div`
+/*     overflow: hidden;
+    position: fixed;
+    background-color: #0F151A;
+    width: 100%;
+    z-index: 9999;
+    top: 0;
+    @media screen and (max-width: 1024px) {
+        animation: fadeInAnimation ease 2s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    } */  
+
+    display: flex;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #0F151A;
+    display: none;
+    @media screen and (max-width: 1024px) {
+        animation: fadeInAnimation ease 0.5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        display: block;
+    }
+    
+`;
+
+export const NavMobileTwo = styled.div`
+    display: flex;
+    position: fixed;
+    z-index: 9999;
+    top: 100px;
+    width: 100%;
+    height: 100px;
+    background-color: #0F151A;
+    display: none;
+    @media screen and (max-width: 1024px) {
+        animation: fadeInAnimation ease 0.5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        display: block;
+    }
+    left: 0px;
+`;
+
+export const NavMobileThree = styled.div`
+    display: flex;
+    position: fixed;
+    z-index: 9999;
+    top: 200px;
+    width: 100%;
+    height: 100px;
+    background-color: #0F151A;
+    display: none;
+    @media screen and (max-width: 1024px) {
+        animation: fadeInAnimation ease 0.5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        display: block;
+    }
+    left: 0px;
+`;
+
 export const NavMenu = styled.div`
     display: flex;
     height: 80px;
@@ -35,6 +101,16 @@ export const NavMenu = styled.div`
 	}
 `;
 
+export const NavMenuMobile = styled.div`
+    display: flex;
+    background-color: #0F151A;
+    height: 100px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+`;
+
+
 export const NavLink = styled(Link)`
     height: 43px;
     color: ${theme.textColor};
@@ -46,6 +122,34 @@ export const NavLink = styled(Link)`
     letter-spacing: .08em;
     padding: 0 20px;
     padding-top: 27px;
+
+    :after {
+        content: "";
+        display: block;
+        position: relative;
+        width: 0% ;
+        padding-top: 18px;
+        border-bottom: 6px solid ${theme.highlightPrimary};
+        transition: width .5s ease, background-color .5s ease;
+    }
+
+    :hover:after {
+        width: 100%;
+    }
+`;
+
+export const NavLinkMobile = styled(Link)`
+    height: 30px;
+    width: 80px;
+    color: ${theme.textColor};
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: .08em;
+    padding: 0 20px;
+    padding-top: 10px;
 
     :after {
         content: "";

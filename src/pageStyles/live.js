@@ -12,7 +12,7 @@ export const TwitchContainer = styled.div`
 
 export const TwitchTopMarginer = styled.div`
     width: 100%;
-    height: 110px;
+    height: 200px;
     background-color: #0e0e10;
 `;
 

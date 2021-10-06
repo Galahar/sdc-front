@@ -3,6 +3,13 @@
     height: auto;
 }
 
+.iconResize {
+    width: 85%;
+    height: auto;
+    margin-top: 70px;
+    margin-left: 8px;
+}
+
 @keyframes fadeInAnimation {
     0% {
         opacity: 0;

@@ -11,6 +11,7 @@ export const BackgroundContainer = styled.div`
     flex-direction: column;
     align-items: center;
     break-inside: avoid;
+    overflow-x: hidden;
 `;
 
 export const TopContainer = styled.div`
@@ -100,7 +101,25 @@ export const GoogleSheetsContainer = styled.div`
     margin-top: 150px;
     outline: 10px solid black;
     background-color: gray;
-    
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+`;  
+
+export const GoogleSheetsContainerMobile = styled.div`
+    width: 80%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+    margin-top: 150px;
+    outline: 10px solid black;
+    background-color: gray;
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
 `;  
 
 export const BottomMargin = styled.div`

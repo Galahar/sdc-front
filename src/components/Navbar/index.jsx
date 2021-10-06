@@ -1,13 +1,65 @@
 import React from "react";
-import { Nav, NavMenu, NavLink, BottomNav } from "./NavbarStyles";
+import { Nav, NavMenu, NavLink, BottomNav, NavMobile, NavMenuMobile, 
+    NavLinkMobile, NavMobileTwo, NavMobileThree } from "./NavbarStyles";
 import { SDCIcon } from "../Logo";
+import hamburgerIcon from "../../assets/illustrations/hamburgerIcon.png";
+import "./navbar.css";
 
 const Navbar = () => {
+
+    class ShowDiv extends React.Component {
+        
+        state = { showing: true };
+
+        render() {
+            const { showing } = this.state;
+            return (
+                <div>
+                <button onClick={() => this.setState({ showing: !showing })} style={{ background: 'none', 
+                    color: 'inherit', border: 'none', padding: '0', 
+                    font: 'inherit', cursor: 'pointer', outline: 'inherit'}}>
+                    <img className="hamburgerResize" src={hamburgerIcon} alt="Hamburger Icon Dropdown"></img>
+                </button>
+                    { showing 
+                        ? null : <div>                
+                        <NavMobileTwo>
+                        <NavMenuMobile>
+                            <NavLinkMobile to='/' activeStyle>
+                                Home
+                            </NavLinkMobile>
+                            <NavLinkMobile to='/live' activeStyle>
+                                Live
+                            </NavLinkMobile>
+                            <NavLinkMobile to='/schedule' activeStyle>
+                                Schedule
+                            </NavLinkMobile>
+                        </NavMenuMobile>
+                    </NavMobileTwo>
+                    <NavMobileThree>
+                        <NavMenuMobile>
+                            <NavLinkMobile to='/teams' activeStyle>
+                                Teams
+                            </NavLinkMobile>
+                            <NavLinkMobile to='/standings' activeStyle>
+                                Standings
+                            </NavLinkMobile>
+                            <NavLinkMobile to='/statistics' activeStyle>
+                                Statistics
+                            </NavLinkMobile>
+                        </NavMenuMobile>
+                    </NavMobileThree>
+                    </div>
+                
+                    }
+                </div>  
+            )
+        }
+    }
 
     return (
         <>
             <Nav>
-                <NavMenu className="navbar">
+                <NavMenu>
                     <BottomNav>
                         <SDCIcon />
                         <NavLink to='/live' activeStyle>
@@ -31,6 +83,11 @@ const Navbar = () => {
                     </BottomNav>
                 </NavMenu>
             </Nav>
+            <NavMobile>
+                <NavMenuMobile>
+                    <ShowDiv />
+                </NavMenuMobile>
+            </NavMobile>
         </>
     );
 };

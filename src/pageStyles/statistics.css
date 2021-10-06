@@ -12,13 +12,3 @@
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
-
-.sheetsResize {
-    width: 100%;
-}
-
-@media screen and (max-width: 768px) {
-    .sheetsResize {
-        width: 80%;
-    }
-}

@@ -24,6 +24,7 @@ import teamIMG9 from "../assets/illustrations/teamIMG9.png";
 import teamIMG10 from "../assets/illustrations/teamIMG10.png";
 import teamIMG11 from "../assets/illustrations/teamIMG11.png";
 import teamIMG12 from "../assets/illustrations/teamIMG12.png";
+import { MarginLargeResize } from "../pageStyles/standings";
 
 
 const Teamspage = () => {
@@ -251,6 +252,7 @@ const Teamspage = () => {
                             </ITC>
                         </TeamsInnerContainer>
                     </TeamsContainer>
+                    <MarginLargeResize />
                 </BackgroundContainer>
             </TopContainer>
             <Navbar />

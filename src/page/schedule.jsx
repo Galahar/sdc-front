@@ -7,6 +7,7 @@ import { TopContainer, BackgroundContainer, ScheduleContainer, ScheduleVersusCon
 
 import "../pageStyles/schedule.js";
 import "../pageStyles/schedule.css";
+import { MarginLargeResize } from "../pageStyles/standings";
 
 
 const Schedulepage = () => {
@@ -517,6 +518,7 @@ const Schedulepage = () => {
                         </ScheduleVersusContainer>
                     </ScheduleContainer>
                     <TopMarginer />
+                    <MarginLargeResize />
                 </BackgroundContainer>
             </TopContainer>
             <Navbar />

@@ -23,7 +23,7 @@ const pictureSelected = pictureArray[randomIndexPicture]; */
 
 export const TopContainer = styled.div`
     width: 100%;
-    height: 100vh;
+    height: 105vh;
     background-image: url(${coolLeague2Image});
     background-position: center;
     background-repeat: no-repeat;
