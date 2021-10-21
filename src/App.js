@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import Homepage from "./page/homepage";
 import Livepage from "./page/live";
 import Schedulepage from "./page/schedule";
@@ -12,6 +12,8 @@ import "./App.css";
 import ScrollIntoView from "./components/ScrollIntoView/ScrollIntoView";
 
 function App() {
+
+      
   return (
     <>
       <Router>

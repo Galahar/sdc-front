@@ -1,24 +1,15 @@
 import React from "react";
-import { Button } from "../components/ButtonRiot";
 
 import { RiotTextLinkContainer  } from "../pageStyles/riot";
 
-import riottext from '../riot.txt';
+import riottext from './riot.txt';
 
 
 const Riotpage = () => {
     return (
         <>
             <RiotTextLinkContainer>
-                <Button
-                onClick={(e) => {
-                    e.preventDefault();
-                    window.location.href=riottext;
-                }}
-                >
-                    Riot.txt 
-                    For Application
-                </Button>
+                <a style={{ fontSize: '30px', color: 'white'}} href={riottext} download>RIOT.TXT for APPLICATION, CLICK HERE</a>
             </RiotTextLinkContainer>
         </>
     );

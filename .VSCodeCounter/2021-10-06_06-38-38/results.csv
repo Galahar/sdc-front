@@ -1,0 +1,49 @@
+"filename", "language", "JavaScript", "JavaScript React", "CSS", "SCSS", "XML", "comment", "blank", "total"
+"c:\Users\ctyle\Desktop\Projects\sdc-front\src\App.css", "CSS", 0, 0, 33, 0, 0, 0, 6, 39
+"c:\Users\ctyle\Desktop\Projects\sdc-front\src\App.js", "JavaScript", 33, 0, 0, 0, 0, 0, 4, 37
+"c:\Users\ctyle\Desktop\Projects\sdc-front\src\App.test.js", "JavaScript", 7, 0, 0, 0, 0, 0, 2, 9
+"c:\Users\ctyle\Desktop\Projects\sdc-front\src\components\ButtonRiot\index.jsx", "JavaScript React", 0, 26, 0, 0, 0, 0, 3, 29
+"c:\Users\ctyle\Desktop\Projects\sdc-front\src\components\Button\index.jsx", "JavaScript React", 0, 23, 0, 0, 0, 0, 4, 27
+"c:\Users\ctyle\Desktop\Projects\sdc-front\src\components\Footer\index.jsx", "JavaScript React", 0, 82, 0, 0, 0, 0, 5, 87
+"c:\Users\ctyle\Desktop\Projects\sdc-front\src\components\LogoDiscord\Logo.css", "CSS", 0, 0, 4, 0, 0, 0, 0, 4
+"c:\Users\ctyle\Desktop\Projects\sdc-front\src\components\LogoDiscord\index.jsx", "JavaScript React", 0, 21, 0, 0, 0, 0, 2, 23
+"c:\Users\ctyle\Desktop\Projects\sdc-front\src\components\LogoSuites\LogoSuites.css", "CSS", 0, 0, 42, 0, 0, 0, 6, 48
+"c:\Users\ctyle\Desktop\Projects\sdc-front\src\components\LogoSuites\indexc1.jsx", "JavaScript React", 0, 15, 0, 0, 0, 0, 2, 17
+"c:\Users\ctyle\Desktop\Projects\sdc-front\src\components\LogoSuites\indexd1.jsx", "JavaScript React", 0, 15, 0, 0, 0, 0, 2, 17
+"c:\Users\ctyle\Desktop\Projects\sdc-front\src\components\LogoSuites\indexh1.jsx", "JavaScript React", 0, 15, 0, 0, 0, 0, 2, 17
+"c:\Users\ctyle\Desktop\Projects\sdc-front\src\components\LogoSuites\indexs1.jsx", "JavaScript React", 0, 15, 0, 0, 0, 0, 2, 17
+"c:\Users\ctyle\Desktop\Projects\sdc-front\src\components\Logo\Logo.css", "CSS", 0, 0, 4, 0, 0, 0, 0, 4
+"c:\Users\ctyle\Desktop\Projects\sdc-front\src\components\Logo\index.jsx", "JavaScript React", 0, 20, 0, 0, 0, 0, 2, 22
+"c:\Users\ctyle\Desktop\Projects\sdc-front\src\components\Navbar\NavbarStyles.js", "JavaScript", 147, 0, 0, 0, 0, 11, 17, 175
+"c:\Users\ctyle\Desktop\Projects\sdc-front\src\components\Navbar\index.jsx", "JavaScript React", 0, 87, 0, 0, 0, 1, 9, 97
+"c:\Users\ctyle\Desktop\Projects\sdc-front\src\components\Navbar\navbar.css", "CSS", 0, 0, 12, 0, 0, 0, 1, 13
+"c:\Users\ctyle\Desktop\Projects\sdc-front\src\components\ScrollIntoView\ScrollIntoView.js", "JavaScript", 10, 0, 0, 0, 0, 0, 4, 14
+"c:\Users\ctyle\Desktop\Projects\sdc-front\src\index.css", "CSS", 0, 0, 13, 0, 0, 0, 2, 15
+"c:\Users\ctyle\Desktop\Projects\sdc-front\src\index.js", "JavaScript", 12, 0, 0, 0, 0, 3, 3, 18
+"c:\Users\ctyle\Desktop\Projects\sdc-front\src\logo.svg", "XML", 0, 0, 0, 0, 1, 0, 0, 1
+"c:\Users\ctyle\Desktop\Projects\sdc-front\src\pageStyles\aboutus.js", "JavaScript", 0, 0, 0, 0, 0, 0, 1, 1
+"c:\Users\ctyle\Desktop\Projects\sdc-front\src\pageStyles\homepage.js", "JavaScript", 181, 0, 0, 0, 0, 18, 26, 225
+"c:\Users\ctyle\Desktop\Projects\sdc-front\src\pageStyles\homestyle.scss", "SCSS", 0, 0, 0, 152, 0, 2, 24, 178
+"c:\Users\ctyle\Desktop\Projects\sdc-front\src\pageStyles\live.css", "CSS", 0, 0, 49, 0, 0, 0, 9, 58
+"c:\Users\ctyle\Desktop\Projects\sdc-front\src\pageStyles\live.js", "JavaScript", 19, 0, 0, 0, 0, 0, 4, 23
+"c:\Users\ctyle\Desktop\Projects\sdc-front\src\pageStyles\riot.js", "JavaScript", 10, 0, 0, 0, 0, 0, 1, 11
+"c:\Users\ctyle\Desktop\Projects\sdc-front\src\pageStyles\schedule.css", "CSS", 0, 0, 13, 0, 0, 0, 1, 14
+"c:\Users\ctyle\Desktop\Projects\sdc-front\src\pageStyles\schedule.js", "JavaScript", 122, 0, 0, 0, 0, 2, 18, 142
+"c:\Users\ctyle\Desktop\Projects\sdc-front\src\pageStyles\standings.css", "CSS", 0, 0, 23, 0, 0, 0, 3, 26
+"c:\Users\ctyle\Desktop\Projects\sdc-front\src\pageStyles\standings.js", "JavaScript", 193, 0, 0, 0, 0, 1, 27, 221
+"c:\Users\ctyle\Desktop\Projects\sdc-front\src\pageStyles\statistics.css", "CSS", 0, 0, 13, 0, 0, 0, 1, 14
+"c:\Users\ctyle\Desktop\Projects\sdc-front\src\pageStyles\statistics.js", "JavaScript", 123, 0, 0, 0, 0, 0, 14, 137
+"c:\Users\ctyle\Desktop\Projects\sdc-front\src\pageStyles\teams.css", "CSS", 0, 0, 17, 0, 0, 0, 2, 19
+"c:\Users\ctyle\Desktop\Projects\sdc-front\src\pageStyles\teams.js", "JavaScript", 102, 0, 0, 0, 0, 1, 12, 115
+"c:\Users\ctyle\Desktop\Projects\sdc-front\src\page\aboutus.jsx", "JavaScript React", 0, 12, 0, 0, 0, 0, 2, 14
+"c:\Users\ctyle\Desktop\Projects\sdc-front\src\page\homepage.jsx", "JavaScript React", 0, 132, 0, 0, 0, 0, 6, 138
+"c:\Users\ctyle\Desktop\Projects\sdc-front\src\page\live.jsx", "JavaScript React", 0, 30, 0, 0, 0, 23, 6, 59
+"c:\Users\ctyle\Desktop\Projects\sdc-front\src\page\riot.jsx", "JavaScript React", 0, 22, 0, 0, 0, 0, 5, 27
+"c:\Users\ctyle\Desktop\Projects\sdc-front\src\page\schedule.jsx", "JavaScript React", 0, 525, 0, 0, 0, 0, 5, 530
+"c:\Users\ctyle\Desktop\Projects\sdc-front\src\page\standings.jsx", "JavaScript React", 0, 958, 0, 0, 0, 0, 6, 964
+"c:\Users\ctyle\Desktop\Projects\sdc-front\src\page\statistics.jsx", "JavaScript React", 0, 42, 0, 0, 0, 0, 3, 45
+"c:\Users\ctyle\Desktop\Projects\sdc-front\src\page\teams.jsx", "JavaScript React", 0, 259, 0, 0, 0, 0, 5, 264
+"c:\Users\ctyle\Desktop\Projects\sdc-front\src\reportWebVitals.js", "JavaScript", 12, 0, 0, 0, 0, 0, 2, 14
+"c:\Users\ctyle\Desktop\Projects\sdc-front\src\setupTests.js", "JavaScript", 1, 0, 0, 0, 0, 4, 1, 6
+"c:\Users\ctyle\Desktop\Projects\sdc-front\src\themes.js", "JavaScript", 8, 0, 0, 0, 0, 0, 0, 8
+"Total", "-", 980, 2299, 223, 152, 1, 66, 262, 3983

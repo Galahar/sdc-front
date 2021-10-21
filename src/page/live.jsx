@@ -17,8 +17,8 @@ const Livepage = () => {
                 <TwitchContainer className="twitch">
                     <div  className="twitch">
                         <TwitchEmbed
-                            channel="riotgames"
-                            id="riotgames"
+                            channel="sdcleague"
+                            id="sdcleague"
                             theme="dark"
                             muted
                             width='100%'

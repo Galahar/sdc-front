@@ -94,6 +94,9 @@ export const MoreInfoContainer = styled.div`
 `;
 
 export const DownArrowContainer = styled.div`
+    @media screen and (max-height: 800px) {
+        display: none;
+    }
     bottom: 25px;
     left: 50%;
 `;
