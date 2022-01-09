@@ -126,9 +126,9 @@ export const ContentFilter = styled.div`
 
 export const ContentContainer = styled(Element)`
     width: 100%;
-    height: 1500px;
+    height: 1000px;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     background-color: #27252D;
     justify-content: center;
     align-items: center;
@@ -157,47 +157,12 @@ export const ContentTextContainer = styled.div`
         display: none;
     }
 `;
-
-export const VideoContainer = styled.div`
-    position: relative;
-    @media screen and (max-width: 1400px) {
-        right: 50px;
-    }
-    @media screen and (max-width: 1260px) {
-        right: 50px;
-    }
-    @media screen and (max-width: 1150px) {
-        display: none;
-    }
-
-`;
-
-export const VideoContainerSmall = styled.div`
-    position: relative;
-    right: 40px;
-    @media screen and (min-width: 1150px) {
-        display: none;
-    }
-
-`;
-
-export const VideoContainerMobile = styled.div`
-    width: 10%;
-    height: 15%;
-    margin-top: 50px;
-    margin-right: 310px;
-    @media screen and (min-width: 1024px) {
-        display: none;
-    }
-`;
-
 /* old color above for border-bottom 1C6EA4 */
 
 export const ContentText = styled.p`
     position: relative;
-    padding-bottom: 50px;
     left: 90px;
-    font-size: 11px;
+    font-size: 14px;
     @media screen and (max-width: 1400px) {
         left: 50px;
         font-size: 14px;
@@ -208,6 +173,7 @@ export const ContentText = styled.p`
     @media screen and (max-width: 1024px) {
         display: none;
     }
+    
 `;
 
 
@@ -258,4 +224,3 @@ export const InfoTextTwo = styled.div`
         left: -30px;
     }
 `;
-

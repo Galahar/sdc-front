@@ -18,6 +18,21 @@ const FooterContainer = styled.div`
     }
 `;
 
+const FooterLinksContainerZero = styled.div`
+    width: 50%;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding-top: 20px;
+    @media screen and (max-width: 1024px) {
+        width: 30%;
+        flex-direction: column;
+    }
+`;
+
 const FooterLinksContainer = styled.div`
     width: 50%;
     height: 60%;
@@ -28,6 +43,23 @@ const FooterLinksContainer = styled.div`
     gap: 50px;
     @media screen and (max-width: 1024px) {
         width: 30%;
+        flex-direction: column;
+    }
+`;
+
+const DisclaimerLinksContainer = styled.div`
+    max-width: 50%;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    line-height: 35px;
+    @media screen and (max-width: 1024px) {
+        width: 40%;
         flex-direction: column;
     }
 `;
@@ -58,7 +90,7 @@ const FooterMargin = styled.div`
 export function Footer(props) {
     return (
         <FooterContainer>
-            <FooterLinksContainer>
+            <FooterLinksContainerZero>
                 <FooterLink to='/live' activeStyle>
                     Home
                 </FooterLink>
@@ -68,7 +100,7 @@ export function Footer(props) {
                 <FooterLink to='/schedule' activeStyle>
                     Schedule
                 </FooterLink>
-            </FooterLinksContainer>
+            </FooterLinksContainerZero>
             <DiscIcon />
             <FooterMargin />
             <FooterLinksContainer>
@@ -82,6 +114,12 @@ export function Footer(props) {
                     Statistics
                 </FooterLink>
             </FooterLinksContainer>
+            <DisclaimerLinksContainer>
+            Seasonal Draft Championship isn't endorsed by Riot Games and doesn't reflect the views or opinions 
+            of Riot Games or anyone officially involved in producing or managing Riot 
+            Games properties. Riot Games, and all associated properties are trademarks 
+            or registered trademarks of Riot Games, Inc.
+            </DisclaimerLinksContainer>
         </FooterContainer>
     );
 }

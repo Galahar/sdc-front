@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import DiscLogo from "../../assets/illustrations/Discord-Logo+Wordmark-White.png";
-import { Link } from "react-router-dom";
 import "./Logo.css";
 
 const IconContainer = styled.div`
@@ -14,10 +13,11 @@ const IconContainer = styled.div`
 export function DiscIcon(props) {
     return (
         <IconContainer>
-            <Link to={{ pathname: "https://www.discord.com/invite/jUMzGUs" }} 
-            target="_blank">
+
+            <a target="_blank" rel="noreferrer" href="https://discord.com/invite/jUMzGUs">
                 <img className="img-resizeDisc" src={DiscLogo} alt="Seasonal Draft Championship Logo"></img>
-            </Link>
+            </a>
+
         </IconContainer>
     );
 };

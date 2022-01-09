@@ -5,6 +5,7 @@ import Livepage from "./page/live";
 import Schedulepage from "./page/schedule";
 import Teamspage from "./page/teams";
 import Standingspage from "./page/standings";
+import StandingsDraft from "./page/standingsDraft";
 import Statisticspage from "./page/statistics";
 import Aboutuspage from "./page/aboutus";
 import Riotpage from "./page/riot";

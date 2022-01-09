@@ -12,3 +12,16 @@
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
+
+.linkHover:after {
+        content: "";
+        display: block;
+        position: relative;
+        width: 0% ;
+        border-bottom: 5px solid #A379C9;
+        transition: width .5s ease, background-color .5s ease;
+    }
+
+    :hover:after {
+        width: 100%;
+    }

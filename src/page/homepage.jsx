@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 import { Footer } from "../components/Footer";
 import { BackgroundFilter, ContentContainer, TopContainer, TextContainer, TitleText, TitleTextResponsive,
     SeasonText, MoreInfoContainer, DownArrowContainer, ContentTextContainer, InfoContainer, 
-    ContentText, InfoContent, InfoText, InfoTextTwo, ContentFilter } from "../pageStyles/homepage";
+    ContentText, InfoContent, InfoText, InfoTextTwo, ContentFilter, VideoContainer, VideoContainerSmall, VideoContainerMobile } from "../pageStyles/homepage";
 import { Button } from "../components/Button";
 import { scroller } from "react-scroll";
 import "../pageStyles/homestyle.scss";
@@ -55,6 +55,19 @@ const Homepage = () => {
             <Navbar />
             <ContentContainer name="contentSection">
                 <ContentFilter>
+                <VideoContainerMobile>
+                        <iframe 
+                            width="340" 
+                            height="200" 
+                            src="https://www.youtube.com/embed/vV9GS-CJZFI" 
+                            title="YouTube video player" 
+                            frameborder="1" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                            gyroscope; picture-in-picture" 
+                            allowfullscreen
+                            >
+                        </iframe>
+                </VideoContainerMobile>
                 <ContentTextContainer>
                     <ContentText>
                         <div className="anim-typewriter line-1">The Seasonal Draft Championship, SDC is</div>
@@ -67,6 +80,32 @@ const Homepage = () => {
                         <div className="anim-typewriter2 line-1">but is more similar to a franchise system</div>
                         <div className="anim-typewriter2 line-1">that varies from season to season.</div>
                     </ContentText>
+                    <VideoContainer>
+                        <iframe 
+                            width="560" 
+                            height="315" 
+                            src="https://www.youtube.com/embed/vV9GS-CJZFI" 
+                            title="YouTube video player" 
+                            frameborder="1" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                            gyroscope; picture-in-picture" 
+                            allowfullscreen
+                            >
+                        </iframe>
+                    </VideoContainer>
+                    <VideoContainerSmall>
+                        <iframe 
+                            width="435" 
+                            height="255" 
+                            src="https://www.youtube.com/embed/vV9GS-CJZFI" 
+                            title="YouTube video player" 
+                            frameborder="1" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                            gyroscope; picture-in-picture" 
+                            allowfullscreen
+                            >
+                        </iframe>
+                    </VideoContainerSmall>
                 </ContentTextContainer>
                 <InfoContainer>
                     <InfoContent>
@@ -85,7 +124,7 @@ const Homepage = () => {
                     </InfoContent>
                     <InfoContent>
                         <InfoText>
-                            <span style={{ fontSize: 25, fontWeight: 600, textDecoration: 'underline', color: '#F3633F', fontFamily: 'Yusei Magic', letterSpacing: '.1em'}}>Drafted Players Compete</span>
+                            <span style={{ fontSize: 23, fontWeight: 600, textDecoration: 'underline', color: '#F3633F', fontFamily: 'Yusei Magic', letterSpacing: '.1em'}}>Drafted Players Compete</span>
                             <br />
                             <span style={{ fontSize: 22 }}>132 Players Make 12 Teams of 11</span>
                             <br />
@@ -102,7 +141,7 @@ const Homepage = () => {
                     </InfoContent>
                     <InfoContent>
                         <InfoTextTwo>
-                            <span style={{ fontSize: 25, fontWeight: 600, textDecoration: 'underline', color: '#DBFF76', fontFamily: 'Yusei Magic', letterSpacing: '.1em'}}>Round Robin Format</span>
+                            <span style={{ fontSize: 23, fontWeight: 600, textDecoration: 'underline', color: '#DBFF76', fontFamily: 'Yusei Magic', letterSpacing: '.1em' }}>Round Robin Format</span>
                             <br />
                             <span style={{ fontSize: 22 }}>198 Regular Season Games</span>
                             <br />
@@ -116,7 +155,7 @@ const Homepage = () => {
                     </InfoContent>
                     <InfoContent>
                         <InfoTextTwo>
-                            <span style={{ fontSize: 25, fontWeight: 600, textDecoration: 'underline', color: '#90E0F3', fontFamily: 'Yusei Magic', letterSpacing: '.1em'}}>Multi-Week Finals</span>
+                            <span style={{ fontSize: 23, fontWeight: 600, textDecoration: 'underline', color: '#90E0F3', fontFamily: 'Yusei Magic', letterSpacing: '.1em'}}>Multi-Week Finals</span>
                             <br />
                             <span style={{ fontSize: 22 }}>Quarter Finals Best of 5</span>
                             <br />

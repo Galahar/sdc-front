@@ -20,10 +20,13 @@ const Statisticspage = () => {
                             <StatsLinkNormal>
                                 For All Time Stats
                             </StatsLinkNormal>
-                            <StatsLink to={{ pathname: "https://docs.google.com/spreadsheets/d/1BWCMVF8cUp1eqjL8MJBuQKIm76WJNfGhVgFOf1xISvk/edit#gid=1325308529" }} 
-                            target="_blank">
-                                Click Here
-                            </StatsLink>
+
+                            <a className="linkHover" target="_blank" rel="noreferrer" href="https://docs.google.com/spreadsheets/d/1BWCMVF8cUp1eqjL8MJBuQKIm76WJNfGhVgFOf1xISvk/edit#gid=1325308529">
+                            <StatsLinkNormal style={{ textDecoration: 'none' }}>
+                                Click here
+                            </StatsLinkNormal>
+                                </a>
+
                         </StatisticsLinkContainer>
                     </StatisticsContainer>
                     <GoogleSheetsContainer className="loadInAnim">
