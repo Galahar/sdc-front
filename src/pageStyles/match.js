@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import Ruined1 from "../assets/illustrations/Ruined1.jpeg";
 import { theme } from "../themes.js";
-import { Link } from 'react-router-dom';
 
 export const BackgroundContainer = styled.div`
     width: 100%;

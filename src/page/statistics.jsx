@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import { Footer } from "../components/Footer";
 import { BackgroundContainer, TopContainer, StatisticsContainer, StatisticsLinkContainer, 
-    StatsLink, StatsLinkNormal, StatsLinkHeader, GoogleSheetsContainer, GoogleSheetsContainerMobile, BottomMargin } from "../pageStyles/statistics.js";
+    StatsLinkNormal, StatsLinkHeader, GoogleSheetsContainer, GoogleSheetsContainerMobile, BottomMargin } from "../pageStyles/statistics.js";
 
 import "../pageStyles/statistics.css";
 import { MarginLargeResize } from "../pageStyles/standings";

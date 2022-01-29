@@ -65,7 +65,7 @@ export default class Schedulepage extends React.Component {
 		const modifiers = { start: from, end: to };
 		const matches = this.state.matches;
 		const displayMatches = [];
-		for (var i = 0; i < matches.length; i++) {
+		for (let i = 0; i < matches.length; i++) {
 			if (Date.parse(matches[i].date) >= this.state.range.from && Date.parse(matches[i].date) <= this.state.range.to) {
 				if (displayMatches.length > 0 && displayMatches.find(e => Date.parse(e.date).valueOf() === Date.parse(matches[i].date).valueOf())) {
 					displayMatches.find(e => Date.parse(e.date).valueOf() === Date.parse(matches[i].date).valueOf()).matches.push(matches[i]);
