@@ -3,42 +3,27 @@ import styled from "styled-components";
 import { theme } from "../../themes.js";
 
 export const Nav = styled.nav`
-    background-color: ${theme.primary};
     overflow: hidden;
     position: fixed;
     width: 100%;
-    background: rgba(255,255,255,0);
     z-index: 9999;
     top: 0;
     transition: all 0.35s ease-in-out;
     :hover {
-        background: rgba(255,255,255,1);
         transition: all 0.5s ease-in-out;
-        background-color: #0F151A;
-        box-shadow: 0 1px 40px -8px rgb(0 0 0 / 50%);
+        background-color: ${theme.primary};
+        /*box-shadow: 0 1px 40px -8px rgb(0 0 0 / 50%);*/
 	}
 `;
 
 export const NavMobile = styled.div`
-/*     overflow: hidden;
-    position: fixed;
-    background-color: #0F151A;
-    width: 100%;
-    z-index: 9999;
-    top: 0;
-    @media screen and (max-width: 1024px) {
-        animation: fadeInAnimation ease 2s;
-        animation-iteration-count: 1;
-        animation-fill-mode: forwards;
-    } */  
-
     display: flex;
     position: fixed;
     z-index: 9999;
     top: 0;
     width: 100%;
     height: 100px;
-    background-color: #0F151A;
+    background-color: ${theme.primary};
     display: none;
     @media screen and (max-width: 1024px) {
         animation: fadeInAnimation ease 0.5s;
@@ -56,7 +41,7 @@ export const NavMobileTwo = styled.div`
     top: 100px;
     width: 100%;
     height: 100px;
-    background-color: #0F151A;
+    background-color: ${theme.primary};
     display: none;
     @media screen and (max-width: 1024px) {
         animation: fadeInAnimation ease 0.5s;
@@ -74,7 +59,7 @@ export const NavMobileThree = styled.div`
     top: 200px;
     width: 100%;
     height: 100px;
-    background-color: #0F151A;
+    background-color: ${theme.primary};
     display: none;
     @media screen and (max-width: 1024px) {
         animation: fadeInAnimation ease 0.5s;
@@ -94,16 +79,15 @@ export const NavMenu = styled.div`
         display: none;
     }
     :hover {
-        background: rgba(255,255,255,1);
         transition: all 0.5s ease-in-out;
-        background-color: #0F151A;
-        box-shadow: 0 1px 40px -8px rgb(0 0 0 / 50%);
+        background-color: ${theme.primary};
+        /*box-shadow: 0 1px 40px -8px rgb(0 0 0 / 50%);*/
 	}
 `;
 
 export const NavMenuMobile = styled.div`
     display: flex;
-    background-color: #0F151A;
+    background-color: ${theme.primary};
     height: 100px;
     flex-direction: row;
     align-items: center;

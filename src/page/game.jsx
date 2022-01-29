@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import DayPicker, { DateUtils } from 'react-day-picker';
 import 'react-day-picker/lib/style.css';
 import axios from "axios";
@@ -10,8 +10,9 @@ import { TopContainer, BackgroundContainer, ScheduleContainer, ScheduleVersusCon
 
 import "../pageStyles/schedule.js";
 import "../pageStyles/schedule.css";
+import { MarginLargeResize } from "../pageStyles/standings";
 
-const baseURL = "https://sdc-league-api-u9e3a.ondigitalocean.app/api/";
+const baseURL = "http://127.0.0.1:8000/api/";
 
 function compareMatches(a, b) {
 	if (a.date < b.date) {
@@ -35,11 +36,11 @@ export default class Schedulepage extends React.Component {
 	}
 	
 	componentDidMount() {
-		axios.get(baseURL + 'games/')
+		axios.get('http://127.0.0.1:8000/api/matches/')
 		  .then(res => {
 			const matchData = res.data;
 			this.setState({range: this.state.range, matches: matchData.sort(compareMatches)});
-		  });
+		  })
 	}
 
 	getInitialDates() {
@@ -67,8 +68,8 @@ export default class Schedulepage extends React.Component {
 		const displayMatches = [];
 		for (var i = 0; i < matches.length; i++) {
 			if (Date.parse(matches[i].date) >= this.state.range.from && Date.parse(matches[i].date) <= this.state.range.to) {
-				if (displayMatches.length > 0 && displayMatches.find(e => Date.parse(e.date).valueOf() === Date.parse(matches[i].date).valueOf())) {
-					displayMatches.find(e => Date.parse(e.date).valueOf() === Date.parse(matches[i].date).valueOf()).matches.push(matches[i]);
+				if (displayMatches.find(e => e.date == matches.date)) {
+					displayMatches.find(e => e.date == matches.date).matches.push(matches[i]);
 				} else {
 					displayMatches.push({date: matches[i].date, matches: [matches[i]]});
 				}
@@ -100,18 +101,15 @@ export default class Schedulepage extends React.Component {
 									<SVTIN>
 										<IDC>
 											<IDCTitle>
-											{
-												(new Date(dates.date).getMonth() + 1) + "/" + new Date(dates.date).getDate() + "/" + new Date(dates.date).getFullYear() +
-												" " + String(new Date(dates.date).getHours()+5).padStart(2, '0') + ":" + String(new Date(dates.date).getMinutes()).padStart(2, '0')
-											}
+											{(new Date(dates.date).getMonth() + 1) + "/" + new Date(dates.date).getDate() + "/" + new Date(dates.date).getFullYear()}
 											</IDCTitle>
 										</IDC>
 										{
 											dates.matches.map( (match) => (
 											<>
 												<IDATCBlueMarginer/>
-												<IDATC onClick={event =>  window.location.href='/match?id='+match.match.id}>
-													<IDATCText>{match.match.team1.name} VS {match.match.team2.name}</IDATCText>
+												<IDATC>
+													<IDATCText>{match.team1.captain.name} VS {match.team2.captain.name}</IDATCText>
 												</IDATC>
 											</>
 											))
@@ -158,9 +156,6 @@ export default class Schedulepage extends React.Component {
 				}
 				.DayPicker:not(.DayPicker--interactionDisabled) .DayPicker-Day:not(.DayPicker-Day--disabled):not(.DayPicker-Day--selected):not(.DayPicker-Day--outside):hover {
 					background-color: #f7b318 !important;
-				}
-				body {  
-					background-color: #1A191A !important; 
 				}
 			`}</style>
 		</>
