@@ -46,7 +46,7 @@ export const ScheduleContainer = styled.div`
 `;
 
 export const HeaderTextContainer = styled.div`
-    width: 60%;
+    width: 100%;
     height: 8%;
     display: flex;
     flex-direction: column;
@@ -56,16 +56,17 @@ export const HeaderTextContainer = styled.div`
 
 export const TitleText = styled.h1`
     font-size: 30px;
-    white-space: nowrap;
+	display: flex;
+    align-items: center;
+	text-align: center;
+    justify-content: center;
+    flex-direction: row;
     margin-top: 0;
     margin-bottom: 0;
     color: ${theme.highlightPrimary};
     text-shadow: 2px 2px 0 black, 1px 1px 0 black, 2px 2px 0 black;
     overflow: hidden;
 	cursor: context-menu;
-    @media screen and (max-width: 768px) {
-        display: none;
-    }
 `;
 
 export const ScheduleVersusContainer = styled.div`
@@ -96,6 +97,7 @@ export const SVTIN = styled.div`
     border-bottom: 5px solid ${theme.ebony};
     @media screen and (max-width: 768px) {
         flex-direction: column;
+		border-bottom: 0px solid ${theme.ebony};
     }
 `;
 
@@ -111,7 +113,7 @@ export const IDATC = styled.div`
     flex-direction: row;
 	:hover {
 		cursor: pointer;
-		background: ${theme.highlightPrimary};
+		background-color: ${theme.highlightPrimary};
         transition: all 0.5s ease-in-out;
 	}
 `;
@@ -125,6 +127,11 @@ export const IDC = styled.div`
     justify-content: center;
     flex-direction: row;
 	cursor: context-menu;
+	background-color: ${theme.ebony};
+	    @media screen and (max-width: 768px) {
+        flex-direction: column;
+		min-width: 100%;
+    }
 `;
 
 export const IDATCBlueMarginer = styled.div`
