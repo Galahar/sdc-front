@@ -57,13 +57,14 @@ export const TeamsInnerContainer = styled.div`
 
 export const ITC = styled.div`
     width: 140px;
-    height: 961px;
+    height: 1000px;
     background-color: #23292E;
     outline: 1px solid black;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    outline: 1px solid red;
 `;
 
 export const SDCIconContainer = styled.div`
