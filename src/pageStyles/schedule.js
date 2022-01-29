@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import Ruined1 from "../assets/illustrations/Ruined1.jpeg";
 import { theme } from "../themes.js";
+import { NavLink as Link } from "react-router-dom";
 
 export const BackgroundContainer = styled.div`
     width: 100%;
@@ -102,7 +103,7 @@ export const SVTIN = styled.div`
 
 /* Individual Day and Team Containers */
 
-export const IDATC = styled.div`
+export const IDATC = styled(Link)`
     width: 100%;
     min-height: 80px;
     font-size: 15px;
@@ -110,6 +111,9 @@ export const IDATC = styled.div`
     align-items: center;
     justify-content: center;
     flex-direction: row;
+	color: ${theme.textColor};
+	text-decoration: none;
+	text-align: center;
 	:hover {
 		cursor: pointer;
 		background-color: ${theme.highlightPrimary};
@@ -141,16 +145,6 @@ export const IDATCBlueMarginer = styled.div`
         min-width: 100%;
         min-height: 2px;
     }
-`;
-
-export const IDATCText = styled.p`
-    font-size: 15px;
-    display: flex;
-    align-items: center;
-	text-align: center;
-    justify-content: center;
-    flex-direction: row;
-    letter-spacing: .09em;
 `;
 
 export const IDCTitle = styled.p`

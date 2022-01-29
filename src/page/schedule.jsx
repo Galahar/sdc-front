@@ -6,7 +6,7 @@ import Navbar from "../components/Navbar";
 import { Footer } from "../components/Footer";
 
 import { TopContainer, BackgroundContainer, ScheduleContainer, ScheduleVersusContainer, 
-    HeaderTextContainer, TitleText, SVTIN, IDATC, IDATCText, IDATCBlueMarginer, IDC, IDCTitle } from "../pageStyles/schedule";
+    HeaderTextContainer, TitleText, SVTIN, IDATC, IDATCBlueMarginer, IDC, IDCTitle } from "../pageStyles/schedule";
 
 import "../pageStyles/schedule.js";
 import "../pageStyles/schedule.css";
@@ -110,8 +110,8 @@ export default class Schedulepage extends React.Component {
 											dates.matches.map( (match) => (
 											<>
 												<IDATCBlueMarginer/>
-												<IDATC onClick={event =>  window.location.href='/match?id='+match.match.id}>
-													<IDATCText>{match.match.team1.name} VS {match.match.team2.name}</IDATCText>
+												<IDATC to={'/match?id='+match.match.id}>
+													{match.match.team1.name} VS {match.match.team2.name}
 												</IDATC>
 											</>
 											))
