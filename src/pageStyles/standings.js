@@ -56,7 +56,7 @@ export const TeamsInnerContainer = styled.div`
 `;
 
 export const ITC = styled.div`
-    width: 100px;
+    width: 140px;
     height: 961px;
     background-color: #23292E;
     outline: 1px solid black;
@@ -163,7 +163,7 @@ export const TeamImageContainer = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 130px;
+    height: 160px;
     outline: 1px solid white;
     margin-top: 55px;
 `;
@@ -189,28 +189,32 @@ export const TeamCaptainsText = styled.div`
 export const SC1 = styled.div`
     width: 100%;
     height: 50px;
-    background-color: #22FC3F;
+    /* background-color: #22FC3F; */
+    background-color: rgb(35, 41, 46);
     border-bottom: 2px solid white;
 `;
 
 export const SC2 = styled.div`
     width: 100%;
     height: 50px;
-    background-color: #BEE6CE;
+    /* background-color: #BEE6CE; */
+    background-color: rgb(35, 41, 46);
     border-bottom: 2px solid white;
 `;
 
 export const SC3 = styled.div`
     width: 100%;
     height: 50px;
-    background-color: #F8AD9D;
+    /* background-color: #F8AD9D; */
+    background-color: rgb(35, 41, 46);
     border-bottom: 2px solid white;
 `;
 
 export const SC4 = styled.div`
     width: 100%;
     height: 50px;
-    background-color: #ea5348;
+    /* background-color: #ea5348; */
+    background-color: rgb(35, 41, 46);
     border-bottom: 2px solid white;
 `;
 

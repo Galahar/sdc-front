@@ -10,18 +10,16 @@ import { BackgroundContainer, TopContainer, TeamsContainer, TeamsInnerContainer,
 
 import "../pageStyles/standings.css";
 
-import teamIMG1 from "../assets/illustrations/teamIMG1.png";
-import teamIMG2 from "../assets/illustrations/teamIMG2.png";
-import teamIMG3 from "../assets/illustrations/teamIMG3.png";
-import teamIMG4 from "../assets/illustrations/teamIMG4.png";
-import teamIMG5 from "../assets/illustrations/teamIMG5.png";
-import teamIMG6 from "../assets/illustrations/teamIMG6.png";
-import teamIMG7 from "../assets/illustrations/teamIMG7.png";
-import teamIMG8 from "../assets/illustrations/teamIMG8.png";
-import teamIMG9 from "../assets/illustrations/teamIMG9.png";
-import teamIMG10 from "../assets/illustrations/teamIMG10.png";
-import teamIMG11 from "../assets/illustrations/teamIMG11.png";
-import teamIMG12 from "../assets/illustrations/teamIMG12.png";
+import teamIMG1 from "../assets/illustrations/team1.png";
+import teamIMG2 from "../assets/illustrations/team2.png";
+import teamIMG3 from "../assets/illustrations/team3.png";
+import teamIMG4 from "../assets/illustrations/team4.png";
+import teamIMG5 from "../assets/illustrations/team5.png";
+import teamIMG6 from "../assets/illustrations/team6.png";
+import teamIMG7 from "../assets/illustrations/team7.png";
+import teamIMG8 from "../assets/illustrations/team8.png";
+import teamIMG9 from "../assets/illustrations/team9.jpg";
+import teamIMG10 from "../assets/illustrations/Team10.png";
 
 import sdcIcon from "../assets/illustrations/sdcIconSmall.png";
 
@@ -114,7 +112,7 @@ const Standingspage = () => {
                                 <TeamName style={{ backgroundColor: "#ff3c3c"}}>
                                     <TeamNameTextContainer>
                                         <TeamNameText>
-                                            FEED TILT COME
+                                            Veibae Simps
                                         </TeamNameText>
                                     </TeamNameTextContainer>
                                     <TeamImageContainer>
@@ -122,61 +120,61 @@ const Standingspage = () => {
                                     </TeamImageContainer >
                                     <TeamCaptains>
                                         <TeamCaptainsText>
-                                            (C): Mixture
+                                            (C): Aidonn
                                         </TeamCaptainsText>
                                     </TeamCaptains>
                                     <TeamCaptains>
                                         <TeamCaptainsText>
-                                            (VC): Jasco
+                                            (VC): Hermy
                                         </TeamCaptainsText>
                                     </TeamCaptains>
                                     <SC1>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        3 - 0</span>
+                                        </span>
                                     </SC1>
                                     <SC2>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        2 - 1</span>
+                                        </span>
                                     </SC2>
                                     <SC3>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        1 - 2</span>
+                                        </span>
                                     </SC3>
                                     <SC1>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        3 - 0</span>
+                                        </span>
                                     </SC1>
                                     <SC1>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        3 - 0</span>
+                                        </span>
                                     </SC1>
                                     <SC2>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        2 - 1</span>
+                                        </span>
                                     </SC2>
                                     <SC3>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        1 - 2</span>
+                                        </span>
                                     </SC3>
                                     <SC2>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        2 - 1</span>
+                                        </span>
                                     </SC2>
                                     <SC2>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        2 - 1</span>
+                                        </span>
                                     </SC2>
                                     <SC1>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        3 - 0</span>
+                                        </span>
                                     </SC1>
                                     <SC2>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        2 - 1</span>
+                                        </span>
                                     </SC2>
                                     <SC1 style={{ backgroundColor: 'black'}}>
                                         <span style={{ fontWeight: '600', color: 'white', fontSize: '28px', marginLeft: '10px'}}> 
-                                        24 - 9</span>
+                                        0 - 0</span>
                                     </SC1>
                                 </TeamName>
                             </ITC>
@@ -184,7 +182,7 @@ const Standingspage = () => {
                                 <TeamName style={{ backgroundColor: "#8ccc42"}}>
                                     <TeamNameTextContainer>
                                         <TeamNameText>
-                                            11 Sad Men
+                                            High Five, Daisy!
                                         </TeamNameText>
                                     </TeamNameTextContainer>
                                     <TeamImageContainer>
@@ -192,61 +190,61 @@ const Standingspage = () => {
                                     </TeamImageContainer >
                                     <TeamCaptains>
                                         <TeamCaptainsText>
-                                            (C): Henny
+                                            (C): blossøm
                                         </TeamCaptainsText>
                                     </TeamCaptains>
                                     <TeamCaptains>
                                         <TeamCaptainsText>
-                                            (VC): Jasco
+                                            (VC): banana ooÿoo
                                         </TeamCaptainsText>
                                     </TeamCaptains>
                                     <SC2>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        2 - 1</span>
+                                        </span>
                                     </SC2>
                                     <SC1>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        3 - 0</span>
+                                        </span>
                                     </SC1>
                                     <SC1>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        3 - 0</span>
+                                        </span>
                                     </SC1>
                                     <SC3>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        1 - 2</span>
+                                        </span>
                                     </SC3>
                                     <SC3>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        1 - 2</span>
+                                        </span>
                                     </SC3>
                                     <SC3>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        1 - 2</span>
+                                        </span>
                                     </SC3>
                                     <SC4>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        0 - 3</span>
+                                        </span>
                                     </SC4>
                                     <SC2>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        2 - 1</span>
+                                        </span>
                                     </SC2>
                                     <SC3>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        1 - 2</span>
+                                        </span>
                                     </SC3>
                                     <SC2>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        2 - 1</span>
+                                        </span>
                                     </SC2>
                                     <SC3>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        1 - 2</span>
+                                        </span>
                                     </SC3>
                                     <SC1 style={{ backgroundColor: 'black'}}>
-                                        <span style={{ fontWeight: '600', color: 'white', fontSize: '28px', marginLeft: '10px'}}> 
-                                        24 - 9</span>
+                                        <span style={{ fontWeight: '600', color: 'white', fontSize: '28px', marginLeft: '20px'}}> 
+                                        0 - 0</span>
                                     </SC1>
                                 </TeamName>
                             </ITC>
@@ -254,7 +252,7 @@ const Standingspage = () => {
                                 <TeamName style={{ backgroundColor: "#634389"}}>
                                     <TeamNameTextContainer>
                                         <TeamNameText>
-                                            OCEAN'S ELEVEN
+                                            Cobra Kai
                                         </TeamNameText>
                                     </TeamNameTextContainer>
                                     <TeamImageContainer>
@@ -262,61 +260,61 @@ const Standingspage = () => {
                                     </TeamImageContainer >
                                     <TeamCaptains>
                                         <TeamCaptainsText>
-                                            (C): Patrick
+                                            (C): Mattsey
                                         </TeamCaptainsText>
                                     </TeamCaptains>
                                     <TeamCaptains>
                                         <TeamCaptainsText>
-                                            (VC): Loanrie
+                                            (VC): Payneless
                                         </TeamCaptainsText>
                                     </TeamCaptains>
                                     <SC3>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        1 - 2</span>
+                                        </span>
                                     </SC3>
                                     <SC3>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        1 - 2</span>
+                                        </span>
                                     </SC3>
                                     <SC2>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        2 - 1</span>
+                                        </span>
                                     </SC2>
                                     <SC2>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        2 - 1</span>
+                                        </span>
                                     </SC2>
                                     <SC3>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        1 - 2</span>
+                                        </span>
                                     </SC3>
                                     <SC4>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        0 - 3</span>
+                                        </span>
                                     </SC4>
                                     <SC2>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        2 - 1</span>
+                                        </span>
                                     </SC2>
                                     <SC3>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        1 - 2</span>
+                                        </span>
                                     </SC3>
                                     <SC3>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        1 - 2</span>
+                                        </span>
                                     </SC3>
                                     <SC2>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        2 - 1</span>
+                                        </span>
                                     </SC2>
                                     <SC1>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        3 - 0</span>
+                                        </span>
                                     </SC1>
                                     <SC1 style={{ backgroundColor: 'black'}}>
-                                        <span style={{ fontWeight: '600', color: 'white', fontSize: '28px', marginLeft: '10px'}}> 
-                                        16 - 17</span>
+                                        <span style={{ fontWeight: '600', color: 'white', fontSize: '28px', marginLeft: '20px'}}> 
+                                        0 - 0</span>
                                     </SC1>
                                 </TeamName>
                             </ITC>
@@ -324,7 +322,7 @@ const Standingspage = () => {
                                 <TeamName style={{ backgroundColor: "#2c5881"}}>
                                     <TeamNameTextContainer>
                                         <TeamNameText>
-                                            Karasuno
+                                            NCOG
                                         </TeamNameText>
                                     </TeamNameTextContainer>
                                     <TeamImageContainer>
@@ -332,61 +330,61 @@ const Standingspage = () => {
                                     </TeamImageContainer >
                                     <TeamCaptains>
                                         <TeamCaptainsText>
-                                            (C): Mattsey
+                                            (C): Łukê
                                         </TeamCaptainsText>
                                     </TeamCaptains>
                                     <TeamCaptains>
                                         <TeamCaptainsText style={{ fontSize: '13px' }}>
-                                            (VC): Shredman3
+                                            (VC): Prestoman
                                         </TeamCaptainsText>
                                     </TeamCaptains>
                                     <SC1>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        3 - 0</span>
+                                        </span>
                                     </SC1>
                                     <SC4>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        0 - 3</span>
+                                        </span>
                                     </SC4>
                                     <SC2>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        2 - 1</span>
+                                        </span>
                                     </SC2>
                                     <SC1>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        3 - 0</span>
+                                        </span>
                                     </SC1>
                                     <SC4>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        0 - 3</span>
+                                        </span>
                                     </SC4>
                                     <SC3>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        1 - 2</span>
+                                        </span>
                                     </SC3>
                                     <SC1>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        3 - 0</span>
+                                        </span>
                                     </SC1>
                                     <SC3>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        1 - 2</span>
+                                        </span>
                                     </SC3>
                                     <SC2>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        2 - 1</span>
+                                        </span>
                                     </SC2>
                                     <SC3>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        1 - 2</span>
+                                        </span>
                                     </SC3>
                                     <SC1>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        3 - 0</span>
+                                        </span>
                                     </SC1>
                                     <SC1 style={{ backgroundColor: 'black'}}>
                                         <span style={{ fontWeight: '600', color: 'white', fontSize: '28px', marginLeft: '10px'}}> 
-                                        19 - 14</span>
+                                        0 - 0</span>
                                     </SC1>
                                 </TeamName>
                             </ITC>
@@ -394,7 +392,7 @@ const Standingspage = () => {
                                 <TeamName style={{ backgroundColor: "#2196f3"}}>
                                     <TeamNameTextContainer>
                                         <TeamNameText>
-                                            Bad Ending
+                                            Sussygons
                                         </TeamNameText>
                                     </TeamNameTextContainer>
                                     <TeamImageContainer>
@@ -402,61 +400,61 @@ const Standingspage = () => {
                                     </TeamImageContainer >
                                     <TeamCaptains>
                                         <TeamCaptainsText>
-                                            (C): QQ
+                                            (C): Jasco
                                         </TeamCaptainsText>
                                     </TeamCaptains>
                                     <TeamCaptains>
                                         <TeamCaptainsText style={{ fontSize: '12px' }}>
-                                            (VC): Wakapanda
+                                            (VC): MoreSleep
                                         </TeamCaptainsText>
                                     </TeamCaptains>
                                     <SC4>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        0 - 3</span>
+                                        </span>
                                     </SC4>
                                     <SC4>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        0 - 3</span>
+                                        </span>
                                     </SC4>
                                     <SC3>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        1 - 2</span>
+                                        </span>
                                     </SC3>
                                     <SC4>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        0 - 3</span>
+                                        </span>
                                     </SC4>
                                     <SC2>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        2 - 1</span>
+                                        </span>
                                     </SC2>
                                     <SC3>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        1 - 2</span>
+                                        </span>
                                     </SC3>
                                     <SC3>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        1 - 2</span>
+                                        </span>
                                     </SC3>
                                     <SC4>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        0 - 3</span>
+                                        </span>
                                     </SC4>
                                     <SC1>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        3 - 0</span>
+                                        </span>
                                     </SC1>
                                     <SC2>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        2 - 1</span>
+                                        </span>
                                     </SC2>
                                     <SC4>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        0 - 3</span>
+                                        </span>
                                     </SC4>
                                     <SC1 style={{ backgroundColor: 'black'}}>
-                                        <span style={{ fontWeight: '600', color: 'white', fontSize: '28px', marginLeft: '10px'}}> 
-                                        10 - 23</span>
+                                        <span style={{ fontWeight: '600', color: 'white', fontSize: '28px', marginLeft: '20px'}}> 
+                                        0 - 0</span>
                                     </SC1>
                                 </TeamName>
                             </ITC>
@@ -464,7 +462,7 @@ const Standingspage = () => {
                                 <TeamName style={{ backgroundColor: "#cf3768"}}>
                                     <TeamNameTextContainer>
                                         <TeamNameText>
-                                            The Hunter Association
+                                            Team Astral
                                         </TeamNameText>
                                     </TeamNameTextContainer>
                                     <TeamImageContainer>
@@ -472,61 +470,61 @@ const Standingspage = () => {
                                     </TeamImageContainer >
                                     <TeamCaptains>
                                         <TeamCaptainsText>
-                                            (C): Tonguey
+                                            (C): Crucifix
                                         </TeamCaptainsText>
                                     </TeamCaptains>
                                     <TeamCaptains>
                                         <TeamCaptainsText>
-                                            (VC): Dubz
+                                            (VC): nDivine
                                         </TeamCaptainsText>
                                     </TeamCaptains>
                                     <SC3>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        1 - 2</span>
+                                        </span>
                                     </SC3>
                                     <SC1>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        3 - 0</span>
+                                        </span>
                                     </SC1>
                                     <SC3>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        1 - 2</span>
+                                        </span>
                                     </SC3>
                                     <SC3>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        1 - 2</span>
+                                        </span>
                                     </SC3>
                                     <SC2>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        2 - 1</span>
+                                        </span>
                                     </SC2>
                                     <SC1>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        3 - 0</span>
+                                        </span>
                                     </SC1>
                                     <SC2>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        2 - 1</span>
+                                        </span>
                                     </SC2>
                                     <SC1>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        3 - 0</span>
+                                        </span>
                                     </SC1>
                                     <SC1>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        3 - 0</span>
+                                        </span>
                                     </SC1>
                                     <SC4>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        0 - 3</span>
+                                        </span>
                                     </SC4>
                                     <SC1>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        3 - 0</span>
+                                        </span>
                                     </SC1>
                                     <SC1 style={{ backgroundColor: 'black'}}>
-                                        <span style={{ fontWeight: '600', color: 'white', fontSize: '28px', marginLeft: '10px'}}> 
-                                        22 - 11</span>
+                                        <span style={{ fontWeight: '600', color: 'white', fontSize: '28px', marginLeft: '20px'}}> 
+                                        0 - 0</span>
                                     </SC1>
                                 </TeamName>
                             </ITC>
@@ -534,7 +532,7 @@ const Standingspage = () => {
                                 <TeamName style={{ backgroundColor: "#4cb051"}}>
                                     <TeamNameTextContainer>
                                         <TeamNameText style={{ fontSize: '14px' }}>
-                                            Underdogs 2.0
+                                            THE CHAOS EMERALDS
                                         </TeamNameText>
                                     </TeamNameTextContainer>
                                     <TeamImageContainer>
@@ -542,61 +540,61 @@ const Standingspage = () => {
                                     </TeamImageContainer >
                                     <TeamCaptains>
                                         <TeamCaptainsText>
-                                            (C): Rifle
+                                            (C): Sunscorched
                                         </TeamCaptainsText>
                                     </TeamCaptains>
                                     <TeamCaptains>
                                         <TeamCaptainsText>
-                                            (VC): Kami
+                                            (VC): Seaboyer09
                                         </TeamCaptainsText>
                                     </TeamCaptains>
                                     <SC3>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        1 - 2</span>
+                                        </span>
                                     </SC3>
                                     <SC3>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        1 - 2</span>
+                                        </span>
                                     </SC3>
                                     <SC4>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        0 - 3</span>
+                                        </span>
                                     </SC4>
                                     <SC3>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        1 - 2</span>
+                                        </span>
                                     </SC3>
                                     <SC3>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        1 - 2</span>
+                                        </span>
                                     </SC3>
                                     <SC3>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        1 - 2</span>
+                                        </span>
                                     </SC3>
                                     <SC3>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        1 - 2</span>
+                                        </span>
                                     </SC3>
                                     <SC4>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        0 - 3</span>
+                                        </span>
                                     </SC4>
                                     <SC3>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        1 - 2</span>
+                                        </span>
                                     </SC3>
                                     <SC4>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        0 - 3</span>
+                                        </span>
                                     </SC4>
                                     <SC4>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        0 - 3</span>
+                                        </span>
                                     </SC4>
                                     <SC1 style={{ backgroundColor: 'black'}}>
-                                        <span style={{ fontWeight: '600', color: 'white', fontSize: '28px', marginLeft: '10px'}}> 
-                                        7 - 26</span>
+                                        <span style={{ fontWeight: '600', color: 'white', fontSize: '28px', marginLeft: '20px'}}> 
+                                        0 - 0</span>
                                     </SC1>
                                 </TeamName>
                             </ITC>
@@ -604,7 +602,7 @@ const Standingspage = () => {
                                 <TeamName style={{ backgroundColor: "#01dbed"}}>
                                     <TeamNameTextContainer>
                                         <TeamNameText style={{ fontSize: '14px'}}>
-                                            ENLIGHTENED
+                                            FAIRY TAIL
                                         </TeamNameText>
                                     </TeamNameTextContainer>
                                     <TeamImageContainer>
@@ -612,61 +610,61 @@ const Standingspage = () => {
                                     </TeamImageContainer >
                                     <TeamCaptains>
                                         <TeamCaptainsText>
-                                            (C): Grayfawx
+                                            (C): ChrisTeeAnn
                                         </TeamCaptainsText>
                                     </TeamCaptains>
                                     <TeamCaptains>
                                         <TeamCaptainsText style={{ fontSize: '11px' }}>
-                                            (VC): Silverhammer
+                                            (VC): Heecher
                                         </TeamCaptainsText>
                                     </TeamCaptains>
                                     <SC2>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        2 - 1</span>
+                                        </span>
                                     </SC2>
                                     <SC2>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        2 - 1</span>
+                                        </span>
                                     </SC2>
                                     <SC2>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        2 - 1</span>
+                                        </span>
                                     </SC2>
                                     <SC4>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        0 - 3</span>
+                                        </span>
                                     </SC4>
                                     <SC2>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        2 - 1</span>
+                                        </span>
                                     </SC2>
                                     <SC1>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        3 - 0</span>
+                                        </span>
                                     </SC1>
                                     <SC1>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        3 - 0</span>
+                                        </span>
                                     </SC1>
                                     <SC2>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        2 - 1</span>
+                                        </span>
                                     </SC2>
                                     <SC4>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        0 - 3</span>
+                                        </span>
                                     </SC4>
                                     <SC4>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        3 - 0</span>
+                                        </span>
                                     </SC4>
                                     <SC3>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        1 - 2</span>
+                                        </span>
                                     </SC3>
                                     <SC1 style={{ backgroundColor: 'black'}}>
-                                        <span style={{ fontWeight: '600', color: 'white', fontSize: '28px', marginLeft: '10px'}}> 
-                                        20 - 13</span>
+                                        <span style={{ fontWeight: '600', color: 'white', fontSize: '28px', marginLeft: '20px'}}> 
+                                        0 - 0</span>
                                     </SC1>
                                 </TeamName>
                             </ITC>
@@ -674,7 +672,7 @@ const Standingspage = () => {
                                 <TeamName style={{ backgroundColor: "#018579"}}>
                                     <TeamNameTextContainer>
                                         <TeamNameText>
-                                            Return of the Mormons
+                                            Sleep Call Warriors
                                         </TeamNameText>
                                     </TeamNameTextContainer>
                                     <TeamImageContainer>
@@ -682,61 +680,61 @@ const Standingspage = () => {
                                     </TeamImageContainer >
                                     <TeamCaptains>
                                         <TeamCaptainsText>
-                                            (C): Jaedon
+                                            (C): ZoranosLoL
                                         </TeamCaptainsText>
                                     </TeamCaptains>
                                     <TeamCaptains>
                                         <TeamCaptainsText>
-                                            (VC): Zoranos
+                                            (VC): Tonguey
                                         </TeamCaptainsText>
                                     </TeamCaptains>
                                     <SC1>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        3 - 0</span>
+                                        </span>
                                     </SC1>
                                     <SC2>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        2 - 1</span>
+                                        </span>
                                     </SC2>
                                     <SC1>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        3 - 0</span>
+                                        </span>
                                     </SC1>
                                     <SC2>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        2 - 1</span>
+                                        </span>
                                     </SC2>
                                     <SC2>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        2 - 1</span>
+                                        </span>
                                     </SC2>
                                     <SC4>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        0 - 3</span>
+                                        </span>
                                     </SC4>
                                     <SC4>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        0 - 3</span>
+                                        </span>
                                     </SC4>
                                     <SC3>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        1 - 2</span>
+                                        </span>
                                     </SC3>
                                     <SC3>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        1 - 2</span>
+                                        </span>
                                     </SC3>
                                     <SC3>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        1 - 2</span>
+                                        </span>
                                     </SC3>
                                     <SC4>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        0 - 3</span>
+                                        </span>
                                     </SC4>
                                     <SC1 style={{ backgroundColor: 'black'}}>
-                                        <span style={{ fontWeight: '600', color: 'white', fontSize: '28px', marginLeft: '10px'}}> 
-                                        15 - 18</span>
+                                        <span style={{ fontWeight: '600', color: 'white', fontSize: '28px', marginLeft: '20px'}}> 
+                                        0 - 0</span>
                                     </SC1>
                                 </TeamName>
                             </ITC>
@@ -744,7 +742,7 @@ const Standingspage = () => {
                                 <TeamName style={{ backgroundColor: "#ff7b00"}}>
                                     <TeamNameTextContainer>
                                         <TeamNameText>
-                                            CULT
+                                            The Sound 11
                                         </TeamNameText>
                                     </TeamNameTextContainer>
                                     <TeamImageContainer>
@@ -752,201 +750,61 @@ const Standingspage = () => {
                                     </TeamImageContainer >
                                     <TeamCaptains>
                                         <TeamCaptainsText>
-                                            (C): Bane
+                                            (C): Sir Ratcha
                                         </TeamCaptainsText>
                                     </TeamCaptains>
                                     <TeamCaptains>
                                         <TeamCaptainsText style={{ fontSize: '13px' }}>
-                                            (VC): MrDucky13
+                                            (VC): 	xPhoenixGirl
                                         </TeamCaptainsText>
                                     </TeamCaptains>
                                     <SC4>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        0 - 3</span>
+                                        </span>
                                     </SC4>
                                     <SC3>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        1 - 2</span>
+                                        </span>
                                     </SC3>
                                     <SC3>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        1 - 2</span>
+                                        </span>
                                     </SC3>
                                     <SC3>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        1 - 2</span>
+                                        </span>
                                     </SC3>
                                     <SC3>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        1 - 2</span>
+                                        </span>
                                     </SC3>
                                     <SC2>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        2 - 1</span>
+                                        </span>
                                     </SC2>
                                     <SC3>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        1 - 2</span>
+                                        </span>
                                     </SC3>
                                     <SC1>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        3 - 0</span>
+                                        </span>
                                     </SC1>
                                     <SC2>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        2 - 1</span>
+                                        </span>
                                     </SC2>
                                     <SC3>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        1 - 2</span>
+                                        </span>
                                     </SC3>
                                     <SC4>
                                         <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        0 - 3</span>
+                                        </span>
                                     </SC4>
                                     <SC1 style={{ backgroundColor: 'black'}}>
-                                        <span style={{ fontWeight: '600', color: 'white', fontSize: '28px', marginLeft: '10px'}}> 
-                                        13 - 20</span>
-                                    </SC1>
-                                </TeamName>
-                            </ITC>
-                            <ITC>
-                                <TeamName style={{ backgroundColor: "#fec106"}}>
-                                    <TeamNameTextContainer>
-                                        <TeamNameText>
-                                            FINAL BOSS
-                                        </TeamNameText>
-                                    </TeamNameTextContainer>
-                                    <TeamImageContainer>
-                                        <img className="img-resizeTeamsss" src={teamIMG11} alt="Team Logo"></img>
-                                    </TeamImageContainer >
-                                    <TeamCaptains>
-                                        <TeamCaptainsText>
-                                            (C): XZWolf
-                                        </TeamCaptainsText>
-                                    </TeamCaptains>
-                                    <TeamCaptains>
-                                        <TeamCaptainsText>
-                                            (VC): Jwebb
-                                        </TeamCaptainsText>
-                                    </TeamCaptains>
-                                    <SC4>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        0 - 3</span>
-                                    </SC4>
-                                    <SC2>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        3 - 0</span>
-                                    </SC2>
-                                    <SC4>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        0 - 3</span>
-                                    </SC4>
-                                    <SC2>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        2 - 1</span>
-                                    </SC2>
-                                    <SC2>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        2 - 1</span>
-                                    </SC2>
-                                    <SC2>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        2 - 1</span>
-                                    </SC2>
-                                    <SC2>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        2 - 1</span>
-                                    </SC2>
-                                    <SC3>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        1 - 2</span>
-                                    </SC3>
-                                    <SC4>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        0 - 3</span>
-                                    </SC4>
-                                    <SC2>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        2 - 1</span>
-                                    </SC2>
-                                    <SC2>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        2 - 1</span>
-                                    </SC2>
-                                    <SC1 style={{ backgroundColor: 'black'}}>
-                                        <span style={{ fontWeight: '600', color: 'white', fontSize: '28px', marginLeft: '10px'}}> 
-                                        16 - 17</span>
-                                    </SC1>
-                                </TeamName>
-                            </ITC>
-                            <ITC>
-                                <TeamName style={{ backgroundColor: "#8b5f3f"}}>
-                                    <TeamNameTextContainer>
-                                        <TeamNameText>
-                                            MTG Convention Connosieurs
-                                        </TeamNameText>
-                                    </TeamNameTextContainer>
-                                    <TeamImageContainer>
-                                        <img className="img-resizeTeamsss" src={teamIMG12} alt="Team Logo"></img>
-                                    </TeamImageContainer >
-                                    <TeamCaptains>
-                                        <TeamCaptainsText style={{ fontSize: '13px' }}>
-                                            (C): Sunscorched
-                                        </TeamCaptainsText>
-                                    </TeamCaptains>
-                                    <TeamCaptains>
-                                        <TeamCaptainsText>
-                                            (VC): Seaboyer
-                                        </TeamCaptainsText>
-                                    </TeamCaptains>
-                                    <SC2>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        2 - 1</span>
-                                    </SC2>
-                                    <SC4>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        0 - 3</span>
-                                    </SC4>
-                                    <SC2>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        2 - 1</span>
-                                    </SC2>
-                                    <SC2>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        2 - 1</span>
-                                    </SC2>
-                                    <SC3>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        1 - 2</span>
-                                    </SC3>
-                                    <SC2>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        2 - 1</span>
-                                    </SC2>
-                                    <SC2>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        2 - 1</span>
-                                    </SC2>
-                                    <SC2>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        2 - 1</span>
-                                    </SC2>
-                                    <SC2>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        2 - 1</span>
-                                    </SC2>
-                                    <SC3>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        1 - 2</span>
-                                    </SC3>
-                                    <SC1>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        3 - 0</span>
-                                    </SC1>
-                                    <SC1 style={{ backgroundColor: 'black'}}>
-                                        <span style={{ fontWeight: '600', color: 'white', fontSize: '28px', marginLeft: '10px'}}> 
-                                        19 - 14</span>
+                                        <span style={{ fontWeight: '600', color: 'white', fontSize: '28px', marginLeft: '20px'}}> 
+                                        0 - 0</span>
                                     </SC1>
                                 </TeamName>
                             </ITC>
