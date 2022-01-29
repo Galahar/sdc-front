@@ -57,7 +57,7 @@ export const TeamsInnerContainer = styled.div`
 
 export const ITC = styled.div`
     width: 140px;
-    height: 1000px;
+    height: 990px;
     background-color: #23292E;
     outline: 1px solid black;
     display: flex;
@@ -68,7 +68,7 @@ export const ITC = styled.div`
 
 export const SDCIconContainer = styled.div`
     width: 100%;
-    height: 267px;
+    height: 297px;
     border-bottom: 1px solid white;
     background-color: black;
 `;
@@ -108,7 +108,7 @@ export const ScheduleDatesContainer = styled.div`
 `;
 
 export const ScheduleDatesText = styled.div`
-    font-size: 15px;
+    font-size: 11px;
     font-weight: 600;
     color: white;
 `;

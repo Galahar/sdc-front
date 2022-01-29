@@ -49,57 +49,57 @@ const Standingspage = () => {
                                 </CaptainLabelContainer>
                                 <ScheduleDatesContainer>
                                     <ScheduleDatesText>
-                                        DAY ONE (AUGUST 28)
+                                        DAY ONE (JANUARY 29)
                                     </ScheduleDatesText>
                                 </ScheduleDatesContainer>
                                 <ScheduleDatesContainer>
                                     <ScheduleDatesText>
-                                        DAY TWO (AUGUST 29)
+                                        DAY TWO (JANUARY 30)
                                     </ScheduleDatesText>
                                 </ScheduleDatesContainer>
                                 <ScheduleDatesContainer>
                                     <ScheduleDatesText>
-                                        DAY THREE (SEPT 4)
+                                        DAY THREE (FEBRUARY 5)
                                     </ScheduleDatesText>
                                 </ScheduleDatesContainer>
                                 <ScheduleDatesContainer>
                                     <ScheduleDatesText>
-                                        DAY FOUR (SEPT 5)
+                                        DAY FOUR (FEBRUARY 6)
                                     </ScheduleDatesText>
                                 </ScheduleDatesContainer>
                                 <ScheduleDatesContainer>
                                     <ScheduleDatesText>
-                                        DAY FIVE (SEPT 11)
+                                        DAY FIVE (FEBRUARY 12)
                                     </ScheduleDatesText>
                                 </ScheduleDatesContainer>
                                 <ScheduleDatesContainer>
                                     <ScheduleDatesText>
-                                        DAY SIX (SEPT 12)
+                                        DAY SIX (FEBRUARY 13)
                                     </ScheduleDatesText>
                                 </ScheduleDatesContainer>
                                 <ScheduleDatesContainer>
                                     <ScheduleDatesText>
-                                        DAY SEVEN (SEPT 18)
+                                        DAY SEVEN (FEBRUARY 19)
                                     </ScheduleDatesText>
                                 </ScheduleDatesContainer>
                                 <ScheduleDatesContainer>
                                     <ScheduleDatesText>
-                                        DAY EIGHT (SEPT 19)
+                                        DAY EIGHT (FEBRUARY 20)
                                     </ScheduleDatesText>
                                 </ScheduleDatesContainer>
                                 <ScheduleDatesContainer>
                                     <ScheduleDatesText>
-                                        DAY NINE (SEPT 25)
+                                        DAY NINE (FEBRUARY 26)
                                     </ScheduleDatesText>
                                 </ScheduleDatesContainer>
                                 <ScheduleDatesContainer>
                                     <ScheduleDatesText>
-                                        DAY TEN (SEPT 26)
+                                        DAY TEN (FEBRUARY 27)
                                     </ScheduleDatesText>
                                 </ScheduleDatesContainer>
                                 <ScheduleDatesContainer>
                                     <ScheduleDatesText>
-                                        DAY ELEVEN (OCT 2)
+                                        DAY ELEVEN (MARCH 5)
                                     </ScheduleDatesText>
                                 </ScheduleDatesContainer>
                                 <TotalContainer>
