@@ -10,7 +10,7 @@ import { TopContainer, BackgroundContainer, ScheduleContainer, ScheduleVersusCon
 import "../pageStyles/match.js";
 import "../pageStyles/match.css";
 
-const baseURL = "https://sdc-league-api-u9e3a.ondigitalocean.app/api/";
+const baseURL = "https://api.sdcleague.com/api/";
 
 export default class Matchpage extends React.Component {	
 
