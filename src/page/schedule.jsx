@@ -13,17 +13,6 @@ import "../pageStyles/schedule.css";
 
 const baseURL = "https://api.sdcleague.com/api/";
 
-function compareMatches(a, b) {
-	if (a.date < b.date) {
-		return -1;
-	}
-	if (a.date > b.date) {
-		return 1;
-	}
-	// a must be equal to b
-	return 0;
-}
-
 export default class Schedulepage extends React.Component {	
 	constructor(props) {
 		super(props);
@@ -38,7 +27,7 @@ export default class Schedulepage extends React.Component {
 		axios.get(baseURL + 'games/')
 		  .then(res => {
 			const matchData = res.data;
-			this.setState({range: this.state.range, matches: matchData.sort(compareMatches)});
+			this.setState({range: this.state.range, matches: matchData});
 		  });
 	}
 
@@ -66,7 +55,8 @@ export default class Schedulepage extends React.Component {
 		const matches = this.state.matches;
 		const displayMatches = [];
 		for (let i = 0; i < matches.length; i++) {
-			if (Date.parse(matches[i].date) >= this.state.range.from && Date.parse(matches[i].date) <= this.state.range.to) {
+			if (Date.parse(matches[i].date) >= this.state.range.from) {
+				if (Date.parse(matches[i].date) > this.state.range.to) { break; } //if we are in the future we won't find anymore
 				if (displayMatches.length > 0 && displayMatches.find(e => Date.parse(e.date).valueOf() === Date.parse(matches[i].date).valueOf())) {
 					displayMatches.find(e => Date.parse(e.date).valueOf() === Date.parse(matches[i].date).valueOf()).matches.push(matches[i]);
 				} else {
