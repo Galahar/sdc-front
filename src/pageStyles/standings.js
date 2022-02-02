@@ -39,7 +39,6 @@ export const SDCIconImageContainer = styled.div`
 export const LabelContainer = styled.div`
     width: 768px;
     min-height: 34px;
-    border-bottom: 5px solid ${theme.ebony};
     background-color: ${theme.primary};
     display: flex;
     flex-direction: row;
@@ -69,6 +68,7 @@ export const Labels = styled.div`
     flex-direction: column;
 	align-items: center;
     justify-content: center;
+	text-align: center;
 	font-size: 20px;
     font-weight: 600;
 	color: ${theme.highlightPrimary};
