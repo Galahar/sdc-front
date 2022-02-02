@@ -11,6 +11,7 @@ import "../pageStyles/match.js";
 import "../pageStyles/match.css";
 
 const baseURL = "https://api.sdcleague.com/api/";
+//const baseURL = "http://127.0.0.1:8000/api/";
 
 export default class Matchpage extends React.Component {	
 
@@ -22,8 +23,8 @@ export default class Matchpage extends React.Component {
 	componentDidMount() {
 		let queries = queryString.parse(this.props.location.search);
 		//console.log(queries)
-		let request1 = axios.get(baseURL + 'games/?match=' + queries.id)
-		let request2 = axios.get(baseURL + 'matches/' + queries.id + '/')
+		let request1 = axios.get(baseURL + 'matchpage/?match=' + queries.id)
+		let request2 = axios.get(baseURL + 'matchteams/' + queries.id + '/')
 		axios.all([request1, request2]).then(axios.spread((...responses) => {
 			const responseOne = responses[0].data
 			const responseTwo = responses[1].data
@@ -71,10 +72,10 @@ export default class Matchpage extends React.Component {
 				<ScheduleContainer className="loadInAnim">
 					<HeaderTextContainer>
 						<TitleText>
-						{games[0].match.team1.name}
+						{match.team1.name}
 						</TitleText>
 						<TitleText>
-						{games[0].match.team2.name}
+						{match.team2.name}
 						</TitleText>
 					</HeaderTextContainer>
 					<HeaderTextContainer>

@@ -8,6 +8,7 @@ import "../pageStyles/standings.css";
 
 
 const baseURL = "https://api.sdcleague.com/api/";
+//const baseURL = "http://127.0.0.1:8000/api/";
 
 function compareTeams(team1,team2) {
 	if (team1.wins < team2.wins) {
@@ -38,7 +39,7 @@ export default class StandingsPage extends React.Component {
 	}
 
 	componentDidMount() {
-		let request = axios.get(baseURL + 'teams/')
+		let request = axios.get(baseURL + 'standings/')
 		axios.all([request]).then(axios.spread((...responses) => {
 			const response = responses[0].data
 			this.setState({ teams: response });

@@ -12,6 +12,8 @@ import "../pageStyles/schedule.js";
 import "../pageStyles/schedule.css";
 
 const baseURL = "https://api.sdcleague.com/api/";
+//const baseURL = "http://127.0.0.1:8000/api/";
+
 
 export default class Schedulepage extends React.Component {	
 	constructor(props) {
@@ -24,7 +26,7 @@ export default class Schedulepage extends React.Component {
 	}
 	
 	componentDidMount() {
-		axios.get(baseURL + 'games/')
+		axios.get(baseURL + 'schedule/')
 		  .then(res => {
 			const matchData = res.data;
 			this.setState({range: this.state.range, matches: matchData});
@@ -100,8 +102,8 @@ export default class Schedulepage extends React.Component {
 											dates.matches.map( (match) => (
 											<>
 												<IDATCBlueMarginer/>
-												<IDATC to={'/match?id='+match.match.id}>
-													{match.match.team1.name} VS {match.match.team2.name}
+												<IDATC to={'/match?id='+match.match}>
+													{match.team1} VS {match.team2}
 												</IDATC>
 											</>
 											))

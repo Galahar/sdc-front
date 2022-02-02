@@ -70,7 +70,6 @@ export const ScheduleVersusContainer = styled.div`
     justify-content: center;
     background-color: ${theme.primary};
 	border-top: 5px solid ${theme.ebony};
-    border-left: 5px solid ${theme.ebony};
 	border-right: 5px solid ${theme.ebony};
 `;
 
