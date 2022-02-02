@@ -89,7 +89,7 @@ export default class Matchpage extends React.Component {
 					{
 						games.map( (game) => (
 						<>
-							<SVTIN>
+							<SVTIN className="itcLoadIn">
 								<IDC>
 									<IDCTitle>
 									{

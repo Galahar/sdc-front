@@ -87,7 +87,7 @@ export default class Schedulepage extends React.Component {
 							{
 								displayMatches.map( (dates) => (
 								<>
-									<SVTIN>
+									<SVTIN className="itcLoadIn">
 										<IDC>
 											<IDCTitle>
 											{

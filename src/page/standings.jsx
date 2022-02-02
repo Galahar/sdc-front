@@ -103,7 +103,7 @@ export default class StandingsPage extends React.Component {
 						</LabelContainer>
 						{
 						teams.map( (team) => (<>
-						<TeamRowContainer>
+						<TeamRowContainer className="itcLoadIn">
 							<TeamNameText>
 								{team.name}
 							</TeamNameText>
