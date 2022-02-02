@@ -35,7 +35,6 @@ export const ScheduleContainer = styled.div`
     margin-top: 140px;
 	margin-bottom: 140px;
     letter-spacing: .3em;
-    gap: 50px;
 	@media screen and (max-width: 1500px) {
         width: 95%;
     }
@@ -45,18 +44,23 @@ export const ScheduleContainer = styled.div`
 `;
 
 export const HeaderTextContainer = styled.div`
-    width: 100%;
-    height: 8%;
+	width: 100%;
+    min-height: 80px;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+    flex-direction: row;
+	
+	@media screen and (max-width: 768px) {
+        min-height: 50px;
+    }
 `;
 
 export const TitleText = styled.h1`
+	width: 45%;
     font-size: 30px;
 	display: flex;
-    align-items: center;
+    align-items: start;
 	text-align: center;
     justify-content: center;
     flex-direction: row;
@@ -64,8 +68,11 @@ export const TitleText = styled.h1`
     margin-bottom: 0;
     color: ${theme.highlightPrimary};
     text-shadow: 2px 2px 0 black, 1px 1px 0 black, 2px 2px 0 black;
-    overflow: hidden;
+    overflow-wrap: anywhere;
 	cursor: context-menu;
+	@media screen and (max-width: 768px) {
+        font-size: 20px;
+    }
 `;
 
 export const ScheduleVersusContainer = styled.div`

@@ -16,25 +16,57 @@ export default class Matchpage extends React.Component {
 
 	constructor(props) {
 		super(props);
-		this.state = {};
+		this.state = [];
 	}
 
 	componentDidMount() {
 		let queries = queryString.parse(this.props.location.search);
 		//console.log(queries)
-		axios.get(baseURL + 'games/?match=' + queries.id)
-		  .then(res => {
-			const matchData = res.data;
-			this.setState({games: matchData});
-		  });
+		let request1 = axios.get(baseURL + 'games/?match=' + queries.id)
+		let request2 = axios.get(baseURL + 'matches/' + queries.id + '/')
+		axios.all([request1, request2]).then(axios.spread((...responses) => {
+			const responseOne = responses[0].data
+			const responseTwo = responses[1].data
+			this.setState({games: responseOne, match: responseTwo});
+			// use/access the results 
+		})).catch(errors => {
+			console.log("error loading match data")
+			console.log(errors)
+		});
 	}
 
 	render() {
-		if (!this.state.games) {
-            return <div />
+		if (!this.state.games || this.state.match === []) {
+            return (
+			<>
+				<TopContainer>
+					<BackgroundContainer>
+						<ScheduleContainer className="loadInAnim">
+							<HeaderTextContainer>
+								
+							</HeaderTextContainer>
+							<HeaderTextContainer>
+
+							</HeaderTextContainer>
+							<ScheduleVersusContainer>
+							
+							</ScheduleVersusContainer>
+						</ScheduleContainer>
+					</BackgroundContainer>
+				</TopContainer>
+				<Navbar />
+				<Footer />
+				<style>{`
+				body {  
+					background-color: #1A191A !important; 
+				}
+				`}</style>
+			</>)
         }
 		const games = this.state.games;
+		const match = this.state.match;
 		console.log(games);
+		console.log(match);
 		return (
 		<>
 			<TopContainer>
@@ -42,7 +74,18 @@ export default class Matchpage extends React.Component {
 					<ScheduleContainer className="loadInAnim">
 						<HeaderTextContainer>
 							<TitleText>
-							{games[0].match.team1.name} VS {games[0].match.team2.name}
+							{games[0].match.team1.name}
+							</TitleText>
+							<TitleText>
+							{games[0].match.team2.name}
+							</TitleText>
+						</HeaderTextContainer>
+						<HeaderTextContainer>
+							<TitleText>
+							{match.team1.wins}
+							</TitleText>
+							<TitleText>
+							{match.team2.wins}
 							</TitleText>
 						</HeaderTextContainer>
 						<ScheduleVersusContainer>
