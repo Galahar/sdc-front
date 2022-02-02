@@ -1,822 +1,134 @@
 import React from "react";
+import axios from "axios";
 import Navbar from "../components/Navbar";
 import { Footer } from "../components/Footer";
-import { BackgroundContainer, TopContainer, TeamsContainer, TeamsInnerContainer, 
-    ITC, TeamName, TeamNameText, TeamNameTextContainer, TeamImageContainer, 
-    TeamCaptains, TeamCaptainsText, SC1, SC2, SC3, SC4, 
-    SDCIconContainer, SDCIconImageContainer, CaptainLabelContainer, 
-    CaptainLabelText, ScheduleDatesContainer, 
-    ScheduleDatesText, TotalContainer, TotalText, MarginLargeResize } from "../pageStyles/standings";
+import { BackgroundContainer, StandingsContainer, LabelContainer, Label1, Labels, TeamRowContainer, TeamNameText, SC } from "../pageStyles/standings";
 
 import "../pageStyles/standings.css";
 
-import teamIMG1 from "../assets/illustrations/team1.png";
-import teamIMG2 from "../assets/illustrations/team2.png";
-import teamIMG3 from "../assets/illustrations/team3.png";
-import teamIMG4 from "../assets/illustrations/team4.png";
-import teamIMG5 from "../assets/illustrations/team5.png";
-import teamIMG6 from "../assets/illustrations/team6.png";
-import teamIMG7 from "../assets/illustrations/team7.png";
-import teamIMG8 from "../assets/illustrations/team8.png";
-import teamIMG9 from "../assets/illustrations/team9.jpg";
-import teamIMG10 from "../assets/illustrations/Team10.png";
 
-import sdcIcon from "../assets/illustrations/sdcIconSmall.png";
+const baseURL = "https://api.sdcleague.com/api/";
 
+function compareTeams(team1,team2) {
+	if (team1.wins < team2.wins) {
+		return 1
+	} else if (team1.wins > team2.wins) {
+		return -1
+	} else {
+		if (team1.losses > team2.losses) {
+			return 1
+		} else if (team1.losses < team2.losses) {
+			return -1
+		} else {
+			if ((team1.points-team1.points_remaining)/(team1.wins+team1.losses) < (team2.points-team2.points_remaining)/(team2.wins+team2.losses)) {
+				return -1
+			} else if ((team1.points-team1.points_remaining)/(team1.wins+team1.losses) > (team2.points-team2.points_remaining)/(team2.wins+team2.losses)) {
+				return 1
+			} else {
+				return 0
+			}
+		}
+	}
+}
 
-const Standingspage = () => {
-    return (
-        <>
-            <TopContainer>
-                <BackgroundContainer>
-                    <TeamsContainer>
-                        <TeamsInnerContainer className="itcLoadIn">
-                            <ITC>
-                                <SDCIconContainer>
-                                    <SDCIconImageContainer>
-                                        <img className="iconResize" src={sdcIcon} alt="Seasonal Draft Championship Logo"></img>
-                                    </SDCIconImageContainer>
-                                </SDCIconContainer>
-                                <CaptainLabelContainer>
-                                    <CaptainLabelText>
-                                        CAPTAIN
-                                    </CaptainLabelText>
-                                </CaptainLabelContainer>
-                                <CaptainLabelContainer>
-                                    <CaptainLabelText>
-                                        VICE
-                                    </CaptainLabelText>
-                                </CaptainLabelContainer>
-                                <ScheduleDatesContainer>
-                                    <ScheduleDatesText>
-                                        DAY ONE (JANUARY 29)
-                                    </ScheduleDatesText>
-                                </ScheduleDatesContainer>
-                                <ScheduleDatesContainer>
-                                    <ScheduleDatesText>
-                                        DAY TWO (JANUARY 30)
-                                    </ScheduleDatesText>
-                                </ScheduleDatesContainer>
-                                <ScheduleDatesContainer>
-                                    <ScheduleDatesText>
-                                        DAY THREE (FEBRUARY 5)
-                                    </ScheduleDatesText>
-                                </ScheduleDatesContainer>
-                                <ScheduleDatesContainer>
-                                    <ScheduleDatesText>
-                                        DAY FOUR (FEBRUARY 6)
-                                    </ScheduleDatesText>
-                                </ScheduleDatesContainer>
-                                <ScheduleDatesContainer>
-                                    <ScheduleDatesText>
-                                        DAY FIVE (FEBRUARY 12)
-                                    </ScheduleDatesText>
-                                </ScheduleDatesContainer>
-                                <ScheduleDatesContainer>
-                                    <ScheduleDatesText>
-                                        DAY SIX (FEBRUARY 13)
-                                    </ScheduleDatesText>
-                                </ScheduleDatesContainer>
-                                <ScheduleDatesContainer>
-                                    <ScheduleDatesText>
-                                        DAY SEVEN (FEBRUARY 19)
-                                    </ScheduleDatesText>
-                                </ScheduleDatesContainer>
-                                <ScheduleDatesContainer>
-                                    <ScheduleDatesText>
-                                        DAY EIGHT (FEBRUARY 20)
-                                    </ScheduleDatesText>
-                                </ScheduleDatesContainer>
-                                <ScheduleDatesContainer>
-                                    <ScheduleDatesText>
-                                        DAY NINE (FEBRUARY 26)
-                                    </ScheduleDatesText>
-                                </ScheduleDatesContainer>
-                                <ScheduleDatesContainer>
-                                    <ScheduleDatesText>
-                                        DAY TEN (FEBRUARY 27)
-                                    </ScheduleDatesText>
-                                </ScheduleDatesContainer>
-                                <ScheduleDatesContainer>
-                                    <ScheduleDatesText>
-                                        DAY ELEVEN (MARCH 5)
-                                    </ScheduleDatesText>
-                                </ScheduleDatesContainer>
-                                <TotalContainer>
-                                    <TotalText>
-                                        TOTAL
-                                    </TotalText>
-                                </TotalContainer>
-                            </ITC>
-                            <ITC>
-                                <TeamName style={{ backgroundColor: "#ff3c3c"}}>
-                                    <TeamNameTextContainer>
-                                        <TeamNameText>
-                                            Veibae Simps
-                                        </TeamNameText>
-                                    </TeamNameTextContainer>
-                                    <TeamImageContainer>
-                                        <img className="img-resizeTeamsss" src={teamIMG1} alt="Team Logo"></img>
-                                    </TeamImageContainer >
-                                    <TeamCaptains>
-                                        <TeamCaptainsText>
-                                            (C): Aidonn
-                                        </TeamCaptainsText>
-                                    </TeamCaptains>
-                                    <TeamCaptains>
-                                        <TeamCaptainsText>
-                                            (VC): Hermy
-                                        </TeamCaptainsText>
-                                    </TeamCaptains>
-                                    <SC1>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC1>
-                                    <SC2>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC2>
-                                    <SC3>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC3>
-                                    <SC1>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC1>
-                                    <SC1>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC1>
-                                    <SC2>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC2>
-                                    <SC3>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC3>
-                                    <SC2>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC2>
-                                    <SC2>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC2>
-                                    <SC1>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC1>
-                                    <SC2>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC2>
-                                    <SC1 style={{ backgroundColor: 'black'}}>
-                                        <span style={{ fontWeight: '600', color: 'white', fontSize: '28px', marginLeft: '10px'}}> 
-                                        0 - 0</span>
-                                    </SC1>
-                                </TeamName>
-                            </ITC>
-                            <ITC>
-                                <TeamName style={{ backgroundColor: "#8ccc42"}}>
-                                    <TeamNameTextContainer>
-                                        <TeamNameText>
-                                            High Five, Daisy!
-                                        </TeamNameText>
-                                    </TeamNameTextContainer>
-                                    <TeamImageContainer>
-                                        <img className="img-resizeTeamsss" src={teamIMG2} alt="Team Logo"></img>
-                                    </TeamImageContainer >
-                                    <TeamCaptains>
-                                        <TeamCaptainsText>
-                                            (C): blossøm
-                                        </TeamCaptainsText>
-                                    </TeamCaptains>
-                                    <TeamCaptains>
-                                        <TeamCaptainsText>
-                                            (VC): banana ooÿoo
-                                        </TeamCaptainsText>
-                                    </TeamCaptains>
-                                    <SC2>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC2>
-                                    <SC1>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC1>
-                                    <SC1>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC1>
-                                    <SC3>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC3>
-                                    <SC3>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC3>
-                                    <SC3>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC3>
-                                    <SC4>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC4>
-                                    <SC2>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC2>
-                                    <SC3>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC3>
-                                    <SC2>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC2>
-                                    <SC3>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC3>
-                                    <SC1 style={{ backgroundColor: 'black'}}>
-                                        <span style={{ fontWeight: '600', color: 'white', fontSize: '28px', marginLeft: '20px'}}> 
-                                        0 - 0</span>
-                                    </SC1>
-                                </TeamName>
-                            </ITC>
-                            <ITC>
-                                <TeamName style={{ backgroundColor: "#634389"}}>
-                                    <TeamNameTextContainer>
-                                        <TeamNameText>
-                                            Cobra Kai
-                                        </TeamNameText>
-                                    </TeamNameTextContainer>
-                                    <TeamImageContainer>
-                                        <img className="img-resizeTeamsss" src={teamIMG3} alt="Team Logo"></img>
-                                    </TeamImageContainer >
-                                    <TeamCaptains>
-                                        <TeamCaptainsText>
-                                            (C): Mattsey
-                                        </TeamCaptainsText>
-                                    </TeamCaptains>
-                                    <TeamCaptains>
-                                        <TeamCaptainsText>
-                                            (VC): Payneless
-                                        </TeamCaptainsText>
-                                    </TeamCaptains>
-                                    <SC3>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC3>
-                                    <SC3>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC3>
-                                    <SC2>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC2>
-                                    <SC2>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC2>
-                                    <SC3>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC3>
-                                    <SC4>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC4>
-                                    <SC2>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC2>
-                                    <SC3>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC3>
-                                    <SC3>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC3>
-                                    <SC2>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC2>
-                                    <SC1>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC1>
-                                    <SC1 style={{ backgroundColor: 'black'}}>
-                                        <span style={{ fontWeight: '600', color: 'white', fontSize: '28px', marginLeft: '20px'}}> 
-                                        0 - 0</span>
-                                    </SC1>
-                                </TeamName>
-                            </ITC>
-                            <ITC>
-                                <TeamName style={{ backgroundColor: "#2c5881"}}>
-                                    <TeamNameTextContainer>
-                                        <TeamNameText>
-                                            NCOG
-                                        </TeamNameText>
-                                    </TeamNameTextContainer>
-                                    <TeamImageContainer>
-                                        <img className="img-resizeTeamsss" src={teamIMG4} alt="Team Logo"></img>
-                                    </TeamImageContainer >
-                                    <TeamCaptains>
-                                        <TeamCaptainsText>
-                                            (C): Łukê
-                                        </TeamCaptainsText>
-                                    </TeamCaptains>
-                                    <TeamCaptains>
-                                        <TeamCaptainsText style={{ fontSize: '13px' }}>
-                                            (VC): Prestoman
-                                        </TeamCaptainsText>
-                                    </TeamCaptains>
-                                    <SC1>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC1>
-                                    <SC4>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC4>
-                                    <SC2>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC2>
-                                    <SC1>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC1>
-                                    <SC4>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC4>
-                                    <SC3>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC3>
-                                    <SC1>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC1>
-                                    <SC3>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC3>
-                                    <SC2>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC2>
-                                    <SC3>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC3>
-                                    <SC1>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC1>
-                                    <SC1 style={{ backgroundColor: 'black'}}>
-                                        <span style={{ fontWeight: '600', color: 'white', fontSize: '28px', marginLeft: '10px'}}> 
-                                        0 - 0</span>
-                                    </SC1>
-                                </TeamName>
-                            </ITC>
-                            <ITC>
-                                <TeamName style={{ backgroundColor: "#2196f3"}}>
-                                    <TeamNameTextContainer>
-                                        <TeamNameText>
-                                            Sussygons
-                                        </TeamNameText>
-                                    </TeamNameTextContainer>
-                                    <TeamImageContainer>
-                                        <img className="img-resizeTeamsss" src={teamIMG5} alt="Team Logo"></img>
-                                    </TeamImageContainer >
-                                    <TeamCaptains>
-                                        <TeamCaptainsText>
-                                            (C): Jasco
-                                        </TeamCaptainsText>
-                                    </TeamCaptains>
-                                    <TeamCaptains>
-                                        <TeamCaptainsText style={{ fontSize: '12px' }}>
-                                            (VC): MoreSleep
-                                        </TeamCaptainsText>
-                                    </TeamCaptains>
-                                    <SC4>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC4>
-                                    <SC4>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC4>
-                                    <SC3>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC3>
-                                    <SC4>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC4>
-                                    <SC2>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC2>
-                                    <SC3>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC3>
-                                    <SC3>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC3>
-                                    <SC4>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC4>
-                                    <SC1>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC1>
-                                    <SC2>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC2>
-                                    <SC4>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC4>
-                                    <SC1 style={{ backgroundColor: 'black'}}>
-                                        <span style={{ fontWeight: '600', color: 'white', fontSize: '28px', marginLeft: '20px'}}> 
-                                        0 - 0</span>
-                                    </SC1>
-                                </TeamName>
-                            </ITC>
-                            <ITC>
-                                <TeamName style={{ backgroundColor: "#cf3768"}}>
-                                    <TeamNameTextContainer>
-                                        <TeamNameText>
-                                            Team Astral
-                                        </TeamNameText>
-                                    </TeamNameTextContainer>
-                                    <TeamImageContainer>
-                                        <img className="img-resizeTeamsss" src={teamIMG6} alt="Team Logo"></img>
-                                    </TeamImageContainer >
-                                    <TeamCaptains>
-                                        <TeamCaptainsText>
-                                            (C): Crucifix
-                                        </TeamCaptainsText>
-                                    </TeamCaptains>
-                                    <TeamCaptains>
-                                        <TeamCaptainsText>
-                                            (VC): nDivine
-                                        </TeamCaptainsText>
-                                    </TeamCaptains>
-                                    <SC3>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC3>
-                                    <SC1>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC1>
-                                    <SC3>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC3>
-                                    <SC3>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC3>
-                                    <SC2>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC2>
-                                    <SC1>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC1>
-                                    <SC2>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC2>
-                                    <SC1>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC1>
-                                    <SC1>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC1>
-                                    <SC4>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC4>
-                                    <SC1>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC1>
-                                    <SC1 style={{ backgroundColor: 'black'}}>
-                                        <span style={{ fontWeight: '600', color: 'white', fontSize: '28px', marginLeft: '20px'}}> 
-                                        0 - 0</span>
-                                    </SC1>
-                                </TeamName>
-                            </ITC>
-                            <ITC>
-                                <TeamName style={{ backgroundColor: "#4cb051"}}>
-                                    <TeamNameTextContainer>
-                                        <TeamNameText style={{ fontSize: '14px' }}>
-                                            THE CHAOS EMERALDS
-                                        </TeamNameText>
-                                    </TeamNameTextContainer>
-                                    <TeamImageContainer>
-                                        <img className="img-resizeTeamsss" src={teamIMG7} alt="Team Logo"></img>
-                                    </TeamImageContainer >
-                                    <TeamCaptains>
-                                        <TeamCaptainsText>
-                                            (C): Sunscorched
-                                        </TeamCaptainsText>
-                                    </TeamCaptains>
-                                    <TeamCaptains>
-                                        <TeamCaptainsText>
-                                            (VC): Seaboyer09
-                                        </TeamCaptainsText>
-                                    </TeamCaptains>
-                                    <SC3>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC3>
-                                    <SC3>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC3>
-                                    <SC4>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC4>
-                                    <SC3>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC3>
-                                    <SC3>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC3>
-                                    <SC3>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC3>
-                                    <SC3>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC3>
-                                    <SC4>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC4>
-                                    <SC3>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC3>
-                                    <SC4>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC4>
-                                    <SC4>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC4>
-                                    <SC1 style={{ backgroundColor: 'black'}}>
-                                        <span style={{ fontWeight: '600', color: 'white', fontSize: '28px', marginLeft: '20px'}}> 
-                                        0 - 0</span>
-                                    </SC1>
-                                </TeamName>
-                            </ITC>
-                            <ITC>
-                                <TeamName style={{ backgroundColor: "#01dbed"}}>
-                                    <TeamNameTextContainer>
-                                        <TeamNameText style={{ fontSize: '14px'}}>
-                                            FAIRY TAIL
-                                        </TeamNameText>
-                                    </TeamNameTextContainer>
-                                    <TeamImageContainer>
-                                        <img className="img-resizeTeamsss" src={teamIMG8} alt="Team Logo"></img>
-                                    </TeamImageContainer >
-                                    <TeamCaptains>
-                                        <TeamCaptainsText>
-                                            (C): ChrisTeeAnn
-                                        </TeamCaptainsText>
-                                    </TeamCaptains>
-                                    <TeamCaptains>
-                                        <TeamCaptainsText style={{ fontSize: '11px' }}>
-                                            (VC): Heecher
-                                        </TeamCaptainsText>
-                                    </TeamCaptains>
-                                    <SC2>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC2>
-                                    <SC2>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC2>
-                                    <SC2>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC2>
-                                    <SC4>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC4>
-                                    <SC2>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC2>
-                                    <SC1>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC1>
-                                    <SC1>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC1>
-                                    <SC2>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC2>
-                                    <SC4>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC4>
-                                    <SC4>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC4>
-                                    <SC3>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC3>
-                                    <SC1 style={{ backgroundColor: 'black'}}>
-                                        <span style={{ fontWeight: '600', color: 'white', fontSize: '28px', marginLeft: '20px'}}> 
-                                        0 - 0</span>
-                                    </SC1>
-                                </TeamName>
-                            </ITC>
-                            <ITC>
-                                <TeamName style={{ backgroundColor: "#018579"}}>
-                                    <TeamNameTextContainer>
-                                        <TeamNameText>
-                                            Sleep Call Warriors
-                                        </TeamNameText>
-                                    </TeamNameTextContainer>
-                                    <TeamImageContainer>
-                                        <img className="img-resizeTeamsss" src={teamIMG9} alt="Team Logo"></img>
-                                    </TeamImageContainer >
-                                    <TeamCaptains>
-                                        <TeamCaptainsText>
-                                            (C): ZoranosLoL
-                                        </TeamCaptainsText>
-                                    </TeamCaptains>
-                                    <TeamCaptains>
-                                        <TeamCaptainsText>
-                                            (VC): Tonguey
-                                        </TeamCaptainsText>
-                                    </TeamCaptains>
-                                    <SC1>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC1>
-                                    <SC2>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC2>
-                                    <SC1>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC1>
-                                    <SC2>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC2>
-                                    <SC2>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC2>
-                                    <SC4>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC4>
-                                    <SC4>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC4>
-                                    <SC3>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC3>
-                                    <SC3>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC3>
-                                    <SC3>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC3>
-                                    <SC4>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC4>
-                                    <SC1 style={{ backgroundColor: 'black'}}>
-                                        <span style={{ fontWeight: '600', color: 'white', fontSize: '28px', marginLeft: '20px'}}> 
-                                        0 - 0</span>
-                                    </SC1>
-                                </TeamName>
-                            </ITC>
-                            <ITC>
-                                <TeamName style={{ backgroundColor: "#ff7b00"}}>
-                                    <TeamNameTextContainer>
-                                        <TeamNameText>
-                                            The Sound 11
-                                        </TeamNameText>
-                                    </TeamNameTextContainer>
-                                    <TeamImageContainer>
-                                        <img className="img-resizeTeamsss" src={teamIMG10} alt="Team Logo"></img>
-                                    </TeamImageContainer >
-                                    <TeamCaptains>
-                                        <TeamCaptainsText>
-                                            (C): Sir Ratcha
-                                        </TeamCaptainsText>
-                                    </TeamCaptains>
-                                    <TeamCaptains>
-                                        <TeamCaptainsText style={{ fontSize: '13px' }}>
-                                            (VC): 	xPhoenixGirl
-                                        </TeamCaptainsText>
-                                    </TeamCaptains>
-                                    <SC4>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC4>
-                                    <SC3>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC3>
-                                    <SC3>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC3>
-                                    <SC3>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC3>
-                                    <SC3>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC3>
-                                    <SC2>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC2>
-                                    <SC3>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC3>
-                                    <SC1>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC1>
-                                    <SC2>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC2>
-                                    <SC3>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC3>
-                                    <SC4>
-                                        <span style={{ fontWeight: '600', color: 'black', fontSize: '35px', marginLeft: '10px'}}> 
-                                        </span>
-                                    </SC4>
-                                    <SC1 style={{ backgroundColor: 'black'}}>
-                                        <span style={{ fontWeight: '600', color: 'white', fontSize: '28px', marginLeft: '20px'}}> 
-                                        0 - 0</span>
-                                    </SC1>
-                                </TeamName>
-                            </ITC>
-                        </TeamsInnerContainer>
-                    </TeamsContainer>
-                    <MarginLargeResize />
-                </BackgroundContainer>
-            </TopContainer>
-            <Navbar />
-            <Footer />
-        </>
-    );
-};
+export default class StandingsPage extends React.Component {	
+	constructor(props) {
+		super(props);
+		this.state = { teams: [], };
+	}
 
-export default Standingspage;
+	componentDidMount() {
+		let request = axios.get(baseURL + 'teams/')
+		axios.all([request]).then(axios.spread((...responses) => {
+			const response = responses[0].data
+			this.setState({ teams: response });
+			// use/access the results 
+		})).catch(errors => {
+			console.log("error loading match data")
+			console.log(errors)
+		});
+	}
+	
+	render() {
+		if (this.state.teams === []) {
+			return (
+				<>
+				<BackgroundContainer>
+					<StandingsContainer className="itcLoadIn">
+						<LabelContainer>
+							<Label1>
+								Team
+							</Label1>
+							<Labels>
+								Wins
+							</Labels>
+							<Labels>
+								Losses
+							</Labels>
+							<Labels>
+								Points Remaining
+							</Labels>
+						</LabelContainer>
+					</StandingsContainer>
+				</BackgroundContainer>
+				<Navbar />
+				<Footer />
+				<style>{`
+					body {  
+						background-color: #1A191A !important; 
+					}
+				`}</style>
+			</>
+			)
+		}
+		const teams = this.state.teams;
+		console.log(teams.sort(compareTeams));
+		return (
+			<>
+				<BackgroundContainer>
+					<StandingsContainer className="itcLoadIn">
+						<LabelContainer>
+							<Label1>
+								Team
+							</Label1>
+							<Labels>
+								Wins
+							</Labels>
+							<Labels>
+								Losses
+							</Labels>
+							<Labels>
+								Avg Spent
+							</Labels>
+						</LabelContainer>
+						{
+						teams.map( (team) => (<>
+						<TeamRowContainer>
+							<TeamNameText>
+								{team.name}
+							</TeamNameText>
+							<SC>
+								{team.wins}
+							</SC>
+							<SC>
+								{team.losses}
+							</SC>
+							<SC>
+								{(team.points-team.points_remaining)/(team.wins+team.losses)}
+							</SC>
+						</TeamRowContainer>
+						</>))
+						}
+					</StandingsContainer>
+				</BackgroundContainer>
+				<Navbar />
+				<Footer />
+				<style>{`
+					body {  
+						background-color: #1A191A !important; 
+					}
+				`}</style>
+			</>
+		);
+	}
+}

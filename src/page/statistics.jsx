@@ -5,7 +5,6 @@ import { BackgroundContainer, TopContainer, StatisticsContainer, StatisticsLinkC
     StatsLinkNormal, StatsLinkHeader, GoogleSheetsContainer, GoogleSheetsContainerMobile, BottomMargin } from "../pageStyles/statistics.js";
 
 import "../pageStyles/statistics.css";
-import { MarginLargeResize } from "../pageStyles/standings";
 
 const Statisticspage = () => {
     return (
@@ -26,7 +25,6 @@ const Statisticspage = () => {
                                 Click here
                             </StatsLinkNormal>
                                 </a>
-
                         </StatisticsLinkContainer>
                     </StatisticsContainer>
                     <GoogleSheetsContainer className="loadInAnim">
@@ -36,7 +34,6 @@ const Statisticspage = () => {
                         <iframe title="Google Sheets SDC Statistics" className="sheetsResize" width="100%" height="100%" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRgNH4K41GMCzO3B5MTHjXFH2kAl_YoB6m9SqGer870FBzYCO7rr9OVjf15XPzBA5isAT9KVKAfBsmu/pubhtml?widget=true&amp;headers=false"></iframe>
                     </GoogleSheetsContainerMobile>
                     <BottomMargin />
-                    <MarginLargeResize />
                 </TopContainer>
             </BackgroundContainer>
             <Navbar />

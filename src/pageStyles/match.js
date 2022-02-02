@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import Ruined1 from "../assets/illustrations/Ruined1.jpeg";
 import { theme } from "../themes.js";
 
 export const BackgroundContainer = styled.div`
@@ -11,19 +10,6 @@ export const BackgroundContainer = styled.div`
     align-items: center;
     break-inside: avoid;
 `;
-
-export const TopContainer = styled.div`
-    /*width: 100%;
-    min-height: 500px;
-	display: flex;
-	flex-direction: column;
-    background-image: url(${Ruined1});
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-color: ${theme.primary};*/
-`;
-
 
 export const ScheduleContainer = styled.div`
     width: 1470px;
