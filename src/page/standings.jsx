@@ -67,7 +67,7 @@ export default class StandingsPage extends React.Component {
 								Losses
 							</Labels>
 							<Labels>
-								Points Remaining
+								Avg Spent
 							</Labels>
 						</LabelContainer>
 					</StandingsContainer>
@@ -115,7 +115,7 @@ export default class StandingsPage extends React.Component {
 								{team.losses}
 							</SC>
 							<SC>
-								{(team.points-team.points_remaining)/(team.wins+team.losses)}
+								{Math.round((team.points-team.points_remaining)/(team.wins+team.losses))}
 							</SC>
 						</TeamRowContainer>
 						</>))
