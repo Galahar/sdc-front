@@ -94,7 +94,7 @@ export default class Schedulepage extends React.Component {
 											<IDCTitle>
 											{
 												(new Date(dates.date).getMonth() + 1) + "/" + new Date(dates.date).getDate() + "/" + new Date(dates.date).getFullYear() +
-												" " + String(new Date(dates.date).getHours()+5).padStart(2, '0') + ":" + String(new Date(dates.date).getMinutes()).padStart(2, '0')
+												" " + String(new Date(dates.date).getHours()+4).padStart(2, '0') + ":" + String(new Date(dates.date).getMinutes()).padStart(2, '0')
 											}
 											</IDCTitle>
 										</IDC>

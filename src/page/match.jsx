@@ -95,7 +95,7 @@ export default class Matchpage extends React.Component {
 									<IDCTitle>
 									{
 										(new Date(game.date).getMonth() + 1) + "/" + new Date(game.date).getDate() + "/" + new Date(game.date).getFullYear() +
-										" " + String(new Date(game.date).getHours()+5).padStart(2, '0') + ":" + String(new Date(game.date).getMinutes()).padStart(2, '0')
+										" " + String(new Date(game.date).getHours()+4).padStart(2, '0') + ":" + String(new Date(game.date).getMinutes()).padStart(2, '0')
 									}
 									</IDCTitle>
 								</IDC>
