@@ -49,7 +49,7 @@ export const LabelContainer = styled.div`
 `;
 
 export const Label1 = styled.div`
-	width: 36%;
+	width: 40%;
 	padding-left: 15px;
     min-height: 100%;
     display: flex;
@@ -62,7 +62,7 @@ export const Label1 = styled.div`
 `;
 
 export const Labels = styled.div`
-	width: 24%;
+	width: 20%;
     min-height: 100%;
     display: flex;
     flex-direction: column;
@@ -88,7 +88,7 @@ export const TeamRowContainer = styled.div`
 `;
 
 export const TeamNameText = styled.div`
-	width: 34%;
+	width: 40%;
 	padding-left: 15px;
     min-height: 100%;
     display: flex;
@@ -102,7 +102,7 @@ export const TeamNameText = styled.div`
 
 /* ScoreContainers */
 export const SC = styled.div`
-    width: 22%;
+    width: 20%;
     min-height: 100%;
     display: flex;
     flex-direction: column;

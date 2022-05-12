@@ -7,8 +7,8 @@ import { BackgroundContainer, StandingsContainer, LabelContainer, Label1, Labels
 import "../pageStyles/standings.css";
 
 
-const baseURL = "https://api.sdcleague.com/api/";
-//const baseURL = "http://127.0.0.1:8000/api/";
+//const baseURL = "https://api.sdcleague.com/api/";
+const baseURL = "http://127.0.0.1:8000/api/";
 
 function compareTeams(team1,team2) {
 	if (team1.wins < team2.wins) {
@@ -39,7 +39,7 @@ export default class StandingsPage extends React.Component {
 	}
 
 	componentDidMount() {
-		let request = axios.get(baseURL + 'standings/')
+		let request = axios.get(baseURL + 'standings/?tournament__name=SDC Season 12')
 		axios.all([request]).then(axios.spread((...responses) => {
 			const response = responses[0].data
 			this.setState({ teams: response });
@@ -115,7 +115,7 @@ export default class StandingsPage extends React.Component {
 								{team.losses}
 							</SC>
 							<SC>
-								{Math.round((team.points-team.points_remaining)/(team.wins+team.losses))}
+								{~~Math.round((team.points-team.points_remaining)/(team.wins+team.losses))}
 							</SC>
 						</TeamRowContainer>
 						</>))
