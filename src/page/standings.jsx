@@ -7,8 +7,8 @@ import { BackgroundContainer, StandingsContainer, LabelContainer, Label1, Labels
 import "../pageStyles/standings.css";
 
 
-//const baseURL = "https://api.sdcleague.com/api/";
-const baseURL = "http://127.0.0.1:8000/api/";
+const baseURL = "https://api.sdcleague.com/api/";
+//const baseURL = "http://127.0.0.1:8000/api/";
 
 function compareTeams(team1,team2) {
 	if (team1.wins < team2.wins) {
