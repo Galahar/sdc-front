@@ -14,7 +14,7 @@ const Statisticspage = () => {
                     <StatisticsContainer className="loadInAnim">
                         <StatisticsLinkContainer>
                             <StatsLinkHeader>
-                                SDC SEASON 10 REGULAR SEASON STATS
+                                SDC SEASON 12 REGULAR SEASON STATS
                             </StatsLinkHeader>
                             <StatsLinkNormal>
                                 For All Time Stats
@@ -28,10 +28,10 @@ const Statisticspage = () => {
                         </StatisticsLinkContainer>
                     </StatisticsContainer>
                     <GoogleSheetsContainer className="loadInAnim">
-                        <iframe title="Google Sheets SDC Statistics" className="sheetsResize" width="100%" height="100%" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRgNH4K41GMCzO3B5MTHjXFH2kAl_YoB6m9SqGer870FBzYCO7rr9OVjf15XPzBA5isAT9KVKAfBsmu/pubhtml?widget=true&amp;headers=false"></iframe>
+                        <iframe title="Google Sheets SDC Statistics" className="sheetsResize" width="100%" height="100%" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTnYywnx7Cuq2onIaIk8KGu-UrydteT1OZyPkgI6pG7WyqX5_g1Y8sYsyfqar86Y_QjHwLl9RrAugBl/pubhtml?widget=true&amp;headers=false"></iframe>
                     </GoogleSheetsContainer>
                     <GoogleSheetsContainerMobile className="loadInAnim">
-                        <iframe title="Google Sheets SDC Statistics" className="sheetsResize" width="100%" height="100%" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRgNH4K41GMCzO3B5MTHjXFH2kAl_YoB6m9SqGer870FBzYCO7rr9OVjf15XPzBA5isAT9KVKAfBsmu/pubhtml?widget=true&amp;headers=false"></iframe>
+                        <iframe title="Google Sheets SDC Statistics" className="sheetsResize" width="100%" height="100%" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTnYywnx7Cuq2onIaIk8KGu-UrydteT1OZyPkgI6pG7WyqX5_g1Y8sYsyfqar86Y_QjHwLl9RrAugBl/pubhtml?widget=true&amp;headers=false"></iframe>
                     </GoogleSheetsContainerMobile>
                     <BottomMargin />
                 </TopContainer>
