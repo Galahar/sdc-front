@@ -2,8 +2,6 @@ import styled from "styled-components";
 import { theme } from "../themes.js";
 import { Element } from "react-scroll";
 
-import coolLeague2Image from "../assets/illustrations/coolLeague2.jpg";
-import Ruined2 from "../assets/illustrations/Ruined2.jpeg";
 import coveBK from "../assets/illustrations/coveBK.jpg";
 import summerIMG from "../assets/illustrations/summerBK.jpg";
 
