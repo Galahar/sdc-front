@@ -11,7 +11,7 @@ const FooterContainer = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: ${theme.primary};
+    background-color: ${theme.summer};
     position: relative;
     @media screen and (max-width: 1024px) {
         min-height: 400px;

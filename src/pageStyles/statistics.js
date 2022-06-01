@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Ruined2 from "../assets/illustrations/Ruined2.jpeg";
+import Ruined2 from "../assets/illustrations/coveBK.jpg";
 import { theme } from "../themes.js"; 
 import { Link } from "react-router-dom";
 

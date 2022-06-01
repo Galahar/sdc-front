@@ -4,5 +4,6 @@ export const theme = {
     highlightPrimary: '#f7b318', // Yellow
     fadedPastelGreen: '#60AB9A', // Greyish Pastel Green
     textColor: "#FDFDFF", // White
-	ebony: "#624604"
+	ebony: "#624604",
+    summer: "#023047"
 }
