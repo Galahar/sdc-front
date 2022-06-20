@@ -13,7 +13,7 @@ import "../pageStyles/statisticsCustom.css";
 function DefaultColumnFilter({
     column: { filterValue, preFilteredRows, setFilter },
 }) {
-    const count = preFilteredRows.length
+    /* const count = preFilteredRows.length */ // assigned a value but never used
 
     return (
         <input
@@ -83,7 +83,7 @@ function Table({ columns, data, update,hasMoreData }) {
                         <tr className="th-head" {...headerGroup.getHeaderGroupProps()}   >
                             {headerGroup.headers.map(column => {
                                 return column.hideHeader === false ? null :(
-                                <th {...column.getHeaderProps()} style={{position:"-webkit-sticky", position:"sticky",top:"0",zindex:"1",paddingTop:"10px",borderBottom:"2px solid rgb(98, 70, 4)"}}  >
+                                <th {...column.getHeaderProps()} style={{position:"-webkit-sticky",top:"0",zindex:"1",paddingTop:"10px",borderBottom:"2px solid rgb(98, 70, 4)"}}  >
                                     {column.render('Header')}
                                     {/* Render the columns filter UI */}
                                     
