@@ -77,6 +77,9 @@ const Navbar = () => {
                         <NavLink to='/statistics' activeStyle>
                             Statistics
                         </NavLink>
+                        <NavLink to='/allStatistics' activeStyle>
+                            All Statistics
+                        </NavLink>
 {/*                         <NavLink to='/aboutus' activeStyle>
                             About Us
                         </NavLink> */}

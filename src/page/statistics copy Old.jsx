@@ -1,15 +1,14 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Navbar from "../components/Navbar";
 import { Footer } from "../components/Footer";
-import { useTable, useFilters, useGlobalFilter } from 'react-table'
-import InfiniteScroll from "react-infinite-scroll-component";
+import { useTable, useFilters, useGlobalFilter, useAsyncDebounce } from 'react-table'
+import { useInfiniteQuery } from 'react-query'
 import { BackgroundContainer, TopContainer, StatisticsContainer, StatisticsLinkContainer, 
     StatsLinkNormal, StatsLinkHeader, GoogleSheetsContainer, GoogleSheetsContainerMobile, BottomMargin } from "../pageStyles/statistics.js";
 
-import "../pageStyles/statistics.css";
 import "../pageStyles/standings.css";
-import "../pageStyles/statisticsCustom.css";
+
 function DefaultColumnFilter({
     column: { filterValue, preFilteredRows, setFilter },
 }) {
@@ -18,7 +17,7 @@ function DefaultColumnFilter({
     return (
         <input
             // className="fa fa-search"
-            style={{textAlign:"center",border:"none",backgroundColor:"#101010",color:"white",paddingBottom:"10px",width:'auto' }}
+            style={{textAlign:"center",border:"none",backgroundColor:"#101010",color:"white" }}
             className="placeholderColor"
             value={filterValue || ''}
             onChange={e => {
@@ -31,7 +30,7 @@ function DefaultColumnFilter({
     )
 }
 
-function Table({ columns, data, update,hasMoreData }) {
+function Table({ columns, data }) {
 
 	const defaultColumn = React.useMemo(
         () => ({
@@ -57,33 +56,14 @@ function Table({ columns, data, update,hasMoreData }) {
     )
 
     return (
-        
-        <div id="customScrollTable" className="" style={{width:"100%",marginBottom:"auto"}}>
-        <InfiniteScroll
-        className="customScroll"
-        height={"600px"}
-        dataLength={rows.length}
-        next={update}
-        hasMore={hasMoreData}
-        loader={
-            <h3 style={{ textAlign: 'center' }}>
-                    <b>Loading more data...</b>
-                    </h3>}
-        scrollableTarget={'customScrollTable'}
-        scrollThreshold={0.96}
-        endMessage={
-                    <p style={{ textAlign: 'center' }}>
-                    <b>Loading Data ...</b>
-                    </p>
-                }
-        >
+        <div className="customScroll" style={{width:"100%",marginBottom:"auto"}}>
             <table className="zui-table-highlight tableStripped" {...getTableProps()} style={{borderCollapse:"collapse"}} >
-                <thead  >
+                <thead >
                     {headerGroups.map(headerGroup => (
                         <tr className="th-head" {...headerGroup.getHeaderGroupProps()}   >
                             {headerGroup.headers.map(column => {
                                 return column.hideHeader === false ? null :(
-                                <th {...column.getHeaderProps()} style={{position:"-webkit-sticky", position:"sticky",top:"0",zindex:"1",paddingTop:"10px",borderBottom:"2px solid rgb(98, 70, 4)"}}  >
+                                <th {...column.getHeaderProps()} style={{position:"-webkit-sticky", position:"sticky",top:"0",zindex:"1"}} >
                                     {column.render('Header')}
                                     {/* Render the columns filter UI */}
                                     
@@ -108,20 +88,17 @@ function Table({ columns, data, update,hasMoreData }) {
                     })}
                 </tbody>
             </table>
-            </InfiniteScroll>
         </div>
     )
 }
 
-function FilterTableComponentStatistis() {
+function FilterTableComponent() {
 
 	const [post, setPost] = React.useState(null);
-    const [nextLink,setNext] = React.useState(null);
     useEffect(() => {
-        axios.get('http://127.0.0.1:8000/api/statistics/?page=1')
+        axios.get('http://127.0.0.1:8000/api/statistics/?page=2')
 		.then(response => {
 			setPost(response.data.results);
-            setNext(response.data.next);
 
 			console.log("response: ",response.data.results)
 		}).catch(errors => {
@@ -137,8 +114,36 @@ function FilterTableComponentStatistis() {
                 hideHeader:false,
                 columns: [
                     {
-                        Header: 'Name',
-                        accessor: 'name'
+                        Header: 'S3',
+                        accessor: 's3'
+                    },
+                    {
+                        Header: 'S4',
+                        accessor: 's4'
+                    },
+                    {
+                        Header: 'S5',
+                        accessor: 's5'
+                    },
+                    {
+                        Header: 'S6',
+                        accessor: 's6'
+                    },
+                    {
+                        Header: 'S7',
+                        accessor: 's7'
+                    },
+                    {
+                        Header: 'S8',
+                        accessor: 's8'
+                    },
+                    {
+                        Header: 'S9',
+                        accessor: 's9'
+                    },
+                    {
+                        Header: 'S10',
+                        accessor: 's10'
                     },
                     {
                         Header: 'S11',
@@ -156,7 +161,10 @@ function FilterTableComponentStatistis() {
                         Header: 'T',
                         accessor: 't'
                     },
-					
+					{
+                        Header: 'Name',
+                        accessor: 'name'
+                    },
 					{
                         Header: 'Kills',
                         accessor: 'kills'
@@ -356,22 +364,8 @@ function FilterTableComponentStatistis() {
             },
         ],
         []
-    );
-    const fetchMoreData = () => {
-        setTimeout(()=>{
-            axios.get(nextLink)
-            .then(response => {
-                setPost(post.concat(response.data.results));
-                setNext(response.data.next)
-                console.log("newData: ",response.data)
-            }).catch(errors => {
-                console.log("error loading match data")
-                console.log(errors)
-            });
-        })
-    }
+    )
 	
-    const data = React.useMemo(()=> post,[post])
 	// const data_new = post;
     const data2 = [
         {
@@ -390,7 +384,7 @@ function FilterTableComponentStatistis() {
                     <StatisticsContainer className="loadInAnim">
                         <StatisticsLinkContainer>
                             <StatsLinkHeader>
-                                SDC SEASON 11 REGULAR SEASON STATS
+                                SDC SEASON 10 REGULAR SEASON STATS
                             </StatsLinkHeader>
                             <StatsLinkNormal>
                                 For All Time Stats
@@ -425,7 +419,7 @@ function FilterTableComponentStatistis() {
                     <StatisticsContainer className="loadInAnim">
                         <StatisticsLinkContainer>
                             <StatsLinkHeader>
-                                SDC SEASON 11 REGULAR SEASON STATS
+                                SDC SEASON 10 REGULAR SEASON STATS
                             </StatsLinkHeader>
                             <StatsLinkNormal>
                                 For All Time Stats
@@ -439,10 +433,10 @@ function FilterTableComponentStatistis() {
                         </StatisticsLinkContainer>
                     </StatisticsContainer>
                     <GoogleSheetsContainer className="loadInAnim">
-					<Table columns={columns} data={data} update={fetchMoreData} hasMoreData={nextLink? true: false}  />
+					<Table columns={columns} data={post} />
                     </GoogleSheetsContainer>
                     <GoogleSheetsContainerMobile className="loadInAnim">
-					<Table columns={columns} data={data} update={fetchMoreData} hasMoreData={nextLink? true: false}  />
+					<Table columns={columns} data={post} />
                     </GoogleSheetsContainerMobile>
                     <BottomMargin />
                 </TopContainer>
@@ -454,4 +448,4 @@ function FilterTableComponentStatistis() {
     )
 }
 
-export default FilterTableComponentStatistis;
+export default FilterTableComponent;

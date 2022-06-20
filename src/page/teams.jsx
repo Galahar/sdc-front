@@ -12,20 +12,16 @@ import { TopContainer, BackgroundContainer, TeamsContainer, TeamsInnerContainer,
 
 import "../pageStyles/teams.js";
 import "../pageStyles/teams.css";
-import teamIMG1 from "../assets/illustrations/ClassyInters.png";
-import teamIMG2 from "../assets/illustrations/Discord_Kitten_Enjoyers.png";
-import teamIMG3 from "../assets/illustrations/Fury.png";
-import teamIMG4 from "../assets/illustrations/Legion.jpg";
-import teamIMG5 from "../assets/illustrations/Doofenshmirtz Evil Inc.png";
-import teamIMG6 from "../assets/illustrations/Gigachads.png";
-import teamIMG7 from "../assets/illustrations/The Chimera Ants.png";
-import teamIMG8 from "../assets/illustrations/mighty ducks.png";
-import teamIMG9 from "../assets/illustrations/The J Hat Pirates.png";
-import teamIMG10 from "../assets/illustrations/North American Diving Club.jpg";
-import teamIMG11 from "../assets/illustrations/seafood gumbo.jpg";
-import teamIMG12 from "../assets/illustrations/The_French_Domination.png";
-import teamIMG13 from "../assets/illustrations/Team Aqua.jpg";
-import teamIMG14 from "../assets/illustrations/TIPS TINY PECKERS.png";
+import teamIMG1 from "../assets/illustrations/team1.png";
+import teamIMG2 from "../assets/illustrations/team2.png";
+import teamIMG3 from "../assets/illustrations/team3.png";
+import teamIMG4 from "../assets/illustrations/team4.png";
+import teamIMG5 from "../assets/illustrations/team5.png";
+import teamIMG6 from "../assets/illustrations/team6.png";
+import teamIMG7 from "../assets/illustrations/team7.png";
+import teamIMG8 from "../assets/illustrations/team8.png";
+import teamIMG9 from "../assets/illustrations/team9.jpg";
+import teamIMG10 from "../assets/illustrations/Team10.png";
 
 
 const Teamspage = () => {
@@ -36,9 +32,9 @@ const Teamspage = () => {
                     <TeamsContainer>
                         <TeamsInnerContainer>
                             <ITC className="itcLoadIn">
-                                <TeamNameITCTextContainer style={{ backgroundImage: "linear-gradient(#FF7B00, #FFA24B)" }}>
+                                <TeamNameITCTextContainer style={{ backgroundImage: "linear-gradient(#ff3c3c, #F97373)" }}>
                                     <TeamNameITCText>
-                                        Classy Inters
+                                        Veibae Simps
                                     </TeamNameITCText>
                                 </TeamNameITCTextContainer>
                                 <ITCTeamImageContainer>
@@ -47,16 +43,16 @@ const Teamspage = () => {
                                 </ITCTeamImageContainer>
                                 <TextImageMarginer />
                                 <CaptainViceCaptainText>
-                                    Captain (C): Kadel
+                                    Captain (C): Aidon
                                 </CaptainViceCaptainText>
-{/*                                 <CaptainViceCaptainText>
+                                <CaptainViceCaptainText>
                                     Vice Captain (VC): Hermy
-                                </CaptainViceCaptainText> */}
+                                </CaptainViceCaptainText>
                             </ITC>
                             <ITC className="itcLoadIn">
-                                <TeamNameITCTextContainer style={{ backgroundImage: "linear-gradient(#92ECFF, #B9F3FF)" }}>
+                                <TeamNameITCTextContainer style={{ backgroundImage: "linear-gradient(#8ccc42, #B8EA7E)" }}>
                                     <TeamNameITCText>
-                                        Discord Kitten
+                                        High Five, Daisy!
                                     </TeamNameITCText>
                                 </TeamNameITCTextContainer>
                                 <ITCTeamImageContainer>
@@ -65,16 +61,16 @@ const Teamspage = () => {
                                 </ITCTeamImageContainer>
                                 <TextImageMarginer />
                                 <CaptainViceCaptainText>
-                                    Captain (C): ZoranosLoL
+                                    Captain (C): blossøm
                                 </CaptainViceCaptainText>
-{/*                                 <CaptainViceCaptainText>
+                                <CaptainViceCaptainText>
                                     Vice Captain (VC): banana ooÿoo 
-                                </CaptainViceCaptainText> */}
+                                </CaptainViceCaptainText>
                             </ITC>
                             <ITC className="itcLoadIn">
-                                <TeamNameITCTextContainer style={{ backgroundImage: "linear-gradient(#FFF889, #FFFBB4)" }}>
+                                <TeamNameITCTextContainer style={{ backgroundImage: "linear-gradient(#634389, #9079AB)" }}>
                                     <TeamNameITCText>
-                                        Night Furys
+                                        Cobra Kai
                                     </TeamNameITCText>
                                 </TeamNameITCTextContainer>
                                 <ITCTeamImageContainer>
@@ -83,16 +79,16 @@ const Teamspage = () => {
                                 </ITCTeamImageContainer>
                                 <TextImageMarginer />
                                 <CaptainViceCaptainText>
-                                    Captain (C): The Duh
+                                    Captain (C): Mattsey
                                 </CaptainViceCaptainText>
-{/*                                 <CaptainViceCaptainText>
+                                <CaptainViceCaptainText>
                                     Vice Captain (VC): Payneless
-                                </CaptainViceCaptainText> */}
+                                </CaptainViceCaptainText>
                             </ITC>
                             <ITC className="itcLoadIn">
-                                <TeamNameITCTextContainer style={{ backgroundImage: "linear-gradient(#018579, #00C2B0)" }}>
+                                <TeamNameITCTextContainer style={{ backgroundImage: "linear-gradient(#2c5881, #678BAD)" }}>
                                     <TeamNameITCText>
-                                        NLegion
+                                        NCOG
                                     </TeamNameITCText>
                                 </TeamNameITCTextContainer>
                                 <ITCTeamImageContainer>
@@ -101,16 +97,16 @@ const Teamspage = () => {
                                 </ITCTeamImageContainer>
                                 <TextImageMarginer />
                                 <CaptainViceCaptainText>
-                                    Captain (C): LC Bane
+                                    Captain (C): Łukê
                                 </CaptainViceCaptainText>
-{/*                                 <CaptainViceCaptainText>
+                                <CaptainViceCaptainText>
                                     Vice Captain (VC): Prestoman
-                                </CaptainViceCaptainText> */}
+                                </CaptainViceCaptainText>
                             </ITC>
                             <ITC className="itcLoadIn">
-                                <TeamNameITCTextContainer style={{ backgroundImage: "linear-gradient(#FE99DF, #FFBBEA)" }}>
+                                <TeamNameITCTextContainer style={{ backgroundImage: "linear-gradient(#2196f3, #60B1F0)" }}>
                                     <TeamNameITCText>
-                                        Doofenshmirtz Evil
+                                        Sussygons
                                     </TeamNameITCText>
                                 </TeamNameITCTextContainer>
                                 <ITCTeamImageContainer>
@@ -119,16 +115,16 @@ const Teamspage = () => {
                                 </ITCTeamImageContainer>
                                 <TextImageMarginer />
                                 <CaptainViceCaptainText>
-                                    Captain (C): Patrick Jones
+                                    Captain (C): Jasco
                                 </CaptainViceCaptainText>
-{/*                                 <CaptainViceCaptainText>
+                                <CaptainViceCaptainText>
                                     Vice Captain (VC): MoreSleep
-                                </CaptainViceCaptainText> */}
+                                </CaptainViceCaptainText>
                             </ITC>
                             <ITC className="itcLoadIn">
-                                <TeamNameITCTextContainer style={{ backgroundImage: "linear-gradient(#634389, #AF93D0)" }}>
+                                <TeamNameITCTextContainer style={{ backgroundImage: "linear-gradient(#cf3768, #E57FA0)" }}>
                                     <TeamNameITCText>
-                                        Gigachads
+                                        Team Astral
                                     </TeamNameITCText>
                                 </TeamNameITCTextContainer>
                                 <ITCTeamImageContainer>
@@ -137,16 +133,16 @@ const Teamspage = () => {
                                 </ITCTeamImageContainer>
                                 <TextImageMarginer />
                                 <CaptainViceCaptainText>
-                                    Captain (C): Brizz
+                                    Captain (C): Crucifix
                                 </CaptainViceCaptainText>
-{/*                                 <CaptainViceCaptainText>
+                                <CaptainViceCaptainText>
                                     Vice Captain (VC): nDivine
-                                </CaptainViceCaptainText> */}
+                                </CaptainViceCaptainText>
                             </ITC>
                             <ITC className="itcLoadIn">
-                                <TeamNameITCTextContainer style={{ backgroundImage: "linear-gradient(#8CCC42, #87D58A)" }}>
+                                <TeamNameITCTextContainer style={{ backgroundImage: "linear-gradient(#4cb051, #87D58A)" }}>
                                     <TeamNameITCText>
-                                        The Chimera Ants
+                                        THE CHAOS EMERALDS
                                     </TeamNameITCText>
                                 </TeamNameITCTextContainer>
                                 <ITCTeamImageContainer>
@@ -155,16 +151,16 @@ const Teamspage = () => {
                                 </ITCTeamImageContainer>
                                 <TextImageMarginer />
                                 <CaptainViceCaptainText>
-                                    Captain (C): Tonguey
+                                    Captain (C): Sunscorched
                                 </CaptainViceCaptainText>
-{/*                                 <CaptainViceCaptainText>
+                                <CaptainViceCaptainText>
                                     Vice Captain (VC): Seaboyer09
-                                </CaptainViceCaptainText> */}
+                                </CaptainViceCaptainText>
                             </ITC>
                             <ITC className="itcLoadIn">
-                                <TeamNameITCTextContainer style={{ backgroundImage: "linear-gradient(#2C5881, #679BCB)" }}>
+                                <TeamNameITCTextContainer style={{ backgroundImage: "linear-gradient(#01dbed, #85F6FF)" }}>
                                     <TeamNameITCText>
-                                        Mighty Ducks
+                                        FAIRY TAIL
                                     </TeamNameITCText>
                                 </TeamNameITCTextContainer>
                                 <ITCTeamImageContainer>
@@ -173,16 +169,16 @@ const Teamspage = () => {
                                 </ITCTeamImageContainer>
                                 <TextImageMarginer />
                                 <CaptainViceCaptainText>
-                                    Captain (C): Mattsey
+                                    Captain (C): ChrisTeeAnn
                                 </CaptainViceCaptainText>
-{/*                                 <CaptainViceCaptainText>
+                                <CaptainViceCaptainText>
                                     Vice Captain (VC): Heecher
-                                </CaptainViceCaptainText> */}
+                                </CaptainViceCaptainText>
                             </ITC>
                             <ITC className="itcLoadIn">
-                                <TeamNameITCTextContainer style={{ backgroundImage: "linear-gradient(#CF3768, #D77695)" }}>
+                                <TeamNameITCTextContainer style={{ backgroundImage: "linear-gradient(#018579, #4AE0D2)" }}>
                                     <TeamNameITCText>
-                                        The J Hat Pirates
+                                        Sleep Call Warriors
                                     </TeamNameITCText>
                                 </TeamNameITCTextContainer>
                                 <ITCTeamImageContainer>
@@ -191,16 +187,16 @@ const Teamspage = () => {
                                 </ITCTeamImageContainer>
                                 <TextImageMarginer />
                                 <CaptainViceCaptainText>
-                                    Captain (C): Tony Baboni
+                                    Captain (C): ZoranosLoL
                                 </CaptainViceCaptainText>
-{/*                                 <CaptainViceCaptainText>
+                                <CaptainViceCaptainText>
                                     Vice Captain (VC): Tonguey
-                                </CaptainViceCaptainText> */}
+                                </CaptainViceCaptainText>
                             </ITC>
                             <ITC className="itcLoadIn">
-                                <TeamNameITCTextContainer style={{ backgroundImage: "linear-gradient(#01DBED, #01DBED)" }}>
+                                <TeamNameITCTextContainer style={{ backgroundImage: "linear-gradient(#ff7b00, #FFBE81)" }}>
                                     <TeamNameITCText>
-                                        North American Diving Club
+                                        The Sound 11
                                     </TeamNameITCText>
                                 </TeamNameITCTextContainer>
                                 <ITCTeamImageContainer>
@@ -209,83 +205,11 @@ const Teamspage = () => {
                                 </ITCTeamImageContainer>
                                 <TextImageMarginer />
                                 <CaptainViceCaptainText>
-                                    Captain (C): Senna Main Role
-                                </CaptainViceCaptainText>
-{/*                                 <CaptainViceCaptainText>
-                                    Vice Captain (VC): 	xPhoenixGirl
-                                </CaptainViceCaptainText> */}
-                            </ITC>
-                            <ITC className="itcLoadIn">
-                                <TeamNameITCTextContainer style={{ backgroundImage: "linear-gradient(#99FFB5, #BEFFCF)" }}>
-                                    <TeamNameITCText>
-                                        Seafood Gumbo
-                                    </TeamNameITCText>
-                                </TeamNameITCTextContainer>
-                                <ITCTeamImageContainer>
-                                <TextImageMarginer />
-                                    <img className="img-resizeTeam" src={teamIMG11} alt="Team Logo"></img>
-                                </ITCTeamImageContainer>
-                                <TextImageMarginer />
-                                <CaptainViceCaptainText>
-                                    Captain (C): UwU Headpats
-                                </CaptainViceCaptainText>
-{/*                                 <CaptainViceCaptainText>
-                                    Vice Captain (VC): 	xPhoenixGirl
-                                </CaptainViceCaptainText> */}
-                            </ITC>
-                            <ITC className="itcLoadIn">
-                                <TeamNameITCTextContainer style={{ backgroundImage: "linear-gradient(#8B5F3F, #B08769)" }}>
-                                    <TeamNameITCText>
-                                        The French Domination
-                                    </TeamNameITCText>
-                                </TeamNameITCTextContainer>
-                                <ITCTeamImageContainer>
-                                <TextImageMarginer />
-                                    <img className="img-resizeTeam" src={teamIMG12} alt="Team Logo"></img>
-                                </ITCTeamImageContainer>
-                                <TextImageMarginer />
-                                <CaptainViceCaptainText>
-                                    Captain (C): Mr Raven Cat
-                                </CaptainViceCaptainText>
-{/*                                 <CaptainViceCaptainText>
-                                    Vice Captain (VC): 	xPhoenixGirl
-                                </CaptainViceCaptainText> */}
-                            </ITC>
-                            <ITC className="itcLoadIn">
-                                <TeamNameITCTextContainer style={{ backgroundImage: "linear-gradient(#2196F3, #96D1FF)" }}>
-                                    <TeamNameITCText>
-                                        Team Aqua
-                                    </TeamNameITCText>
-                                </TeamNameITCTextContainer>
-                                <ITCTeamImageContainer>
-                                <TextImageMarginer />
-                                    <img className="img-resizeTeam" src={teamIMG13} alt="Team Logo"></img>
-                                </ITCTeamImageContainer>
-                                <TextImageMarginer />
-                                <CaptainViceCaptainText>
                                     Captain (C): Sir Ratcha
                                 </CaptainViceCaptainText>
-{/*                                 <CaptainViceCaptainText>
-                                    Vice Captain (VC): 	xPhoenixGirl
-                                </CaptainViceCaptainText> */}
-                            </ITC>
-                            <ITC className="itcLoadIn">
-                                <TeamNameITCTextContainer style={{ backgroundImage: "linear-gradient(#FF3C3C, #FF9090)" }}>
-                                    <TeamNameITCText>
-                                        Tips Tiny Pecker
-                                    </TeamNameITCText>
-                                </TeamNameITCTextContainer>
-                                <ITCTeamImageContainer>
-                                <TextImageMarginer />
-                                    <img className="img-resizeTeam" src={teamIMG14} alt="Team Logo"></img>
-                                </ITCTeamImageContainer>
-                                <TextImageMarginer />
                                 <CaptainViceCaptainText>
-                                    Captain (C): Nico Mid
-                                </CaptainViceCaptainText>
-{/*                                 <CaptainViceCaptainText>
                                     Vice Captain (VC): 	xPhoenixGirl
-                                </CaptainViceCaptainText> */}
+                                </CaptainViceCaptainText>
                             </ITC>
                         </TeamsInnerContainer>
                     </TeamsContainer>

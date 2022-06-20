@@ -8,6 +8,7 @@ import Gamepage from "./page/game";
 import Teamspage from "./page/teams";
 import Standingspage from "./page/standings";
 import Statisticspage from "./page/statistics";
+import AllStatisticspage from "./page/allStatistics";
 import Aboutuspage from "./page/aboutus";
 import "./App.css";
 import ScrollIntoView from "./components/ScrollIntoView/ScrollIntoView";
@@ -26,6 +27,8 @@ function App() {
           <Route path='/teams' exact component={Teamspage} />
           <Route path='/standings' exact component={Standingspage} />
           <Route path='/statistics' exact component={Statisticspage} />
+          <Route path='/allStatistics' exact component={AllStatisticspage} />
+
           <Route path='/aboutus' exact component={Aboutuspage} />
         </Switch>
         </ScrollIntoView>

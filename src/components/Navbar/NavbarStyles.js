@@ -11,7 +11,7 @@ export const Nav = styled.nav`
     transition: all 0.35s ease-in-out;
     :hover {
         transition: all 0.5s ease-in-out;
-        background-color: ${theme.summer};
+        background-color: ${theme.primary};
         /*box-shadow: 0 1px 40px -8px rgb(0 0 0 / 50%);*/
 	}
 `;
@@ -23,7 +23,7 @@ export const NavMobile = styled.div`
     top: 0;
     width: 100%;
     height: 100px;
-    background-color: ${theme.summer};
+    background-color: ${theme.primary};
     display: none;
     @media screen and (max-width: 1024px) {
         animation: fadeInAnimation ease 0.5s;
@@ -41,7 +41,7 @@ export const NavMobileTwo = styled.div`
     top: 100px;
     width: 100%;
     height: 100px;
-    background-color: ${theme.summer};
+    background-color: ${theme.primary};
     display: none;
     @media screen and (max-width: 1024px) {
         animation: fadeInAnimation ease 0.5s;
@@ -59,7 +59,7 @@ export const NavMobileThree = styled.div`
     top: 200px;
     width: 100%;
     height: 100px;
-    background-color: ${theme.summer};
+    background-color: ${theme.primary};
     display: none;
     @media screen and (max-width: 1024px) {
         animation: fadeInAnimation ease 0.5s;
@@ -80,14 +80,14 @@ export const NavMenu = styled.div`
     }
     :hover {
         transition: all 0.5s ease-in-out;
-        background-color: ${theme.summer};
+        background-color: ${theme.primary};
         /*box-shadow: 0 1px 40px -8px rgb(0 0 0 / 50%);*/
 	}
 `;
 
 export const NavMenuMobile = styled.div`
     display: flex;
-    background-color: ${theme.summer};
+    background-color: ${theme.primary};
     height: 100px;
     flex-direction: row;
     align-items: center;
@@ -113,7 +113,7 @@ export const NavLink = styled(Link)`
         position: relative;
         width: 0% ;
         padding-top: 18px;
-        border-bottom: 6px solid #fcbf49;
+        border-bottom: 6px solid ${theme.highlightPrimary};
         transition: width .5s ease, background-color .5s ease;
     }
 

@@ -1,0 +1,36 @@
+thead th:first-child {
+    position: sticky;
+    /* background-color: lightgrey; */
+    text-align: center;
+      left: 0;
+      top: 0;
+      z-index: 50;
+      /* height: auto;
+      display: block; */
+  }
+ 
+  tbody td:first-child {
+    text-align: left;
+    font-weight: normal;
+    position: sticky;
+    background-color: darkslategray !important;
+    left: 0px;
+    border-right: 2px solid rgb(98, 70, 4) !important;
+    /* top: 0; */
+    z-index: 40;
+    /* border-bottom: 2px solid goldenrod;  */
+  }
+
+  tbody td:first-child:hover{
+    text-align: left;
+    font-weight: normal;
+    position: sticky;
+    background-color: rgb(98, 70, 4) !important;
+    left: 0px;
+    /* top: 0; */
+    z-index: 40;
+    /* border-bottom: 2px solid goldenrod;  */
+  }
+
+
+  

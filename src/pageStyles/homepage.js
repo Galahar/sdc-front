@@ -2,13 +2,13 @@ import styled from "styled-components";
 import { theme } from "../themes.js";
 import { Element } from "react-scroll";
 
-import coveBK from "../assets/illustrations/coveBK.jpg";
-import summerIMG from "../assets/illustrations/summerBK.jpg";
+import coolLeague2Image from "../assets/illustrations/coolLeague2.jpg";
+import Ruined2 from "../assets/illustrations/Ruined2.jpeg";
 
 export const BackgroundFilter = styled.div`
     width: 100%;
     height: 100%;
-    background-color: rgba(55, 55, 55, 0.5);
+    background-color: rgba(55, 55, 55, 0.6);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,7 +24,7 @@ const pictureSelected = pictureArray[randomIndexPicture]; */
 export const TopContainer = styled.div`
     width: 100%;
     height: 105vh;
-    background-image: url(${summerIMG});
+    background-image: url(${coolLeague2Image});
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -51,8 +51,8 @@ export const TitleText = styled.h1`
     white-space: nowrap;
     margin-top: 0;
     margin-bottom: 0;
-    color: #a2d2ff;
-    text-shadow: 2px 2px 0 black, 1px 1px 0 black, 2px 2px 0 black;
+    color: #f2d492;
+    text-shadow: 3px 3px 0 black, 1px 1px 0 black, 2px 2px 0 black;
     @media screen and (max-width: 1024px) {
         display: none;
     }
@@ -76,7 +76,7 @@ export const TitleTextResponsive = styled.h1`
 export const SeasonText = styled.h2`
     font-size: 10vh;
     white-space: nowrap;
-    color: #CAF0F8;
+    color: #FFF;
     @media screen and (max-width: 650px) {
         font-size: 6vh;
     }
@@ -133,7 +133,7 @@ export const ContentContainer = styled(Element)`
     justify-content: center;
     align-items: center;
     overflow-x: hidden;
-    background-image: url(${coveBK});
+    background-image: url(${Ruined2});
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

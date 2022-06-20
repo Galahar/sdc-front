@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Ruined2 from "../assets/illustrations/coveBK.jpg";
+import Ruined2 from "../assets/illustrations/Ruined2.jpeg";
 import { theme } from "../themes.js"; 
 import { Link } from "react-router-dom";
 
@@ -25,13 +25,14 @@ export const TopContainer = styled.div`
 `;
 
 export const StatisticsContainer = styled.div`
-    width: 80%;
+    width: 100%;
     height: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 260px;
+    margin-top: 200px;
+    ${'' /* margin-top: 250px; */}
     margin-left: 0px;
     @media screen and (max-width: 800px) {
         margin-left: 40px;
@@ -91,16 +92,17 @@ export const StatsLink = styled(Link)`
 `;
 
 export const GoogleSheetsContainer = styled.div`
-    width: 90%;
-    height: 800px;
+    width: 95%;
+    height: 600px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-left: 50px;
-    margin-top: 150px;
-    outline: 10px solid black;
-    background-color: gray;
+    margin-left: 48px;
+    ${'' /* margin-top: 150px; */}
+    margin-top: 120px;
+    ${'' /* outline: 10px solid rgb(247, 179, 24); */}
+    background-color:rgb(0,0,0,0.4) ;
     @media screen and (max-width: 768px) {
         display: none;
     }
@@ -108,15 +110,16 @@ export const GoogleSheetsContainer = styled.div`
 
 export const GoogleSheetsContainerMobile = styled.div`
     width: 80%;
-    height: 800px;
+    height: 600px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-left: 50px;
     margin-top: 150px;
-    outline: 10px solid black;
-    background-color: gray;
+    ${'' /* outline: 10px solid black; */}
+    background-color:rgb(0,0,0,0.4) ;
+    ${'' /* background-color: gray; */}
     @media screen and (min-width: 768px) {
         display: none;
     }

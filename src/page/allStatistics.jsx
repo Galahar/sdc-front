@@ -113,7 +113,7 @@ function Table({ columns, data, update,hasMoreData }) {
     )
 }
 
-function FilterTableComponentStatistis() {
+function FilterTableComponent() {
 
 	const [post, setPost] = React.useState(null);
     const [nextLink,setNext] = React.useState(null);
@@ -139,6 +139,38 @@ function FilterTableComponentStatistis() {
                     {
                         Header: 'Name',
                         accessor: 'name'
+                    },
+                    {
+                        Header: 'S3',
+                        accessor: 's3'
+                    },
+                    {
+                        Header: 'S4',
+                        accessor: 's4'
+                    },
+                    {
+                        Header: 'S5',
+                        accessor: 's5'
+                    },
+                    {
+                        Header: 'S6',
+                        accessor: 's6'
+                    },
+                    {
+                        Header: 'S7',
+                        accessor: 's7'
+                    },
+                    {
+                        Header: 'S8',
+                        accessor: 's8'
+                    },
+                    {
+                        Header: 'S9',
+                        accessor: 's9'
+                    },
+                    {
+                        Header: 'S10',
+                        accessor: 's10'
                     },
                     {
                         Header: 'S11',
@@ -390,7 +422,7 @@ function FilterTableComponentStatistis() {
                     <StatisticsContainer className="loadInAnim">
                         <StatisticsLinkContainer>
                             <StatsLinkHeader>
-                                SDC SEASON 11 REGULAR SEASON STATS
+                                SDC SEASON 10 REGULAR SEASON STATS
                             </StatsLinkHeader>
                             <StatsLinkNormal>
                                 For All Time Stats
@@ -425,7 +457,7 @@ function FilterTableComponentStatistis() {
                     <StatisticsContainer className="loadInAnim">
                         <StatisticsLinkContainer>
                             <StatsLinkHeader>
-                                SDC SEASON 11 REGULAR SEASON STATS
+                                SDC SEASON 10 REGULAR SEASON STATS
                             </StatsLinkHeader>
                             <StatsLinkNormal>
                                 For All Time Stats
@@ -454,4 +486,4 @@ function FilterTableComponentStatistis() {
     )
 }
 
-export default FilterTableComponentStatistis;
+export default FilterTableComponent;

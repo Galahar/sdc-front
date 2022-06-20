@@ -17,8 +17,9 @@
         content: "";
         display: block;
         position: relative;
+        background-color: red !important;
         width: 0% ;
-        border-bottom: 5px solid #A379C9;
+        border-bottom: 5px solid #A379C9 !important;
         transition: width .5s ease, background-color .5s ease;
     }
 
