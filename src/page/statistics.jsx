@@ -118,7 +118,7 @@ function FilterTableComponentStatistis() {
 	const [post, setPost] = React.useState(null);
     const [nextLink,setNext] = React.useState(null);
     useEffect(() => {
-        axios.get('http://127.0.0.1:8000/api/statistics/?page=1')
+        axios.get('https://api.sdcleague.com/api/statistics/?page=1')
 		.then(response => {
 			setPost(response.data.results);
             setNext(response.data.next);
