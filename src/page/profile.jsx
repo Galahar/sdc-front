@@ -17,8 +17,8 @@ import KillCard from "../components/profileComponents/killCard";
 // import teamIMG1 from "../assets/illustrations/team1.png";
 
 
-// const baseURL = "https://api.sdcleague.com/api/";
-const baseURL = "http://127.0.0.1:8000/api/";
+const baseURL = "https://api.sdcleague.com/api/";
+// const baseURL = "http://127.0.0.1:8000/api/";
 
 function Table({ columns, data, update,hasMoreData}) {
     const [selectedId, setSelectedId] = React.useState(0)

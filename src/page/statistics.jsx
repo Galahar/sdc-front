@@ -116,15 +116,19 @@ function Table({ columns, data, update,hasMoreData }) {
         </div>
     )
 }
-// const baseURL = "https://api.sdcleague.com/api/";
-const baseURL = "http://127.0.0.1:8000/api/";
+const baseURL = "https://api.sdcleague.com/api/";
+// const baseURL = "http://127.0.0.1:8000/api/";
 
 function FilterTableComponentStatistis() {
 
 	const [post, setPost] = React.useState(null);
     const [nextLink,setNext] = React.useState(null);
     useEffect(() => {
+<<<<<<< HEAD
         axios.get(baseURL + 'statistics/?page=1')
+=======
+        axios.get('https://api.sdcleague.com/api/statistics/?page=1')
+>>>>>>> c27819cabd837e2307310d0c6240256dbca0f21b
 		.then(response => {
 			setPost(response.data.results);
             setNext(response.data.next);
