@@ -9,7 +9,7 @@ thead th:first-child {
       display: block; */
   }
  
-  tbody td:first-child {
+tbody.cus td:first-child {
     text-align: left;
     font-weight: normal;
     position: sticky;
@@ -21,7 +21,7 @@ thead th:first-child {
     /* border-bottom: 2px solid goldenrod;  */
   }
 
-  tbody td:first-child:hover{
+  tbody.cus td:first-child:hover{
     text-align: left;
     font-weight: normal;
     position: sticky;

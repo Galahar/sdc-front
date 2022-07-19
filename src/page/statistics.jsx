@@ -72,8 +72,12 @@ function Table({ columns, data, update,hasMoreData }) {
         scrollableTarget={'customScrollTable'}
         scrollThreshold={0.96}
         endMessage={
+            hasMoreData==undefined?
                     <p style={{ textAlign: 'center' }}>
                     <b>Loading Data ...</b>
+                    </p> : 
+                    <p style={{ textAlign: 'center' }}>
+                    <b>All The Data has been loaded</b>
                     </p>
                 }
         >
@@ -95,7 +99,7 @@ function Table({ columns, data, update,hasMoreData }) {
                     ))}
                   
                 </thead>
-                <tbody {...getTableBodyProps()}>
+                <tbody className="cus" {...getTableBodyProps()}>
                     {rows.map((row, i) => {
                         prepareRow(row)
                         return (
@@ -112,18 +116,20 @@ function Table({ columns, data, update,hasMoreData }) {
         </div>
     )
 }
+// const baseURL = "https://api.sdcleague.com/api/";
+const baseURL = "http://127.0.0.1:8000/api/";
 
 function FilterTableComponentStatistis() {
 
 	const [post, setPost] = React.useState(null);
     const [nextLink,setNext] = React.useState(null);
     useEffect(() => {
-        axios.get('http://127.0.0.1:8000/api/statistics/?page=1')
+        axios.get(baseURL + 'statistics/?page=1')
 		.then(response => {
 			setPost(response.data.results);
             setNext(response.data.next);
 
-			console.log("response: ",response.data.results)
+			// console.log("response: ",response.data.results)
 		}).catch(errors => {
 			console.log("error loading match data")
 			console.log(errors)

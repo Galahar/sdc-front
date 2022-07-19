@@ -12,6 +12,8 @@ import AllStatisticspage from "./page/allStatistics";
 import Aboutuspage from "./page/aboutus";
 import "./App.css";
 import ScrollIntoView from "./components/ScrollIntoView/ScrollIntoView";
+import Profile from "./page/profile";
+import profileTry from "./page/profileTry"
 
 function App() {
   return (
@@ -22,8 +24,9 @@ function App() {
           <Route path='/' exact component={Homepage} />
           <Route path='/live' exact component={Livepage} />
           <Route path='/schedule' exact component={Schedulepage} />
-		  <Route path='/match' exact component={Matchpage} />
-		  <Route path='/game' exact component={Gamepage} />
+          <Route path='/match' exact component={Matchpage} />
+          <Route path='/game' exact component={Gamepage} />
+          <Route path='/profile' exact component={profileTry} />
           <Route path='/teams' exact component={Teamspage} />
           <Route path='/standings' exact component={Standingspage} />
           <Route path='/statistics' exact component={Statisticspage} />

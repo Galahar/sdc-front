@@ -1,6 +1,6 @@
 import React from "react";
 import { Nav, NavMenu, NavLink, BottomNav, NavMobile, NavMenuMobile, 
-    NavLinkMobile, NavMobileTwo, NavMobileThree } from "./NavbarStyles";
+    NavLinkMobile, NavMobileTwo, NavMobileThree, NavMobileFour } from "./NavbarStyles";
 import { SDCIcon } from "../Logo";
 import hamburgerIcon from "../../assets/illustrations/hamburgerIcon.png";
 import "./navbar.css";
@@ -40,14 +40,27 @@ const Navbar = () => {
                             <NavLinkMobile to='/teams' activeStyle>
                                 Teams
                             </NavLinkMobile>
+                            <NavLinkMobile to='/profile' activeStyle>
+                                Profile
+                            </NavLinkMobile>
                             <NavLinkMobile to='/standings' activeStyle>
                                 Standings
                             </NavLinkMobile>
+                            
+                        </NavMenuMobile>
+                    </NavMobileThree>
+
+                    <NavMobileFour>
+                        <NavMenuMobile>
                             <NavLinkMobile to='/statistics' activeStyle>
                                 Statistics
                             </NavLinkMobile>
+                            <NavLinkMobile to='/allStatistics' activeStyle>
+                                All Statistics
+                            </NavLinkMobile>
                         </NavMenuMobile>
-                    </NavMobileThree>
+                    </NavMobileFour>
+                    
                     </div>
                 
                     }
@@ -71,6 +84,9 @@ const Navbar = () => {
                         <NavLink to='/teams' activeStyle>
                             Teams
                         </NavLink>
+                        <NavLink to='/profile' activeStyle>
+                            Profile
+                        </NavLink>
                         <NavLink to='/standings' activeStyle>
                             Standings
                         </NavLink>
@@ -80,6 +96,7 @@ const Navbar = () => {
                         <NavLink to='/allStatistics' activeStyle>
                             All Statistics
                         </NavLink>
+                        
 {/*                         <NavLink to='/aboutus' activeStyle>
                             About Us
                         </NavLink> */}
