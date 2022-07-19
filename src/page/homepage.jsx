@@ -24,7 +24,7 @@ const Homepage = () => {
                 <BackgroundFilter>
                     <TextContainer className="loadInAnim">
                         <TitleText style={{ fontFamily: 'Yusei Magic' }}>
-                            Seasonal Draft
+                            Seasonal Draft123
                         </TitleText>
                         <TitleText style={{ fontFamily: 'Yusei Magic' }}>
                             Championship
