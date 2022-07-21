@@ -75,7 +75,7 @@ const Navbar = () => {
                             Standings
                         </NavLink>
                         <NavLink to='/statistics' activeStyle>
-                            Statistics
+                            Statistics 123333
                         </NavLink>
                         <NavLink to='/allStatistics' activeStyle>
                             All Statistics
