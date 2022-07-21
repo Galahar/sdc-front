@@ -3,13 +3,6 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import 'bootstrap/dist/css/bootstrap-grid.min.css';
-import 'bootstrap/dist/css/bootstrap-utilities.min.css';
-// import 'bootstrap/dist/css/bootstrap-reboot.min.css';
-
-// import 'bootstrap/dist/scss/_card.scss'; 
-
-
 
 ReactDOM.render(
   <React.StrictMode>
