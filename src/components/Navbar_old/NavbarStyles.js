@@ -70,24 +70,6 @@ export const NavMobileThree = styled.div`
     left: 0px;
 `;
 
-export const NavMobileFour = styled.div`
-    display: flex;
-    position: fixed;
-    z-index: 9999;
-    top: 300px;
-    width: 100%;
-    height: 100px;
-    background-color: ${theme.primary};
-    display: none;
-    @media screen and (max-width: 1024px) {
-        animation: fadeInAnimation ease 0.5s;
-        animation-iteration-count: 1;
-        animation-fill-mode: forwards;
-        display: block;
-    }
-    left: 0px;
-`;
-
 export const NavMenu = styled.div`
     display: flex;
     height: 80px;
@@ -131,8 +113,8 @@ export const NavLink = styled(Link)`
         position: relative;
         width: 0% ;
         padding-top: 18px;
-        border-bottom: 6px solid ${theme.highlightPrimary} ;
-        transition: width .5s ease, background-color .5s ease ;
+        border-bottom: 6px solid ${theme.highlightPrimary};
+        transition: width .5s ease, background-color .5s ease;
     }
 
     :hover:after {
