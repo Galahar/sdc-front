@@ -41,7 +41,7 @@ const Navbar = () => {
                                 Teams
                             </NavLinkMobile>
                             <NavLinkMobile to='/profile' activeStyle>
-                                Profile
+                                Profile 123
                             </NavLinkMobile>
                             <NavLinkMobile to='/standings' activeStyle>
                                 Standings
