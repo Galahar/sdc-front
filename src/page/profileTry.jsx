@@ -6,7 +6,7 @@ import axios from "axios";
 import { useTable, useFilters, useGlobalFilter } from 'react-table'
 import InfiniteScroll from "react-infinite-scroll-component";
 import { TopContainer, BackgroundContainer, TeamsContainer, TeamsInnerContainer, ITC} from "../pageStyles/profile";
-import KdaCanvas from "../components/profileComponents/kdCanvas";
+// import KdaCanva../pageStyles/profile___/profileComponents/kdCanvas";
 import AvgKdaCanvas from "../components/profileComponents/avgKdaCanvas";
 import ScoreCard from "../components/profileComponents/scoreCard";
 import "../pageStyles/teams.js";
