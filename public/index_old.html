@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="The Seasonal Draft Championship is a tournament league for the video game League of Legends
+      that houses more than one hundred players ranging in skill from gold elo to challenger. This League of Legends tournament 
+      isn’t your standard tournament but is more similar to a franchise system that varies from season to season."
+    />
+    <link rel="sdc-icon" href="%PUBLIC_URL%/sdcIcon.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>Seasonal Draft Championship</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <head>
+      <style>      
+      #navbar {
+        background-color: #023047;
+        position: fixed;
+        top: -80px;
+        height: 80px;
+        width: 100%;
+        display: block;
+        transition: top 0.3s;
+        box-shadow: 0 1px 40px -8px rgb(0 0 0 / 50%);
+      }
+      
+      #navbar a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 15px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+      
+      #navbar a:hover {
+        background-color: #ddd;
+        color: #023047;
+      }
+      </style>
+      <div id="navbar">
+      </div>
+      <script>
+      // When the user scrolls down 20px from the top of the document, slide down the navbar
+      // Credit to https://www.w3schools.com/
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("navbar").style.top = "0";
+          } else {
+            document.getElementById("navbar").style.top = "-80px";
+          }
+        }
+      </script>
+  </body>
+</html>
