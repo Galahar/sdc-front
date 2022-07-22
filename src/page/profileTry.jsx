@@ -6,7 +6,7 @@ import axios from "axios";
 import { useTable, useFilters, useGlobalFilter } from 'react-table'
 import InfiniteScroll from "react-infinite-scroll-component";
 import { TopContainer, BackgroundContainer, TeamsContainer, TeamsInnerContainer, ITC} from "../pageStyles/profile";
-// import KdaCanva../pageStyles/profile___/profileComponents/kdCanvas";
+import KdaCanvas from "../components/profileComponents/kdCanvas";
 import AvgKdaCanvas from "../components/profileComponents/avgKdaCanvas";
 import ScoreCard from "../components/profileComponents/scoreCard";
 import "../pageStyles/teams.js";
@@ -20,7 +20,7 @@ import icon from '../assets/illustrations/headshot-icon.png'
 import picture from "../assets/illustrations/icons8-fantasy-100.png"
 import coin from "../assets/illustrations/icons8-coins-96.png"
 
-import ChampCard from "../components/championCard/championCard";
+import ChampCard from '../components/championCard/championCard';
 
 
 // C:\Users\Adaxiom\Desktop\sdc-front\src\pageStyles\bootstrap.min.css
@@ -132,7 +132,7 @@ function Table({ columns, data, update,hasMoreData}) {
 
             {/* <div className=" col-md-10 col-xl-10" > */}
             <Col xl={9} lg={9} xs={12}>
-                {/* {console.log("data : ",data[selectedId])} */}
+                {/* {console.log("data : ",data[KdaCanvasselectedId])} */}
                 <Row >
                     {/* <div className="col-xl-4 col-md-6 col-xs-8"> */}
                     <Col xl={4} md={6}  xs={12}>
