@@ -25,32 +25,32 @@ export default function ScoreCard(playerData)
             </div>
             <div className="clearfix"></div>
             <div style={{paddingTop:"16px"}}>
-                <div class="total-stat">
-                    <span class="total-label">Played</span>
-                    <span class="total-value">{playerData.playerData.games}</span>
-                    {/* <div class="clearfix"></div> */}
+                <div className="total-stat">
+                    <span className="total-label">Played</span>
+                    <span className="total-value">{playerData.playerData.games}</span>
+                    {/* <div className="clearfix"></div> */}
                 </div>
  
             </div>
             <div style={{paddingTop:"16px"}}>
-                <div class="total-stat">
-                    <span class="total-label">Won</span>
-                    <span class="total-value">{playerData.playerData.wins}</span>
-                    {/* <div class="clearfix"></div> */}
+                <div className="total-stat">
+                    <span className="total-label">Won</span>
+                    <span className="total-value">{playerData.playerData.wins}</span>
+                    {/* <div className="clearfix"></div> */}
                 </div>
             </div>
             <div style={{paddingTop:"16px"}}>
-                <div class="total-stat">
-                    <span class="total-label">Lost</span>
-                    <span class="total-value">{playerData.playerData.losses}</span>
-                    {/* <div class="clearfix"></div> */}
+                <div className="total-stat">
+                    <span className="total-label">Lost</span>
+                    <span className="total-value">{playerData.playerData.losses}</span>
+                    {/* <div className="clearfix"></div> */}
                 </div>
             </div>
             <div style={{paddingTop:"16px"}}>
-                <div class="total-stat">
-                    <span class="total-label">Game Time</span>
-                    <span class="total-value">{playerData.playerData.game_time}</span>
-                    {/* <div class="clearfix"></div> */}
+                <div className="total-stat">
+                    <span className="total-label">Game Time</span>
+                    <span className="total-value">{playerData.playerData.game_time}</span>
+                    {/* <div className="clearfix"></div> */}
                 </div>
             </div>
         </div>

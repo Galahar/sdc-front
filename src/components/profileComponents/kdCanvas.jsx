@@ -10,12 +10,12 @@ export default function KdaCanvas(playerData)
         </div>
         <svg width={300} height={300}>
             <text x="50%" y="50%" 
-                text-anchor="middle"
+                textAnchor="middle"
                 stroke="white"
                 fill='black'
                 fontSize="62px"
-                stroke-width="1px"
-                alignment-baseline="middle"> 
+                strokeWidth="1px"
+                alignmentBaseline="middle"> 
                 {playerData.playerData.kda}
             </text>
 
@@ -28,7 +28,7 @@ export default function KdaCanvas(playerData)
                     labels: { fontSize: 11,fill: "white" },
                     // parent: { border: "1px solid #ccc" }
                     }}
-                    width={"300"} height={"300"}
+                    width={300} height={300}
                     labels={({ datum }) => datum.x}
                     padAngle={2}
                     colorScale={["#97E668", "red", "orange", "cyan", "navy" ]}
@@ -82,13 +82,13 @@ export default function KdaCanvas(playerData)
 <svg width={310} height={300}>
 
 <text x="50%" y="50%" 
-    text-anchor="middle"
+    textAnchor="middle"
     stroke="white"
     fill='black'
     fontSize="62px"
     stroke-width="1px"
     // fontWeight="bold"
-    alignment-baseline="middle"> 
+    alignmentBaseline="middle"> 
     {playerData.playerData.kda}
 </text>
 

@@ -91,26 +91,26 @@ export function Footer(props) {
     return (
         <FooterContainer>
             <FooterLinksContainerZero>
-                <FooterLink to='/live' activeStyle>
+                <FooterLink to='/live' activestyle="true">
                     Home
                 </FooterLink>
-                <FooterLink to='/live' activeStyle>
+                <FooterLink to='/live' activestyle="true">
                     Live
                 </FooterLink>
-                <FooterLink to='/schedule' activeStyle>
+                <FooterLink to='/schedule' activestyle="true">
                     Schedule
                 </FooterLink>
             </FooterLinksContainerZero>
             <DiscIcon />
             <FooterMargin />
             <FooterLinksContainer>
-                <FooterLink to='/teams' activeStyle>
+                <FooterLink to='/teams' activestyle="true">
                     Teams
                 </FooterLink>
-                <FooterLink to='/standings' activeStyle>
+                <FooterLink to='/standings' activestyle="true">
                     Standings
                 </FooterLink>
-                <FooterLink to='/statistics' activeStyle>
+                <FooterLink to='/statistics' activestyle="true">
                     Statistics
                 </FooterLink>
             </FooterLinksContainer>

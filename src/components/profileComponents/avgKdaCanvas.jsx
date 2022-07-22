@@ -53,13 +53,13 @@ export default function AvgKdaCanvas(playerData)
     <svg width={300} height={300}>
 
         <text x="50%" y="50%" 
-            text-anchor="middle"
+            textAnchor="middle"
             stroke="white"
             fill='black'
             fontSize="62px"
-            stroke-width="1px"
+            strokeWidth="1px"
             // fontWeight="bold"
-            alignment-baseline="middle"> 
+            alignmentBaseline="middle"> 
             {playerData.playerData.win}
         </text>
 
@@ -70,7 +70,7 @@ export default function AvgKdaCanvas(playerData)
                         // parent: { border: "1px solid #ccc" }
                     }}
             standalone={false}
-            width={"300"} height={"300"}
+            width={300} height={300}
             colorScale={["#97E668", "red", "orange", "cyan", "navy" ]}
             padAngle={2}
             innerRadius={85}

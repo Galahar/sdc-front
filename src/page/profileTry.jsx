@@ -5,8 +5,7 @@ import React, { useEffect } from "react";
 import axios from "axios";
 import { useTable, useFilters, useGlobalFilter } from 'react-table'
 import InfiniteScroll from "react-infinite-scroll-component";
-import { TopContainer, BackgroundContainer, TeamsContainer, TeamsInnerContainer, 
-    ITC} from "../pageStyles/profile";
+import { TopContainer, BackgroundContainer, TeamsContainer, TeamsInnerContainer, ITC} from "../pageStyles/profile";
 import KdaCanvas from "../components/profileComponents/kdCanvas";
 import AvgKdaCanvas from "../components/profileComponents/avgKdaCanvas";
 import ScoreCard from "../components/profileComponents/scoreCard";
@@ -94,7 +93,7 @@ function Table({ columns, data, update,hasMoreData}) {
                         <p style={{ textAlign: 'center' }}>
                         <b>All The Data has been loaded</b>
                         </p>
-                        }
+                }
                 >
                 <table  {...getTableProps()} style={{borderCollapse:"collapse", width:"100%"}} >
                     <thead  >
@@ -120,7 +119,7 @@ function Table({ columns, data, update,hasMoreData}) {
                             return (
                                 <tr {...row.getRowProps()} style={{textAlign:"end"}} >
                                     {row.cells.map((cell,j) => {
-                                        return <td {...cell.getCellProps()} style={{textAlign:"center",background: selectedId==row.id?'rgb(98, 70, 4)':'none',textAlign:"center"}} onClick={() => getCellValue(cell,j)}>{cell.render('Cell')}</td>
+                                        return <td {...cell.getCellProps()} style={{textAlign:"center",zIndex:"0",background: selectedId==row.id?'rgb(98, 70, 4)':'none',textAlign:"center"}} onClick={() => getCellValue(cell,j)}>{cell.render('Cell')}</td>
                                     })}
                                 </tr>
                             )

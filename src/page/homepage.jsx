@@ -46,9 +46,9 @@ const Homepage = () => {
                         <Button onClick={scrollToNextSection} style={{ fontFamily: 'Yusei Magic' }}>Learn more</Button>
                     </MoreInfoContainer>
                     <DownArrowContainer onClick={scrollToNextSection}>
-                        <div class="chevron"></div>
-                        <div class="chevron"></div>
-                        <div class="chevron"></div>
+                        <div className="chevron"></div>
+                        <div className="chevron"></div>
+                        <div className="chevron"></div>
                     </DownArrowContainer>
                 </BackgroundFilter>
             </TopContainer>
@@ -61,10 +61,10 @@ const Homepage = () => {
                             height="200" 
                             src="https://www.youtube.com/embed/vV9GS-CJZFI" 
                             title="YouTube video player" 
-                            frameborder="1" 
+                            frameBorder="1" 
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
                             gyroscope; picture-in-picture" 
-                            allowfullscreen
+                            allowFullScreen
                             >
                         </iframe>
                 </VideoContainerMobile>
@@ -86,10 +86,10 @@ const Homepage = () => {
                             height="315" 
                             src="https://www.youtube.com/embed/vV9GS-CJZFI" 
                             title="YouTube video player" 
-                            frameborder="1" 
+                            frameBorder="1" 
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
                             gyroscope; picture-in-picture" 
-                            allowfullscreen
+                            allowFullScreen
                             >
                         </iframe>
                     </VideoContainer>
@@ -99,10 +99,10 @@ const Homepage = () => {
                             height="255" 
                             src="https://www.youtube.com/embed/vV9GS-CJZFI" 
                             title="YouTube video player" 
-                            frameborder="1" 
+                            frameBorder="1" 
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
                             gyroscope; picture-in-picture" 
-                            allowfullscreen
+                            allowFullScreen
                             >
                         </iframe>
                     </VideoContainerSmall>

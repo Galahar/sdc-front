@@ -36,7 +36,7 @@ const Livepage = () => {
                                     src="https://player.twitch.tv/?channel=twitchpresents&parent=sdcleague.com&parent=www.sdcleague.com&autoplay=true"
                                     frameborder="0"
                                     scrolling="no"
-                                    allowfullscreen="true"
+                                    allowFullScreen="true"
                                     height="100%"
                                     width="100%"
                                     >

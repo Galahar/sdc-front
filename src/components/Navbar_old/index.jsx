@@ -24,26 +24,26 @@ const Navbar = () => {
                         ? null : <div>                
                         <NavMobileTwo>
                         <NavMenuMobile>
-                            <NavLinkMobile to='/' activeStyle>
+                            <NavLinkMobile to='/' activestyle="true">
                                 Home
                             </NavLinkMobile>
-                            <NavLinkMobile to='/live' activeStyle>
+                            <NavLinkMobile to='/live' activestyle="true">
                                 Live
                             </NavLinkMobile>
-                            <NavLinkMobile to='/schedule' activeStyle>
+                            <NavLinkMobile to='/schedule' activestyle="true">
                                 Schedule
                             </NavLinkMobile>
                         </NavMenuMobile>
                     </NavMobileTwo>
                     <NavMobileThree>
                         <NavMenuMobile>
-                            <NavLinkMobile to='/teams' activeStyle>
+                            <NavLinkMobile to='/teams' activestyle="true">
                                 Teams
                             </NavLinkMobile>
-                            <NavLinkMobile to='/standings' activeStyle>
+                            <NavLinkMobile to='/standings' activestyle="true">
                                 Standings
                             </NavLinkMobile>
-                            <NavLinkMobile to='/statistics' activeStyle>
+                            <NavLinkMobile to='/statistics' activestyle="true">
                                 Statistics
                             </NavLinkMobile>
                         </NavMenuMobile>
@@ -62,25 +62,25 @@ const Navbar = () => {
                 <NavMenu>
                     <BottomNav>
                         <SDCIcon />
-                        <NavLink to='/live' activeStyle>
+                        <NavLink to='/live' activestyle="true">
                             Live
                         </NavLink>
-                        <NavLink to='/schedule' activeStyle>
+                        <NavLink to='/schedule' activestyle="true">
                             Schedule
                         </NavLink>
-                        <NavLink to='/teams' activeStyle>
+                        <NavLink to='/teams' activestyle="true">
                             Teams
                         </NavLink>
-                        <NavLink to='/standings' activeStyle>
+                        <NavLink to='/standings' activestyle="true">
                             Standings
                         </NavLink>
-                        <NavLink to='/statistics' activeStyle>
+                        <NavLink to='/statistics' activestyle="true">
                             Statistics 123333
                         </NavLink>
-                        <NavLink to='/allStatistics' activeStyle>
+                        <NavLink to='/allStatistics' activestyle="true">
                             All Statistics
                         </NavLink>
-{/*                         <NavLink to='/aboutus' activeStyle>
+{/*                         <NavLink to='/aboutus' activestyle="true">
                             About Us
                         </NavLink> */}
                     </BottomNav>

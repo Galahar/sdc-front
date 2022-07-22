@@ -21,25 +21,25 @@ export default function KillCard(props)
             </div>
             <div className="clearfix"></div>
             <div style={{paddingTop:"16px"}}>
-                <div class="total-stat">
-                    <span class="total-label">{props.label_1}</span>
-                    <span class="total-value">{props.text_1}</span>
-                    {/* <div class="clearfix"></div> */}
+                <div className="total-stat">
+                    <span className="total-label">{props.label_1}</span>
+                    <span className="total-value">{props.text_1}</span>
+                    {/* <div className="clearfix"></div> */}
                 </div>
  
             </div>
             <div style={{paddingTop:"16px"}}>
-                <div class="total-stat">
-                    <span class="total-label">{props.label_2}</span>
-                    <span class="total-value">{props.text_2}</span>
-                    {/* <div class="clearfix"></div> */}
+                <div className="total-stat">
+                    <span className="total-label">{props.label_2}</span>
+                    <span className="total-value">{props.text_2}</span>
+                    {/* <div className="clearfix"></div> */}
                 </div>
             </div>
             <div style={{paddingTop:"16px"}}>
-                <div class="total-stat">
-                    <span class="total-label">{props.label_3}</span>
-                    <span class="total-value">{props.text_3}</span>
-                    {/* <div class="clearfix"></div> */}
+                <div className="total-stat">
+                    <span className="total-label">{props.label_3}</span>
+                    <span className="total-value">{props.text_3}</span>
+                    {/* <div className="clearfix"></div> */}
                 </div>
             </div>
            

@@ -90,14 +90,14 @@ export default function ChampCard(props){
     return(
         <>
         {/* <section id="team" className="pb-5"> */}
-    {/* <div class="container"> */}
+    {/* <div className="container"> */}
               <div className="row">
               <h1 className="section-title" style={{ fontFamily: 'Yusei Magic' }}>Champions</h1>
               {
                   props.championsData !=null ?
-                  (props.championsData).map((row)=>{
+                  (props.championsData).map((row,i)=>{
                         return(
-                            <SingleCard  data={row} /> 
+                            <SingleCard key={i} data={row} /> 
                         )
                   })
                   : <></>
