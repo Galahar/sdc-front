@@ -69,61 +69,7 @@ function Table({ columns, data, update,hasMoreData}) {
 }
 
 const Teamspage = () => {
-    const [post, setPost] = React.useState(null);
-    const [nextLink,setNext] = React.useState(null);
-    const [switchState,setSwitch] = React.useState(true)
-    const [champData,setChamp] = React.useState(null);
 
-    useEffect(() => {
-        axios.get(baseURL + 'statistics/?page=1')
-		.then(response => {
-			setPost(response.data.results);
-            setNext(response.data.next);
-		}).catch(errors => {
-			console.log("error loading match data")
-			console.log(errors)
-		});
-
-        axios.get(baseURL + 'champions/')
-		.then(response => {
-			setChamp(response.data);
-            // console.log("Champ : ",response.data)
-		}).catch(errors => {
-			console.log("error loading match data")
-			console.log(errors)
-		});
-
-      },[]);
-	// if (!post)
-    const columns = React.useMemo(
-        () => [
-            {
-                Header: ' ',
-                hideHeader:false,
-                columns: [
-                    {
-                        Header: 'Name',
-                        accessor: 'name'
-                    },
-                ],
-            },
-        ],
-        []
-    );
-    const fetchMoreData = () => {
-        setTimeout(()=>{
-            axios.get(nextLink)
-            .then(response => {
-                setPost(post.concat(response.data.results));
-                setNext(response.data.next)
-                // console.log("newData: ",response.data)
-            }).catch(errors => {
-                console.log("error loading match data")
-                console.log(errors)
-            });
-        })
-    }
-    const data = React.useMemo(()=> post,[post])
 
     return (
         <>
