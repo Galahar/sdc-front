@@ -68,7 +68,7 @@ import React, { useEffect } from "react";
 //     )
 // }
 
-const Teamspage = () => {
+function Teamspage(){
 
 
     return (
