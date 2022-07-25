@@ -21,7 +21,7 @@ import icon from '../assets/illustrations/headshot-icon.png'
 import picture from "../assets/illustrations/icons8-fantasy-100.png"
 import coin from "../assets/illustrations/icons8-coins-96.png"
 
-import ChampCard from "../components/championCard/championCard";
+// import ChampCard from "../components/championCard/championCard";
 
 
 // C:\Users\Adaxiom\Desktop\sdc-front\src\pageStyles\bootstrap.min.css
@@ -255,7 +255,9 @@ const Teamspage = () => {
                                     <h4 className="profile-title" style={{ fontFamily: 'Yusei Magic' }}>Player's Profile</h4>
                                     <Table columns={columns} data={data} update={fetchMoreData} hasMoreData={nextLink? true: false} />
                                     </>:null)
-                                    : <> <ChampCard championsData={champData}/> </>
+                                    : <> 
+                                    {/* <ChampCard championsData={champData}/>  */}
+                                    </>
                                 }
                                
                         </Row>
