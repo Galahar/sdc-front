@@ -5,7 +5,7 @@ import React, { useEffect } from "react";
 // import axios from "axios";
 // import { useTable, useFilters, useGlobalFilter } from 'react-table'
 // import InfiniteScroll from "react-infinite-scroll-component";
-import { TopContainer, BackgroundContainer, TeamsContainer, TeamsInnerContainer,ITC} from "../pageStyles/profile";
+// import { TopContainer, BackgroundContainer, TeamsContainer, TeamsInnerContainer,ITC} from "../pageStyles/profile";
 // import KdaCanvas from "../components/profileComponents/kdCanvas";
 // import AvgKdaCanvas from "../components/profileComponents/avgKdaCanvas";
 // import ScoreCard from "../components/profileComponents/scoreCard";
@@ -73,11 +73,11 @@ const Teamspage = () => {
 
     return (
         <>
-        
-            <TopContainer>
+        hell
+            {/* <TopContainer>
                 <BackgroundContainer>
                 <TeamsContainer>
-                        <TeamsInnerContainer>
+                        <TeamsInnerContainer> */}
                         {/* <Row className="btn-group">
                                     <button className="col-6 button-1" onClick={(e)=>{setSwitch(true)}} style={switchState?{backgroundColor:"#F1B317"}:{backgroundColor:"rgb(98, 70, 4)"}}>Players</button>
                                     <button className="col-6 button-2" onClick={(e)=>{setSwitch(false)}} style={!switchState?{backgroundColor:"#F1B317"}:{backgroundColor:"rgb(98, 70, 4)"}}>Champions</button>
@@ -94,12 +94,12 @@ const Teamspage = () => {
                                 }
                                
                         </Row> */}
-                                </TeamsInnerContainer>
+                                {/* </TeamsInnerContainer>
                                 </TeamsContainer>
                                 
                 </BackgroundContainer>
                 
-            </TopContainer>
+            </TopContainer> */}
             
             {/* <Navbar />
             <Footer /> */}
