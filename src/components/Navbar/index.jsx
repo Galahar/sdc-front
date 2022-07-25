@@ -85,7 +85,7 @@ const Navbar = () => {
                             Teams
                         </NavLink>
                         <NavLink to='/profile_new' activestyle="true">
-                            Profile 
+                            Profile 3
                         </NavLink>
                         <NavLink to='/standings' activestyle="true">
                             Standings
