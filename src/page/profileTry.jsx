@@ -1,16 +1,16 @@
 // import React from "react";
-import Navbar from "../components/Navbar";
-import { Footer } from "../components/Footer";
+// import Navbar from "../components/Navbar";
+// import { Footer } from "../components/Footer";
 import React, { useEffect } from "react";
-import axios from "axios";
+// import axios from "axios";
 // import { useTable, useFilters, useGlobalFilter } from 'react-table'
 // import InfiniteScroll from "react-infinite-scroll-component";
 import { TopContainer, BackgroundContainer, TeamsContainer, TeamsInnerContainer,ITC} from "../pageStyles/profile";
 // import KdaCanvas from "../components/profileComponents/kdCanvas";
 // import AvgKdaCanvas from "../components/profileComponents/avgKdaCanvas";
 // import ScoreCard from "../components/profileComponents/scoreCard";
-import "../pageStyles/teams.js";
-import "../pageStyles/teams.css";
+// import "../pageStyles/teams.js";
+// import "../pageStyles/teams.css";
 // import "../pageStyles/profile.css";
 // import KillCard from "../components/profileComponents/killCard";
 // import teamIMG1 from "../assets/illustrations/team1.png";
@@ -101,8 +101,8 @@ const Teamspage = () => {
                 
             </TopContainer>
             
-            <Navbar />
-            <Footer />
+            {/* <Navbar />
+            <Footer /> */}
         </>
     );
 };
