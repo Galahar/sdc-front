@@ -1,7 +1,7 @@
 // import React from "react";
 // import Navbar from "../components/Navbar";
 // import { Footer } from "../components/Footer";
-import React, { useEffect } from "react";
+import React from "react";
 // import axios from "axios";
 // import { useTable, useFilters, useGlobalFilter } from 'react-table'
 // import InfiniteScroll from "react-infinite-scroll-component";
@@ -68,12 +68,12 @@ import React, { useEffect } from "react";
 //     )
 // }
 
-function Teamspage(){
+function ProfilePage(){
 
 
     return (
         <>
-        hell
+        <h1>hell</h1>
             {/* <TopContainer>
                 <BackgroundContainer>
                 <TeamsContainer>
@@ -107,4 +107,4 @@ function Teamspage(){
     );
 };
 
-export default Teamspage;
+export default ProfilePage;
