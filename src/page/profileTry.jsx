@@ -3,13 +3,12 @@ import Navbar from "../components/Navbar";
 import { Footer } from "../components/Footer";
 import React, { useEffect } from "react";
 import axios from "axios";
-// import { useTable, useFilters, useGlobalFilter } from 'react-table'
-// import InfiniteScroll from "react-infinite-scroll-component";
-import { TopContainer, BackgroundContainer, TeamsContainer, TeamsInnerContainer, 
-    ITC} from "../pageStyles/profile";
-import KdaCanvas from "../components/profileComponents/kdCanvas";
-import AvgKdaCanvas from "../components/profileComponents/avgKdaCanvas";
-import ScoreCard from "../components/profileComponents/scoreCard";
+import { useTable, useFilters, useGlobalFilter } from 'react-table'
+import InfiniteScroll from "react-infinite-scroll-component";
+import { TopContainer, BackgroundContainer, TeamsContainer, TeamsInnerContainer,ITC} from "../pageStyles/profile";
+// import KdaCanvas from "../components/profileComponents/kdCanvas";
+// import AvgKdaCanvas from "../components/profileComponents/avgKdaCanvas";
+// import ScoreCard from "../components/profileComponents/scoreCard";
 import "../pageStyles/teams.js";
 import "../pageStyles/teams.css";
 import "../pageStyles/profile.css";
@@ -25,49 +24,121 @@ import ChampCard from "../components/championCard/championCard";
 
 
 // C:\Users\Adaxiom\Desktop\sdc-front\src\pageStyles\bootstrap.min.css
-const baseURL = "https://api.sdcleague.com/api/";
-// const baseURL = "http://127.0.0.1:8000/api/";
+// const baseURL = "https://api.sdcleague.com/api/";
+const baseURL = "http://127.0.0.1:8000/api/";
 
-// function Table({ columns, data, update,hasMoreData}) {
-//     const [selectedId, setSelectedId] = React.useState(0)
-// 	const defaultColumn = React.useMemo(
-//         () => ({
-//             // Filter: DefaultColumnFilter,
-//         }),
-//         []
-//     )
+function Table({ columns, data, update,hasMoreData}) {
+    const [selectedId, setSelectedId] = React.useState(0)
+	const defaultColumn = React.useMemo(
+        () => ({
+            // Filter: DefaultColumnFilter,
+        }),
+        []
+    )
 
-//     const {
-//         getTableProps,
-//         getTableBodyProps,
-//         headerGroups,
-//         rows,
-//         prepareRow,
-//     } = useTable(
-//         {
-//             columns,
-//             data,
-//             defaultColumn
-//         },
-//         useFilters,
-//         useGlobalFilter
-//     )
-//     const getCellValue = (e, j) => {
-//         // console.log(e.row.id);
-//         // setCellValue((cellvalue) =>
-//         //   cellvalue === "blue" ? (cellvalue = "red") : (cellvalue = "blue")
-//         // );
-//         setSelectedId(e.row.id)
-//         // setColumn(j)
-//       };
+    const {
+        getTableProps,
+        getTableBodyProps,
+        headerGroups,
+        rows,
+        prepareRow,
+    } = useTable(
+        {
+            columns,
+            data,
+            defaultColumn
+        },
+        useFilters,
+        useGlobalFilter
+    )
+    const getCellValue = (e, j) => {
+        // console.log(e.row.id);
+        // setCellValue((cellvalue) =>
+        //   cellvalue === "blue" ? (cellvalue = "red") : (cellvalue = "blue")
+        // );
+        setSelectedId(e.row.id)
+        // setColumn(j)
+      };
 
-//     return (
-//         // <Container>
-//         <div className="containr">
-           
-//          </div>
-//     )
-// }
+    return (
+        // <Container>
+        <div className="containr">
+             <Row>
+            {/* <div className="row"> */}
+            {/* <button className="champ-button">champions</button> */}
+            {/* <div className="customButton" style={{width:"8%", float:"left"}}>
+                <button className="champ-button"><div className="buttonText">Champion</div></button>
+                <button className="champ-button"><div className="buttonText">Role</div></button>
+                <button className="champ-button"><div className="buttonText">champions</div></button>
+            </div> */}
+            {/* <div id="customScrollTable" className="customScrollTable col-xl-2 col-ml-3 col-xs-4" > */}
+            <Col xl={3} lg={3} xs={12}>
+                <InfiniteScroll
+                className="customScroll"
+                height={"700px"}
+                dataLength={rows.length}
+                next={update}
+                hasMore={hasMoreData}
+                loader={
+                    <h3 style={{ textAlign: 'center' }}>
+                        <b>Loading more data...</b>
+                    </h3>}
+                scrollableTarget={'customScrollTable'}
+                scrollThreshold={0.96}
+                endMessage={
+                    hasMoreData==undefined?
+                        <p style={{ textAlign: 'center' }}>
+                        <b>Loading Data ...</b>
+                        </p> : 
+                        <p style={{ textAlign: 'center' }}>
+                        <b>All The Data has been loaded</b>
+                        </p>
+                        }
+                >
+                <table  {...getTableProps()} style={{borderCollapse:"collapse", width:"100%"}} >
+                    <thead  >
+                        {headerGroups.map(headerGroup => (
+                            <tr  {...headerGroup.getHeaderGroupProps()}   >
+                                {headerGroup.headers.map(column => {
+                                    return column.hideHeader === false ? null :(
+                                    <th {...column.getHeaderProps()} style={{position:"sticky",top:"0",zIndex:"0",paddingTop:"10px",borderBottom:"2px solid rgb(98, 70, 4)",backgroundColor:"black"}} >
+                                        {column.render('Header')}
+                                        {/* Render the columns filter UI */}
+                                        
+                                        {/* <div> {column.canFilter ? column.render('Filter') : null}</div> */}
+                                    </th>
+                                );
+                                })}
+                            </tr>
+                        ))}
+                    
+                    </thead>
+                    <tbody className="profileTable" {...getTableBodyProps()}>
+                        {rows.map((row, i) => {
+                            prepareRow(row)
+                            return (
+                                <tr {...row.getRowProps()} style={{textAlign:"end"}} >
+                                    {row.cells.map((cell,j) => {
+                                        return <td {...cell.getCellProps()} style={{textAlign:"center",background: selectedId==row.id?'rgb(98, 70, 4)':'none',textAlign:"center"}} onClick={() => getCellValue(cell,j)}>{cell.render('Cell')}</td>
+                                    })}
+                                </tr>
+                            )
+                        })}
+                    </tbody>
+                </table>
+                </InfiniteScroll>
+                </Col>
+            {/* </div> */}
+
+            {/* <div className=" col-md-10 col-xl-10" > */}
+            <Col xl={9} lg={9} xs={12}>
+                {/* {console.log("data : ",data[selectedId])} */}
+               
+             </Col>
+        </Row>
+         </div>
+    )
+}
 
 const Teamspage = () => {
     const [post, setPost] = React.useState(null);
@@ -143,11 +214,9 @@ const Teamspage = () => {
                                     post ?
                                     <>
                                     <h4 className="profile-title" style={{ fontFamily: 'Yusei Magic' }}>Player's Profile</h4>
-                                    {/* <Table columns={columns} data={data} update={fetchMoreData} hasMoreData={nextLink? true: false} /> */}
+                                    <Table columns={columns} data={data} update={fetchMoreData} hasMoreData={nextLink? true: false} />
                                     </>:null)
-                                    : <> 
-                                    <ChampCard championsData={champData}/> 
-                                    </>
+                                    : <> <ChampCard championsData={champData}/> </>
                                 }
                                
                         </Row>
