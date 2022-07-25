@@ -25,8 +25,8 @@ import ChampCard from "../components/championCard/championCard";
 
 
 // C:\Users\Adaxiom\Desktop\sdc-front\src\pageStyles\bootstrap.min.css
-// const baseURL = "https://api.sdcleague.com/api/";
-const baseURL = "http://127.0.0.1:8000/api/";
+const baseURL = "https://api.sdcleague.com/api/";
+// const baseURL = "http://127.0.0.1:8000/api/";
 
 function Table({ columns, data, update,hasMoreData}) {
     const [selectedId, setSelectedId] = React.useState(0)
@@ -143,7 +143,7 @@ const Teamspage = () => {
                                     post ?
                                     <>
                                     <h4 className="profile-title" style={{ fontFamily: 'Yusei Magic' }}>Player's Profile</h4>
-                                    <Table columns={columns} data={data} update={fetchMoreData} hasMoreData={nextLink? true: false} />
+                                    {/* <Table columns={columns} data={data} update={fetchMoreData} hasMoreData={nextLink? true: false} /> */}
                                     </>:null)
                                     : <> 
                                     <ChampCard championsData={champData}/> 
