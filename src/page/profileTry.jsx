@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 import { Footer } from "../components/Footer";
 import React, { useEffect } from "react";
 import axios from "axios";
-import { useTable, useFilters, useGlobalFilter } from 'react-table'
+// import { useTable, useFilters, useGlobalFilter } from 'react-table'
 // import InfiniteScroll from "react-infinite-scroll-component";
 import { TopContainer, BackgroundContainer, TeamsContainer, TeamsInnerContainer, 
     ITC} from "../pageStyles/profile";
@@ -28,46 +28,46 @@ import ChampCard from "../components/championCard/championCard";
 const baseURL = "https://api.sdcleague.com/api/";
 // const baseURL = "http://127.0.0.1:8000/api/";
 
-function Table({ columns, data, update,hasMoreData}) {
-    const [selectedId, setSelectedId] = React.useState(0)
-	const defaultColumn = React.useMemo(
-        () => ({
-            // Filter: DefaultColumnFilter,
-        }),
-        []
-    )
+// function Table({ columns, data, update,hasMoreData}) {
+//     const [selectedId, setSelectedId] = React.useState(0)
+// 	const defaultColumn = React.useMemo(
+//         () => ({
+//             // Filter: DefaultColumnFilter,
+//         }),
+//         []
+//     )
 
-    const {
-        getTableProps,
-        getTableBodyProps,
-        headerGroups,
-        rows,
-        prepareRow,
-    } = useTable(
-        {
-            columns,
-            data,
-            defaultColumn
-        },
-        useFilters,
-        useGlobalFilter
-    )
-    const getCellValue = (e, j) => {
-        // console.log(e.row.id);
-        // setCellValue((cellvalue) =>
-        //   cellvalue === "blue" ? (cellvalue = "red") : (cellvalue = "blue")
-        // );
-        setSelectedId(e.row.id)
-        // setColumn(j)
-      };
+//     const {
+//         getTableProps,
+//         getTableBodyProps,
+//         headerGroups,
+//         rows,
+//         prepareRow,
+//     } = useTable(
+//         {
+//             columns,
+//             data,
+//             defaultColumn
+//         },
+//         useFilters,
+//         useGlobalFilter
+//     )
+//     const getCellValue = (e, j) => {
+//         // console.log(e.row.id);
+//         // setCellValue((cellvalue) =>
+//         //   cellvalue === "blue" ? (cellvalue = "red") : (cellvalue = "blue")
+//         // );
+//         setSelectedId(e.row.id)
+//         // setColumn(j)
+//       };
 
-    return (
-        // <Container>
-        <div className="containr">
+//     return (
+//         // <Container>
+//         <div className="containr">
            
-         </div>
-    )
-}
+//          </div>
+//     )
+// }
 
 const Teamspage = () => {
     const [post, setPost] = React.useState(null);
