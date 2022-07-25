@@ -12,7 +12,7 @@ import AllStatisticspage from "./page/allStatistics";
 import Aboutuspage from "./page/aboutus";
 import "./App.css";
 import ScrollIntoView from "./components/ScrollIntoView/ScrollIntoView";
-// import ProfilePage from "./page/profileTry";
+import ProfilePage from "./page/profileTry";
 
 function App() {
   return (
