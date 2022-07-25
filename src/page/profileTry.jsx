@@ -11,10 +11,10 @@ import { TopContainer, BackgroundContainer, TeamsContainer, TeamsInnerContainer,
 // import ScoreCard from "../components/profileComponents/scoreCard";
 import "../pageStyles/teams.js";
 import "../pageStyles/teams.css";
-import "../pageStyles/profile.css";
+// import "../pageStyles/profile.css";
 // import KillCard from "../components/profileComponents/killCard";
 // import teamIMG1 from "../assets/illustrations/team1.png";
-import "../components/profileComponents/style.css"
+// import "../components/profileComponents/style.css"
 // import { Row, Col, Alert, Container} from "react-bootstrap";
 // import icon from '../assets/illustrations/headshot-icon.png'
 // import picture from "../assets/illustrations/icons8-fantasy-100.png"
