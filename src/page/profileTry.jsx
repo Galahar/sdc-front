@@ -4,7 +4,7 @@ import { Footer } from "../components/Footer";
 import React, { useEffect } from "react";
 import axios from "axios";
 import { useTable, useFilters, useGlobalFilter } from 'react-table'
-import InfiniteScroll from "react-infinite-scroll-component";
+// import InfiniteScroll from "react-infinite-scroll-component";
 import { TopContainer, BackgroundContainer, TeamsContainer, TeamsInnerContainer, 
     ITC} from "../pageStyles/profile";
 import KdaCanvas from "../components/profileComponents/kdCanvas";
