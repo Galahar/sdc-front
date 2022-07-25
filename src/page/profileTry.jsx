@@ -12,13 +12,13 @@ import { TopContainer, BackgroundContainer, TeamsContainer, TeamsInnerContainer,
 import "../pageStyles/teams.js";
 import "../pageStyles/teams.css";
 import "../pageStyles/profile.css";
-import KillCard from "../components/profileComponents/killCard";
+// import KillCard from "../components/profileComponents/killCard";
 // import teamIMG1 from "../assets/illustrations/team1.png";
 import "../components/profileComponents/style.css"
-import { Row, Col, Alert, Container} from "react-bootstrap";
-import icon from '../assets/illustrations/headshot-icon.png'
-import picture from "../assets/illustrations/icons8-fantasy-100.png"
-import coin from "../assets/illustrations/icons8-coins-96.png"
+// import { Row, Col, Alert, Container} from "react-bootstrap";
+// import icon from '../assets/illustrations/headshot-icon.png'
+// import picture from "../assets/illustrations/icons8-fantasy-100.png"
+// import coin from "../assets/illustrations/icons8-coins-96.png"
 
 import ChampCard from "../components/championCard/championCard";
 
@@ -63,79 +63,7 @@ function Table({ columns, data, update,hasMoreData}) {
     return (
         // <Container>
         <div className="containr">
-             <Row>
-            {/* <div className="row"> */}
-            {/* <button className="champ-button">champions</button> */}
-            {/* <div className="customButton" style={{width:"8%", float:"left"}}>
-                <button className="champ-button"><div className="buttonText">Champion</div></button>
-                <button className="champ-button"><div className="buttonText">Role</div></button>
-                <button className="champ-button"><div className="buttonText">champions</div></button>
-            </div> */}
-            {/* <div id="customScrollTable" className="customScrollTable col-xl-2 col-ml-3 col-xs-4" > */}
-            <Col xl={3} lg={3} xs={12}>
-                <InfiniteScroll
-                className="customScroll"
-                height={"700px"}
-                dataLength={rows.length}
-                next={update}
-                hasMore={hasMoreData}
-                loader={
-                    <h3 style={{ textAlign: 'center' }}>
-                        <b>Loading more data...</b>
-                    </h3>}
-                scrollableTarget={'customScrollTable'}
-                scrollThreshold={0.96}
-                endMessage={
-                    hasMoreData==undefined?
-                        <p style={{ textAlign: 'center' }}>
-                        <b>Loading Data ...</b>
-                        </p> : 
-                        <p style={{ textAlign: 'center' }}>
-                        <b>All The Data has been loaded</b>
-                        </p>
-                        }
-                >
-                <table  {...getTableProps()} style={{borderCollapse:"collapse", width:"100%"}} >
-                    <thead  >
-                        {headerGroups.map(headerGroup => (
-                            <tr  {...headerGroup.getHeaderGroupProps()}   >
-                                {headerGroup.headers.map(column => {
-                                    return column.hideHeader === false ? null :(
-                                    <th {...column.getHeaderProps()} style={{position:"sticky",top:"0",zIndex:"0",paddingTop:"10px",borderBottom:"2px solid rgb(98, 70, 4)",backgroundColor:"black"}} >
-                                        {column.render('Header')}
-                                        {/* Render the columns filter UI */}
-                                        
-                                        {/* <div> {column.canFilter ? column.render('Filter') : null}</div> */}
-                                    </th>
-                                );
-                                })}
-                            </tr>
-                        ))}
-                    
-                    </thead>
-                    <tbody className="profileTable" {...getTableBodyProps()}>
-                        {rows.map((row, i) => {
-                            prepareRow(row)
-                            return (
-                                <tr {...row.getRowProps()} style={{textAlign:"end"}} >
-                                    {row.cells.map((cell,j) => {
-                                        return <td {...cell.getCellProps()} style={{textAlign:"center",background: selectedId==row.id?'rgb(98, 70, 4)':'none',textAlign:"center"}} onClick={() => getCellValue(cell,j)}>{cell.render('Cell')}</td>
-                                    })}
-                                </tr>
-                            )
-                        })}
-                    </tbody>
-                </table>
-                </InfiniteScroll>
-                </Col>
-            {/* </div> */}
-
-            {/* <div className=" col-md-10 col-xl-10" > */}
-            <Col xl={9} lg={9} xs={12}>
-                {/* {console.log("data : ",data[selectedId])} */}
-               
-             </Col>
-        </Row>
+             
          </div>
     )
 }
@@ -204,7 +132,7 @@ const Teamspage = () => {
                 <BackgroundContainer>
                 <TeamsContainer>
                         <TeamsInnerContainer>
-                        <Row className="btn-group">
+                        {/* <Row className="btn-group">
                                     <button className="col-6 button-1" onClick={(e)=>{setSwitch(true)}} style={switchState?{backgroundColor:"#F1B317"}:{backgroundColor:"rgb(98, 70, 4)"}}>Players</button>
                                     <button className="col-6 button-2" onClick={(e)=>{setSwitch(false)}} style={!switchState?{backgroundColor:"#F1B317"}:{backgroundColor:"rgb(98, 70, 4)"}}>Champions</button>
                         </Row>
@@ -219,7 +147,7 @@ const Teamspage = () => {
                                     : <> <ChampCard championsData={champData}/> </>
                                 }
                                
-                        </Row>
+                        </Row> */}
                                 </TeamsInnerContainer>
                                 </TeamsContainer>
                                 
