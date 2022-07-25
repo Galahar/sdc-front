@@ -21,7 +21,7 @@ import icon from '../assets/illustrations/headshot-icon.png'
 import picture from "../assets/illustrations/icons8-fantasy-100.png"
 import coin from "../assets/illustrations/icons8-coins-96.png"
 
-// import ChampCard from "../components/championCard/championCard";
+import ChampCard from "../components/championCard/championCard";
 
 
 // C:\Users\Adaxiom\Desktop\sdc-front\src\pageStyles\bootstrap.min.css
@@ -64,117 +64,7 @@ function Table({ columns, data, update,hasMoreData}) {
     return (
         // <Container>
         <div className="containr">
-             <Row>
-            {/* <div className="row"> */}
-            {/* <button className="champ-button">champions</button> */}
-            {/* <div className="customButton" style={{width:"8%", float:"left"}}>
-                <button className="champ-button"><div className="buttonText">Champion</div></button>
-                <button className="champ-button"><div className="buttonText">Role</div></button>
-                <button className="champ-button"><div className="buttonText">champions</div></button>
-            </div> */}
-            {/* <div id="customScrollTable" className="customScrollTable col-xl-2 col-ml-3 col-xs-4" > */}
-            <Col xl={3} lg={3} xs={12}>
-                <InfiniteScroll
-                className="customScroll"
-                height={"700px"}
-                dataLength={rows.length}
-                next={update}
-                hasMore={hasMoreData}
-                loader={
-                    <h3 style={{ textAlign: 'center' }}>
-                        <b>Loading more data...</b>
-                    </h3>}
-                scrollableTarget={'customScrollTable'}
-                scrollThreshold={0.96}
-                endMessage={
-                    hasMoreData==undefined?
-                        <p style={{ textAlign: 'center' }}>
-                        <b>Loading Data ...</b>
-                        </p> : 
-                        <p style={{ textAlign: 'center' }}>
-                        <b>All The Data has been loaded</b>
-                        </p>
-                        }
-                >
-                <table  {...getTableProps()} style={{borderCollapse:"collapse", width:"100%"}} >
-                    <thead  >
-                        {headerGroups.map(headerGroup => (
-                            <tr  {...headerGroup.getHeaderGroupProps()}   >
-                                {headerGroup.headers.map(column => {
-                                    return column.hideHeader === false ? null :(
-                                    <th {...column.getHeaderProps()} style={{position:"sticky",top:"0",zIndex:"0",paddingTop:"10px",borderBottom:"2px solid rgb(98, 70, 4)",backgroundColor:"black"}} >
-                                        {column.render('Header')}
-                                        {/* Render the columns filter UI */}
-                                        
-                                        {/* <div> {column.canFilter ? column.render('Filter') : null}</div> */}
-                                    </th>
-                                );
-                                })}
-                            </tr>
-                        ))}
-                    
-                    </thead>
-                    <tbody className="profileTable" {...getTableBodyProps()}>
-                        {rows.map((row, i) => {
-                            prepareRow(row)
-                            return (
-                                <tr {...row.getRowProps()} style={{textAlign:"end"}} >
-                                    {row.cells.map((cell,j) => {
-                                        return <td {...cell.getCellProps()} style={{textAlign:"center",background: selectedId==row.id?'rgb(98, 70, 4)':'none',textAlign:"center"}} onClick={() => getCellValue(cell,j)}>{cell.render('Cell')}</td>
-                                    })}
-                                </tr>
-                            )
-                        })}
-                    </tbody>
-                </table>
-                </InfiniteScroll>
-                </Col>
-            {/* </div> */}
-
-            {/* <div className=" col-md-10 col-xl-10" > */}
-            <Col xl={9} lg={9} xs={12}>
-                {/* {console.log("data : ",data[selectedId])} */}
-                <Row >
-                    {/* <div className="col-xl-4 col-md-6 col-xs-8"> */}
-                    <Col xl={4} md={6}  xs={12}>
-                        <KdaCanvas  playerData={data[selectedId]}/>
-                    </Col>
-                    <Col xl={4} md={6}  xs={12}>
-                        <AvgKdaCanvas  playerData={data[selectedId]}/>
-                    </Col>
-                    <Col xl={4} md={4}  xs={12}>
-                        <ScoreCard  playerData={data[selectedId]}/>
-                    </Col>
-                    <Col xl={3} md={4} ms={3} xs={12}>
-                        <KillCard playerData={data[selectedId]} image={picture} title={"Average Fantasy"} avg={data[selectedId].average_fantasy}
-                        label_1={"jungle ≈"} text_1={data[selectedId].jungle_prox} 
-                        label_2={"enemy jungle ≈"} text_2={data[selectedId].enemy_jungle_prox} 
-                        label_3={"vision score"} text_3={data[selectedId].vision_score} />
-                    </Col>
-                    <Col xl={3} md={4} ms={3} xs={12}>
-                        <KillCard playerData={data[selectedId]} image={icon} title={"Damage Per Minute"} avg={data[selectedId].dpm}
-                            label_1={"TOTAL DAMAGE"} text_1={data[selectedId].damage} label_2={"Damage Share"} text_2={data[selectedId].damage_share} label_3={"Damage Taken"} text_3={data[selectedId].damage_taken}
-                        />
-                    </Col>
-                    <Col xl={3} md={4} ms={3} xs={12}>
-                        <KillCard playerData={data[selectedId]} image={coin} title={"Total Gold"} avg={data[selectedId].total_gold}
-                            label_1={"gold share"} text_1={data[selectedId].gold_share} label_2={"gold diff 15"} text_2={data[selectedId].gold_diff_15} label_3={"d gold"} text_3={data[selectedId].d_gold}
-                        />
-                    </Col>
-                    <Col xl={3} md={4} ms={3} xs={12}>
-                        <KillCard playerData={data[selectedId]} image={icon} title={"Avg Vision Wards"} avg={data[selectedId].avg_vision_wards}
-                            label_1={"vision wards"} text_1={data[selectedId].vision_wards} 
-                            label_2={"wards placed"} text_2={data[selectedId].wards_placed} 
-                            label_3={"wards killed"} text_3={data[selectedId].wards_killed}
-                        />
-                    </Col>
-                    {/* "vision_wards": "91",
-            "avg_vision_wards": "2.9",
-            "wards_placed": "360",
-            "wards_killed": "119", */}
-                </Row>
-             </Col>
-        </Row>
+           
          </div>
     )
 }
@@ -256,7 +146,7 @@ const Teamspage = () => {
                                     <Table columns={columns} data={data} update={fetchMoreData} hasMoreData={nextLink? true: false} />
                                     </>:null)
                                     : <> 
-                                    {/* <ChampCard championsData={champData}/>  */}
+                                    <ChampCard championsData={champData}/> 
                                     </>
                                 }
                                
