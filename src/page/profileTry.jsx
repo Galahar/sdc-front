@@ -176,6 +176,7 @@ function Table({ columns, data, update,hasMoreData}) {
              </Col>
         </Row>
          </div>
+         
     )
 }
 
