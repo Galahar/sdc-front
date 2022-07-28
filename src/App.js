@@ -13,8 +13,8 @@ import Aboutuspage from "./page/aboutus";
 import "./App.css";
 import ScrollIntoView from "./components/ScrollIntoView/ScrollIntoView";
 // import Profile from "./page/profile";
-// import ProfileTry from "./page/profileTry"
-import NewPage from "./page/newPage";
+import ProfileTry from "./page/profileTry"
+// import NewPage from "./page/newPage";
 
 function App() {
   return (
@@ -27,7 +27,7 @@ function App() {
           <Route path='/schedule' exact component={Schedulepage} />
           <Route path='/match' exact component={Matchpage} />
           <Route path='/game' exact component={Gamepage} />
-          <Route path='/profile k' exact component={NewPage} />
+          <Route path='/profile' exact component={ProfileTry} />
           <Route path='/teams' exact component={Teamspage} />
           <Route path='/standings' exact component={Standingspage} />
           <Route path='/statistics' exact component={Statisticspage} />

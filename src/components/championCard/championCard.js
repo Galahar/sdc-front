@@ -1,9 +1,9 @@
 import "./style.css"
-import Card from 'react-bootstrap/Card';
-import champ from "../../assets/illustrations/champions/aatrox.jpg"
+// import Card from 'react-bootstrap/Card';
+// import champ from "../../assets/illustrations/champions/aatrox.jpg"
 const SingleCard =(props)=>{
     return(
-        props.data != undefined?
+        props.data !== undefined?
             //  <div className="row" >
             <div className="col-xs-12 col-sm-6 col-md-4 col-xl-3" >
                 <div className="image-flip" >

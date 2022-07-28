@@ -5,8 +5,7 @@ import React, { useEffect } from "react";
 import axios from "axios";
 import { useTable, useFilters, useGlobalFilter } from 'react-table'
 import InfiniteScroll from "react-infinite-scroll-component";
-import { TopContainer, BackgroundContainer, TeamsContainer, TeamsInnerContainer, 
-    ITC} from "../pageStyles/profile";
+import { TopContainer, BackgroundContainer, TeamsContainer, TeamsInnerContainer} from "../pageStyles/profile";
 import KdaCanvas from "../components/profileComponents/kdCanvas";
 import AvgKdaCanvas from "../components/profileComponents/avgKdaCanvas";
 import ScoreCard from "../components/profileComponents/scoreCard";
@@ -16,7 +15,7 @@ import "../pageStyles/profile.css";
 import KillCard from "../components/profileComponents/killCard";
 // import teamIMG1 from "../assets/illustrations/team1.png";
 import "../components/profileComponents/style.css"
-import { Row, Col, Alert, Container} from "react-bootstrap";
+import { Row, Col} from "react-bootstrap";
 import icon from '../assets/illustrations/headshot-icon.png'
 import picture from "../assets/illustrations/icons8-fantasy-100.png"
 import coin from "../assets/illustrations/icons8-coins-96.png"
@@ -87,7 +86,7 @@ function Table({ columns, data, update,hasMoreData}) {
                 scrollableTarget={'customScrollTable'}
                 scrollThreshold={0.96}
                 endMessage={
-                    hasMoreData==undefined?
+                    hasMoreData===undefined?
                         <p style={{ textAlign: 'center' }}>
                         <b>Loading Data ...</b>
                         </p> : 
@@ -120,7 +119,7 @@ function Table({ columns, data, update,hasMoreData}) {
                             return (
                                 <tr {...row.getRowProps()} style={{textAlign:"end"}} >
                                     {row.cells.map((cell,j) => {
-                                        return <td {...cell.getCellProps()} style={{background: selectedId==row.id?'rgb(98, 70, 4)':'none',textAlign:"center"}} onClick={() => getCellValue(cell,j)}>{cell.render('Cell')}</td>
+                                        return <td {...cell.getCellProps()} style={{background: selectedId===row.id?'rgb(98, 70, 4)':'none',textAlign:"center"}} onClick={() => getCellValue(cell,j)}>{cell.render('Cell')}</td>
                                     })}
                                 </tr>
                             )

@@ -1,6 +1,6 @@
 import "../../components/profileComponents/style.css"
 // import {icon} from "../../assets/illustrations/winrate-icon.png
-import icon from '../../assets/illustrations/headshot-icon.png'
+// import icon from '../../assets/illustrations/headshot-icon.png'
 export default function KillCard(props)
 {
     return(
