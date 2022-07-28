@@ -240,7 +240,7 @@ const Teamspage = () => {
     return (
         <>
         
-            <TopContainer>
+            {/* <TopContainer>
                 <BackgroundContainer>
                 <TeamsContainer>
                         <TeamsInnerContainer>
@@ -268,7 +268,8 @@ const Teamspage = () => {
             </TopContainer>
             
             <Navbar />
-            <Footer />
+            <Footer /> */}
+            <h1>Hello</h1>
         </>
     );
 };
