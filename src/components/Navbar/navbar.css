@@ -11,3 +11,6 @@
         opacity: 1;
     }
   }
+#navbar{
+    z-index: 3 !important;
+  }

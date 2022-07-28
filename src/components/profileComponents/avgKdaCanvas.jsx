@@ -66,7 +66,7 @@ export default function AvgKdaCanvas(playerData)
         <VictoryPie
             style={{
                         data: {  opacity: 1 },
-                        labels: { fontSize: 9,fill: "white",padding:6 },
+                        labels: { fontSize: 10,fill: "white",padding:4 },
                         // parent: { border: "1px solid #ccc" }
                     }}
             standalone={false}

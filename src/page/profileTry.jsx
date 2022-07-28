@@ -101,7 +101,7 @@ function Table({ columns, data, update,hasMoreData}) {
                             <tr  {...headerGroup.getHeaderGroupProps()}   >
                                 {headerGroup.headers.map(column => {
                                     return column.hideHeader === false ? null :(
-                                    <th {...column.getHeaderProps()} style={{position:"sticky",top:"0",zIndex:"0",paddingTop:"10px",borderBottom:"2px solid rgb(98, 70, 4)",backgroundColor:"black"}} >
+                                    <th {...column.getHeaderProps()} style={{position:"sticky",top:"0",zIndex:"1",paddingTop:"10px",borderBottom:"2px solid rgb(98, 70, 4)",backgroundColor:"black"}} >
                                         {column.render('Header')}
                                         {/* Render the columns filter UI */}
                                         
@@ -119,7 +119,8 @@ function Table({ columns, data, update,hasMoreData}) {
                             return (
                                 <tr {...row.getRowProps()} style={{textAlign:"end"}} >
                                     {row.cells.map((cell,j) => {
-                                        return <td {...cell.getCellProps()} style={{zIndex:"0",background: selectedId===row.id?'rgb(98, 70, 4)':'none',textAlign:"center"}} onClick={() => getCellValue(cell,j)}>{cell.render('Cell')}</td>
+                                        console.log(selectedId,"===",row.id)
+                                        return <td {...cell.getCellProps()} style={{zIndex:"0",background: (selectedId==row.id?'rgb(98, 70, 4)':'none'),textAlign:"center"}} onClick={() => getCellValue(cell,j)}>{cell.render('Cell')}</td>
                                     })}
                                 </tr>
                             )

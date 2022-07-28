@@ -25,7 +25,7 @@ export default function KdaCanvas(playerData)
 
                 style={{
                     data: {  opacity: 1 },
-                    labels: { fontSize: 11,fill: "white",padding:5  },
+                    labels: { fontSize: 12,fill: "white",padding:5  },
                     // parent: { border: "1px solid #ccc" }
                     }}
                     width={300} height={300}

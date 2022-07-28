@@ -2,7 +2,7 @@ tbody.profileTable td:hover{
     text-align: left;
     font-weight: normal;
     position: sticky;
-    background-color: rgba(0, 0, 0, 0.8) !important;
+    background-color: rgb(43, 38, 38,0.7) !important;
     left: 0px;
     /* top: 0; */
     z-index: 40;

@@ -13,7 +13,7 @@ thead th:first-child {
     text-align: left;
     font-weight: normal;
     position: sticky;
-    background-color: darkslategray !important;
+    background-color: darkslategray ;
     left: 0px;
     border-right: 2px solid rgb(98, 70, 4) !important;
     /* top: 0; */
