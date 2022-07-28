@@ -27,7 +27,7 @@ function App() {
           <Route path='/schedule' exact component={Schedulepage} />
           <Route path='/match' exact component={Matchpage} />
           <Route path='/game' exact component={Gamepage} />
-          <Route path='/profile' exact component={NewPage} />
+          <Route path='/profile k' exact component={NewPage} />
           <Route path='/teams' exact component={Teamspage} />
           <Route path='/standings' exact component={Standingspage} />
           <Route path='/statistics' exact component={Statisticspage} />
