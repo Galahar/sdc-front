@@ -10,7 +10,7 @@ export default function KillCard(props)
             </div>
             <div style={{float:"left",width:"40%"}}>
            {/* { console.log("image = ",props.image)} */}
-                <img src={props.image} height="40"  />
+                <img src={props.image} height="40" alt="missing" />
             </div>
             <div className="kill-percentage">
                 {(props.avg)}

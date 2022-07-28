@@ -12,7 +12,7 @@ const SingleCard =(props)=>{
                             <div className="card">
                                 <div >
                                 {/* {console.log("DATA : ",props.data != undefined? props.data.name : null)} */}
-                                    <img  src={"./assets/"+props.data.name+".jpg"} alt="card image"/>
+                                    <img  src={"./assets/"+props.data.name+".jpg"} alt="card-image12 "/>
                                     <h3 className="card-title text-center">{props.data.name}</h3>
                                     {/* <p className="card-text" style={{color:"black"}}>This is basic card with image on top, title, description and button.</p> */}
                                     {/* <a href="https://www.fiverr.com/share/qb8D02" className="btn btn-primary btn-sm"><i className="fa fa-plus"></i></a> */}

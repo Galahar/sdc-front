@@ -14,7 +14,7 @@ export default function ScoreCard(playerData)
                 Win Rate
             </div>
             <div style={{float:"left",width:"40%"}}>
-                <img src={icon} height="36"  />
+                <img src={icon} height="36" alt="missing" />
             </div>
             <div className="win-percentage">
                 {playerData.playerData.win}
