@@ -119,7 +119,7 @@ function Table({ columns, data, update,hasMoreData}) {
                             return (
                                 <tr {...row.getRowProps()} style={{textAlign:"end"}} >
                                     {row.cells.map((cell,j) => {
-                                        return <td {...cell.getCellProps()} style={{background: selectedId===row.id?'rgb(98, 70, 4)':'none',textAlign:"center"}} onClick={() => getCellValue(cell,j)}>{cell.render('Cell')}</td>
+                                        return <td {...cell.getCellProps()} style={{zIndex:"0",background: selectedId===row.id?'rgb(98, 70, 4)':'none',textAlign:"center"}} onClick={() => getCellValue(cell,j)}>{cell.render('Cell')}</td>
                                     })}
                                 </tr>
                             )
