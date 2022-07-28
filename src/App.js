@@ -12,7 +12,7 @@ import AllStatisticspage from "./page/allStatistics";
 import Aboutuspage from "./page/aboutus";
 import "./App.css";
 import ScrollIntoView from "./components/ScrollIntoView/ScrollIntoView";
-import Profile from "./page/profile";
+// import Profile from "./page/profile";
 // import ProfileTry from "./page/profileTry"
 
 function App() {
@@ -26,7 +26,7 @@ function App() {
           <Route path='/schedule' exact component={Schedulepage} />
           <Route path='/match' exact component={Matchpage} />
           <Route path='/game' exact component={Gamepage} />
-          <Route path='/profile' exact component={Profile} />
+          <Route path='/profile' exact component={Schedulepage} />
           <Route path='/teams' exact component={Teamspage} />
           <Route path='/standings' exact component={Standingspage} />
           <Route path='/statistics' exact component={Statisticspage} />
