@@ -39,7 +39,7 @@ export default class StandingsPage extends React.Component {
 	}
 
 	componentDidMount() {
-		let request = axios.get(baseURL + 'standings/?tournament__name=SDC Season 12')
+		let request = axios.get(baseURL + 'standings/?tournament__name=SDC Season 14')
 		axios.all([request]).then(axios.spread((...responses) => {
 			const response = responses[0].data
 			this.setState({ teams: response });
