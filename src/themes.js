@@ -6,7 +6,9 @@ export const theme = {
     fadedPastelGreen: '#60AB9A', // Greyish Pastel Green
     titleTextColor: "#00A8E8", // Darkish Blue
     textColor: "#FDFDFF", // White
+    lightishBlue: "#0083b5", // Lightish Blue
     lightBlue: "#00A8E8", // Light blue
     highlightPrimary: "#89D2DC",
-	ebony: "#624604"
+	ebony: "#624604",
+    highlightOrange: "#FF9508"
 }

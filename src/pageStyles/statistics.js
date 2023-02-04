@@ -53,7 +53,7 @@ export const StatsLinkHeader = styled.h2`
     text-transform: uppercase;
     text-align: center;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 35px;
     font-weight: 600;
     letter-spacing: .08em;
 `;

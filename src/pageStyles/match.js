@@ -105,7 +105,7 @@ export const IDATC = styled.div`
     flex-direction: row;
 	:hover {
 		cursor: pointer;
-		background-color: ${theme.lightBlue};
+		background-color: ${theme.lightishBlue};
         transition: all 0.5s ease-in-out;
 	}
 `;
@@ -129,7 +129,7 @@ export const IDC = styled.div`
 export const IDATCBlueMarginer = styled.div`
     min-width: 2px;
     min-height: 80px;
-    background-color: ${theme.lightBlue};
+    background-color: ${theme.lightishBlue};
     @media screen and (max-width: 768px) {
         min-width: 100%;
         min-height: 2px;

@@ -245,8 +245,8 @@ const Teamspage = () => {
                 <TeamsContainer>
                         <TeamsInnerContainer>
                         <Row className="btn-group">
-                                    <button className="col-6 button-1" onClick={(e)=>{setSwitch(true)}} style={switchState?{backgroundColor:"#F1B317"}:{backgroundColor:"rgb(98, 70, 4)"}}>Players</button>
-                                    <button className="col-6 button-2" onClick={(e)=>{setSwitch(false)}} style={!switchState?{backgroundColor:"#F1B317"}:{backgroundColor:"rgb(98, 70, 4)"}}>Champions</button>
+                                    <button className="col-6 button-1" onClick={(e)=>{setSwitch(true)}} style={switchState?{backgroundColor:"#0083b5"}:{backgroundColor:"#101D42"}}>Players</button>
+                                    <button className="col-6 button-2" onClick={(e)=>{setSwitch(false)}} style={!switchState?{backgroundColor:"#0083b5"}:{backgroundColor:"#101D42"}}>Champions</button>
                         </Row>
                         <Row>
                       

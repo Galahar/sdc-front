@@ -66,8 +66,8 @@ export const Label1 = styled.div`
     justify-content: center;
 	font-size: 20px;
     font-weight: 600;
-	color: ${theme.highlightPrimary};
-	background-color: ${theme.ebony};
+	color: ${theme.highlightOrange};
+	background-color: ${theme.mediumBlue};
 `;
 
 export const Labels = styled.div`
@@ -80,14 +80,14 @@ export const Labels = styled.div`
 	text-align: center;
 	font-size: 20px;
     font-weight: 600;
-	color: ${theme.highlightPrimary};
-	background-color: ${theme.ebony};
+	color: ${theme.highlightOrange};
+	background-color: ${theme.mediumBlue};
 `;
 
 export const TeamRowContainer = styled.div`
     width: 768px;
     min-height: 34px;
-    border-bottom: 2px solid ${theme.ebony};
+    border-bottom: 2px solid ${theme.mediumBlue};
     background-color: ${theme.primary};
     display: flex;
     flex-direction: row;
@@ -105,8 +105,8 @@ export const TeamNameText = styled.div`
     justify-content: center;
 	font-size: 20px;
     font-weight: 600;
-	border-left: 1px dashed ${theme.ebony};
-	border-right: 1px dashed ${theme.ebony};
+	border-left: 3px inset ${theme.mediumBlue};
+	border-right: 3px inset ${theme.mediumBlue};
 `;
 
 /* ScoreContainers */
@@ -119,5 +119,5 @@ export const SC = styled.div`
     justify-content: center;
 	font-size: 20px;
     font-weight: 600;
-	border-right: 1px dashed ${theme.ebony};
+	border-right: 3px inset ${theme.mediumBlue};
 `;

@@ -6,7 +6,7 @@ import backgroundImage from "../assets/illustrations/homepageContentIMG.jpg";
 export const BackgroundContainer = styled.div`
     width: 100%;
     height: 100%;
-    background-color: rgba(55, 55, 55, 0.6);
+    background-color: rgba(55, 55, 55, 0.4);
     display: flex;
     flex-direction: column;
     align-items: center;
