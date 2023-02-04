@@ -32,9 +32,9 @@ export default class Schedulepage extends React.Component {
     }
 
     getMatches(range) {
-        axios.get(baseURL + 'schedule/?dategte=' + 
+        axios.get(baseURL + 'schedule/?date__gte=' + 
         this.state.range.from.toISOString().split('T')[0] + 
-        '&datelte=' + 
+        '&date__lte=' + 
         this.state.range.to.toISOString().split('T')[0])
           .then(res => {
             const matchData = res.data;
