@@ -26,7 +26,14 @@ export default class Schedulepage extends React.Component {
 	}
 	
 	componentDidMount() {
-		axios.get(baseURL + 'schedule/')
+		this.getMatches()
+	}
+	
+	getMatches() {
+		axios.get(baseURL + 'schedule/?date__gte=' + 
+		this.state.range.from.toISOString().split('T')[0] + 
+		'&date__lte=' + 
+		this.state.range.to.toISOString().split('T')[0])
 		  .then(res => {
 			const matchData = res.data;
 			this.setState({range: this.state.range, matches: matchData});
@@ -37,6 +44,7 @@ export default class Schedulepage extends React.Component {
 		const from = new Date();
 		from.setHours(0);
 		const to = new Date();
+		to.setDate(to.getDate() + 7);
 		to.setHours(23);
 		return {
 		  from: from,
@@ -48,7 +56,8 @@ export default class Schedulepage extends React.Component {
 		const range = DateUtils.addDayToRange(day, this.state.range);
 		range.from.setHours(0);
 		range.to.setHours(23);
-		this.setState({range: range, matches: this.state.matches})
+		this.setState({range: range, matches: this.state.matches});
+		this.getMatches();
 	}
 
 	render() {
