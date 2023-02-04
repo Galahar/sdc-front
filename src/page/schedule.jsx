@@ -4,7 +4,6 @@ import 'react-day-picker/lib/style.css';
 import axios from "axios";
 import Navbar from "../components/Navbar";
 import { Footer } from "../components/Footer";
-/* import Select from 'react-select'; */
 
 import { TopContainer, BackgroundContainer, ScheduleContainer, ScheduleVersusContainer, 
     HeaderTextContainer, TitleText, DateText, SVTIN, IDATC, IDATCBlueMarginer, IDC, IDCTitle, FilterText } from "../pageStyles/schedule";
@@ -20,7 +19,10 @@ export default class Schedulepage extends React.Component {
 	constructor(props) {
         super(props);
         this.handleDayClick = this.handleDayClick.bind(this);
-        this.state = {
+        if (!localStorage.getItem("team")) {
+			localStorage.setItem("team","ALL")
+		}
+		this.state = {
             range: this.getInitialDates(),
             matches: [],
             team: localStorage.getItem("team")
