@@ -6,7 +6,7 @@ export default function KdaCanvas(playerData)
         <>
         <div className='canvas'>
         <div className='start-heading'>
-            K/D
+            K/D/A
         </div>
         <svg width={300} height={300}>
             <text x="50%" y="50%" 

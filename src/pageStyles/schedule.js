@@ -84,6 +84,20 @@ export const DateText = styled.h1`
 	cursor: context-menu;
 `;
 
+export const FilterText = styled.h1`
+    font-size: 30px;
+	display: flex;
+    align-items: center;
+	text-align: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: -40px;
+    color: ${theme.titleTextColor};
+    text-shadow: 2px 2px 0 black, 1px 1px 0 black, 2px 2px 0 black;
+    overflow: hidden;
+	cursor: context-menu;
+`;
+
 export const ScheduleVersusContainer = styled.div`
     width: 100%;
     height: 90%;

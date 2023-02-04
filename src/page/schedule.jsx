@@ -4,9 +4,10 @@ import 'react-day-picker/lib/style.css';
 import axios from "axios";
 import Navbar from "../components/Navbar";
 import { Footer } from "../components/Footer";
+/* import Select from 'react-select'; */
 
 import { TopContainer, BackgroundContainer, ScheduleContainer, ScheduleVersusContainer, 
-    HeaderTextContainer, TitleText, DateText, SVTIN, IDATC, IDATCBlueMarginer, IDC, IDCTitle } from "../pageStyles/schedule";
+    HeaderTextContainer, TitleText, DateText, SVTIN, IDATC, IDATCBlueMarginer, IDC, IDCTitle, FilterText } from "../pageStyles/schedule";
 
 import "../pageStyles/schedule.js";
 import "../pageStyles/schedule.css";
@@ -17,65 +18,83 @@ const baseURL = "https://api.sdcleague.com/api/";
 
 export default class Schedulepage extends React.Component {	
 	constructor(props) {
-		super(props);
-		this.handleDayClick = this.handleDayClick.bind(this);
-		this.state = {
-			range: this.getInitialDates(),
-			matches: []
-		}
-	}
-	
-	componentDidMount() {
-		this.getMatches()
-	}
-	
-	getMatches() {
-		axios.get(baseURL + 'schedule/?date__gte=' + 
-		this.state.range.from.toISOString().split('T')[0] + 
-		'&date__lte=' + 
-		this.state.range.to.toISOString().split('T')[0])
-		  .then(res => {
-			const matchData = res.data;
-			this.setState({range: this.state.range, matches: matchData});
-		  });
-	}
+        super(props);
+        this.handleDayClick = this.handleDayClick.bind(this);
+        this.state = {
+            range: this.getInitialDates(),
+            matches: [],
+            team: localStorage.getItem("team")
+        }
+    }
 
-	getInitialDates() {
-		const from = new Date();
-		from.setHours(0);
-		const to = new Date();
-		to.setDate(to.getDate() + 7);
-		to.setHours(23);
-		return {
-		  from: from,
-		  to: to,
-		};
-	}
+    componentDidMount() {
+        this.getMatches(this.getInitialDates());
+    }
 
-	handleDayClick(day) {
-		const range = DateUtils.addDayToRange(day, this.state.range);
-		range.from.setHours(0);
-		range.to.setHours(23);
-		this.setState({range: range, matches: this.state.matches});
-		this.getMatches();
-	}
+    getMatches(range) {
+        axios.get(baseURL + 'schedule/?dategte=' + 
+        this.state.range.from.toISOString().split('T')[0] + 
+        '&datelte=' + 
+        this.state.range.to.toISOString().split('T')[0])
+          .then(res => {
+            const matchData = res.data;
+            this.setState({range: range, matches: matchData, team: localStorage.getItem("team")});
+          });
+    }
+
+    getInitialDates() {
+        const from = new Date();
+        from.setHours(0);
+        const to = new Date();
+        to.setDate(to.getDate() + 7);
+        to.setHours(23);
+        return {
+          from: from,
+          to: to,
+        };
+    }
+
+    handleDayClick(day) {
+        const range = DateUtils.addDayToRange(day, this.state.range);
+        range.from.setHours(0);
+        range.to.setHours(23);
+        this.getMatches(range);
+    }
+
+    changeTeam(select) {
+        localStorage.setItem("team",select.target.value);
+        this.setState({range: this.state.range, matches: this.state.matches, team: select.target.value});
+    }
 
 	render() {
 		var { from, to } = this.state.range;
-		const modifiers = { start: from, end: to };
-		const matches = this.state.matches;
-		const displayMatches = [];
-		for (let i = 0; i < matches.length; i++) {
-			if (Date.parse(matches[i].date) >= this.state.range.from) {
-				if (Date.parse(matches[i].date) > this.state.range.to) { break; } //if we are in the future we won't find anymore
-				if (displayMatches.length > 0 && displayMatches.find(e => Date.parse(e.date).valueOf() === Date.parse(matches[i].date).valueOf())) {
-					displayMatches.find(e => Date.parse(e.date).valueOf() === Date.parse(matches[i].date).valueOf()).matches.push(matches[i]);
-				} else {
-					displayMatches.push({date: matches[i].date, matches: [matches[i]]});
-				}
-			}
-		}
-		console.log(displayMatches)
+        const modifiers = { start: from, end: to };
+        const matches = this.state.matches;
+        const team = this.state.team;
+        const teams = ["ALL"]
+        const displayMatches = [];
+        for (let i = 0; i < matches.length; i++) {
+            if (!teams.includes(matches[i].team1)) {
+                teams.push(matches[i].team1)
+            }
+            if (!teams.includes(matches[i].team2)) {
+                teams.push(matches[i].team2)
+            }
+        }
+        teams.slice(0,1).concat(teams.slice(1).sort());
+        for (let i = 0; i < matches.length; i++) {
+            if (Date.parse(matches[i].date) >= this.state.range.from) {
+                if (team !== teams[0] && (matches[i].team1 !== team && matches[i].team2 !== team)) {
+                    continue;
+                }
+                if (displayMatches.length > 0 && displayMatches.find(e => Date.parse(e.date).valueOf() === Date.parse(matches[i].date).valueOf())) {
+                    displayMatches.find(e => Date.parse(e.date).valueOf() === Date.parse(matches[i].date).valueOf()).matches.push(matches[i]);
+                } else {
+                    displayMatches.push({date: matches[i].date, matches: [matches[i]]});
+                }
+            }
+        }
+
 		return (
 		<>
 			<TopContainer>
@@ -100,6 +119,18 @@ export default class Schedulepage extends React.Component {
 						  modifiers={modifiers}
 						  onDayClick={this.handleDayClick}
 						/> 
+						<FilterText>
+                            Filter By Team: 
+                            <select className="" onChange={this.changeTeam.bind(this)} value={team}>
+                            {
+                                teams.map( (team) => (
+                                <>
+                                    <option value={team}>{team}</option>
+                                </>
+                                ))
+                            }
+                            </select>
+                        </FilterText>
 						<ScheduleVersusContainer>
 							{
 								displayMatches.map( (dates) => (

@@ -95,7 +95,7 @@ section {
     position: absolute;
     top: 0;
     left: 0;
-    background: white;
+    background: #fff;
     -webkit-transform: rotateY(-180deg);
     -moz-transform: rotateY(-180deg);
     -o-transform: rotateY(-180deg);
@@ -132,18 +132,18 @@ section {
 
 .backside .card a {
     font-size: 18px;
-    color: #007b5e !important;
+    color: #fa6 !important;
 }
 
 .frontside .card .card-title,
 .backside .card .card-title {
-    color: #007b5e !important;
+    color: #000 !important;
     white-space: nowrap;
     font-style: italic;
     font-size: 20px;
     font-family: "Beaufort for LOL", serif;
     font-weight: 800;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.15em;
     text-overflow: ellipsis;
     transition: transform 300m
 }
