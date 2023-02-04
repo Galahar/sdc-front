@@ -35,9 +35,9 @@ export default class Schedulepage extends React.Component {
 
     getMatches(range) {
         axios.get(baseURL + 'schedule/?date__gte=' + 
-        this.state.range.from.toISOString().split('T')[0] + 
+        range.from.toISOString().split('T')[0] + 
         '&date__lte=' + 
-        this.state.range.to.toISOString().split('T')[0])
+        range.to.toISOString().split('T')[0])
           .then(res => {
             const matchData = res.data;
             this.setState({range: range, matches: matchData, team: localStorage.getItem("team")});
@@ -60,7 +60,10 @@ export default class Schedulepage extends React.Component {
         const range = DateUtils.addDayToRange(day, this.state.range);
         range.from.setHours(0);
         range.to.setHours(23);
+		//loading cursor
+		document.body.style.cursor = "wait";
         this.getMatches(range);
+		//normal cursor
     }
 
     changeTeam(select) {
@@ -119,7 +122,7 @@ export default class Schedulepage extends React.Component {
 						  className="Selectable"
 						  selectedDays={[from, { from, to }]}
 						  modifiers={modifiers}
-						  onDayClick={this.handleDayClick}
+						  onDayClick={this.handleDayClick.bind(this)}
 						/> 
 						<FilterText>
                             Filter By Team: 
