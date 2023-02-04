@@ -4,7 +4,9 @@ export const theme = {
     mediumBlue: '#232ED1', // Medium Blue
     defaultBlue: '#6564DB', // Default Blue
     fadedPastelGreen: '#60AB9A', // Greyish Pastel Green
+    titleTextColor: "#232ED1", // Darkish Blue
     textColor: "#FDFDFF", // White
-    lightBlue: "#89D2DC", // Light blue
+    lightBlue: "#00A8E8", // Light blue
+    highlightPrimary: "#89D2DC",
 	ebony: "#624604"
 }

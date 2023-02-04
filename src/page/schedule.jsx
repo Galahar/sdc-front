@@ -6,7 +6,7 @@ import Navbar from "../components/Navbar";
 import { Footer } from "../components/Footer";
 
 import { TopContainer, BackgroundContainer, ScheduleContainer, ScheduleVersusContainer, 
-    HeaderTextContainer, TitleText, SVTIN, IDATC, IDATCBlueMarginer, IDC, IDCTitle } from "../pageStyles/schedule";
+    HeaderTextContainer, TitleText, DateText, SVTIN, IDATC, IDATCBlueMarginer, IDC, IDCTitle } from "../pageStyles/schedule";
 
 import "../pageStyles/schedule.js";
 import "../pageStyles/schedule.css";
@@ -85,15 +85,21 @@ export default class Schedulepage extends React.Component {
 							<TitleText>
 								SDC Schedule
 							</TitleText>
-							<TitleText>
+							<DateText>
 							  {!from && !to && 'Please select the first day.'}
 							  {from && !to && 'Please select the last day.'}
 							  {from &&
 								to &&
 								`Selected from ${from.toLocaleDateString()} to
 									${to.toLocaleDateString()}`}{' '}
-							</TitleText>
-						</HeaderTextContainer>  
+							</DateText>
+						</HeaderTextContainer> 
+						<DayPicker
+						  className="Selectable"
+						  selectedDays={[from, { from, to }]}
+						  modifiers={modifiers}
+						  onDayClick={this.handleDayClick}
+						/> 
 						<ScheduleVersusContainer>
 							{
 								displayMatches.map( (dates) => (
@@ -122,12 +128,6 @@ export default class Schedulepage extends React.Component {
 								))
 							}
 						</ScheduleVersusContainer>
-						<DayPicker
-						  className="Selectable"
-						  selectedDays={[from, { from, to }]}
-						  modifiers={modifiers}
-						  onDayClick={this.handleDayClick}
-						/>
 					</ScheduleContainer>
 				</BackgroundContainer>
 			</TopContainer>
@@ -135,33 +135,33 @@ export default class Schedulepage extends React.Component {
 			<Footer />
 			<style>{`
 				.Selectable .DayPicker-Day--selected:not(.DayPicker-Day--start):not(.DayPicker-Day--end):not(.DayPicker-Day--outside) {
-					background-color: #624604 !important;
+					background-color: #89D2DC !important;
 					color: #f0f8ff;
 				}
 				.Selectable .DayPicker-Day {
 					border-radius: 4px !important;
-					border-color: #f7b318 !important;
+					border-color: #232ED1 !important;
 					border: solid;
 					background-color: #2B262A;
 				}
 				.Selectable .DayPicker-Day--start {
-					background-color: #f7b318 !important;
+					background-color: #00A8E8 !important;
 					/*border-top-left-radius: 50% !important;
 					border-bottom-left-radius: 50% !important;*/
 				}
 				.Selectable .DayPicker-Day--end {
-					background-color: #f7b318 !important;
+					background-color: #00A8E8 !important;
 					/*border-top-right-radius: 50% !important;
 					border-bottom-right-radius: 50% !important;*/
 				}
 				.Selectable .DayPicker-Day--today:not(.DayPicker-Day--start):not(.DayPicker-Day--end):not(.DayPicker-Day--outside) {
-					color: #e8c547 !important;
+					color: #00A8E8 !important;
 				}
 				.DayPicker:not(.DayPicker--interactionDisabled) .DayPicker-Day:not(.DayPicker-Day--disabled):not(.DayPicker-Day--selected):not(.DayPicker-Day--outside):hover {
-					background-color: #f7b318 !important;
+					background-color: #00A8E8 !important;
 				}
 				body {  
-					background-color: #1A191A !important; 
+					background-color: #FFF !important; 
 				}
 			`}</style>
 		</>

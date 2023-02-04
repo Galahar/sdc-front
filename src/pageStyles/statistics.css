@@ -38,3 +38,26 @@
 }
 
     
+
+.infinite-scroll-component {
+    background-color: #ffff;
+    scrollbar-color: rgba(0, 0, 0, 0.2) #ffff;
+    scrollbar-face-color:rgba(0, 0, 0, 0.2);
+    }
+    .infinite-scroll-component::-webkit-scrollbar {
+    width: 10px!important;
+    height: 10px!important;
+    }
+
+    .infinite-scroll-component::-webkit-scrollbar-track {
+    background: rgb(255, 255, 255);
+    }
+
+    .infinite-scroll-component::-webkit-scrollbar-thumb {
+    background: #1F00FF;
+    border-radius: 10px;
+    }
+
+    .infinite-scroll-component::-webkit-scrollbar-thumb:hover {
+    background:#0060FF;
+    }

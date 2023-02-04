@@ -58,7 +58,7 @@ function Table({ columns, data, update,hasMoreData }) {
 
     return (
         
-        <div id="customScrollTable" className="" style={{width:"100%",marginBottom:"auto"}}>
+        <div id="customScrollTable" className="infinite-scroll-component" style={{width:"100%",marginBottom:"auto"}}>
         <InfiniteScroll
         className="customScroll"
         height={"600px"}
@@ -432,9 +432,6 @@ function FilterTableComponent() {
                                 Click here
                             </StatsLinkNormal>
                                 </a>
-                            <StatsLinkNormal className="mouseText">
-                                Use mouse scroll wheel below to scroll through stats (KDA, Vision, Wins, etc)
-                            </StatsLinkNormal>
                         </StatisticsLinkContainer>
                     </StatisticsContainer>
                     <GoogleSheetsContainer className="loadInAnim">
@@ -470,9 +467,6 @@ function FilterTableComponent() {
                                 Click here
                             </StatsLinkNormal>
                                 </a>
-                                <StatsLinkNormal className="mouseText">
-                                Use mouse scroll wheel below to scroll through stats (KDA, Vision, Wins, etc)
-                            </StatsLinkNormal>
                         </StatisticsLinkContainer>
                     </StatisticsContainer>
                     <GoogleSheetsContainer className="loadInAnim">

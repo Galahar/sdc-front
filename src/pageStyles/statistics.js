@@ -26,7 +26,7 @@ export const TopContainer = styled.div`
 
 export const StatisticsContainer = styled.div`
     width: 100%;
-    height: 30px;
+    height: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;

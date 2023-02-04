@@ -55,7 +55,22 @@ export const HeaderTextContainer = styled.div`
 `;
 
 export const TitleText = styled.h1`
-    font-size: 30px;
+    font-size: 35px;
+	display: flex;
+    align-items: center;
+	text-align: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: -40px;
+    margin-bottom: 0;
+    color: ${theme.titleTextColor};
+    text-shadow: 2px 2px 0 black, 1px 1px 0 black, 2px 2px 0 black;
+    overflow: hidden;
+	cursor: context-menu;
+`;
+
+export const DateText = styled.h1`
+    font-size: 20px;
 	display: flex;
     align-items: center;
 	text-align: center;
@@ -63,7 +78,7 @@ export const TitleText = styled.h1`
     flex-direction: row;
     margin-top: 0;
     margin-bottom: 0;
-    color: ${theme.highlightPrimary};
+    color: ${theme.titleTextColor};
     text-shadow: 2px 2px 0 black, 1px 1px 0 black, 2px 2px 0 black;
     overflow: hidden;
 	cursor: context-menu;
@@ -77,9 +92,9 @@ export const ScheduleVersusContainer = styled.div`
     align-items: center;
     justify-content: center;
     background-color: ${theme.primary};
-	border-top: 5px solid ${theme.ebony};
-    border-left: 5px solid ${theme.ebony};
-	border-right: 5px solid ${theme.ebony};
+	border-top: 5px solid ${theme.mediumBlue};
+    border-left: 5px solid ${theme.mediumBlue};
+	border-right: 5px solid ${theme.mediumBlue};
 `;
 
 
@@ -94,10 +109,10 @@ export const SVTIN = styled.div`
     justify-content: center;
     font-size: 20px;
     font-weight: 600;
-    border-bottom: 5px solid ${theme.ebony};
+    border-bottom: 5px solid ${theme.mediumBlue};
     @media screen and (max-width: 768px) {
         flex-direction: column;
-		border-bottom: 0px solid ${theme.ebony};
+		border-bottom: 0px solid ${theme.mediumBlue};
     }
 `;
 
@@ -130,7 +145,7 @@ export const IDC = styled.div`
     justify-content: center;
     flex-direction: row;
 	cursor: context-menu;
-	background-color: ${theme.ebony};
+	background-color: ${theme.darkBlue};
 	    @media screen and (max-width: 768px) {
         flex-direction: column;
 		min-width: 100%;
@@ -156,7 +171,7 @@ export const IDCTitle = styled.p`
     justify-content: center;
     flex-direction: row;
     letter-spacing: .09em;
-	color: ${theme.highlightPrimary};
+	color: ${theme.textColor};
 	cursor: context-menu;
 `;
 

@@ -52,7 +52,7 @@ export const TitleText = styled.h1`
     flex-direction: row;
     margin-top: 0;
     margin-bottom: 0;
-    color: ${theme.highlightPrimary};
+    color: ${theme.textColor};
     text-shadow: 2px 2px 0 black, 1px 1px 0 black, 2px 2px 0 black;
     overflow-wrap: anywhere;
 	cursor: context-menu;
@@ -71,6 +71,7 @@ export const ScheduleVersusContainer = styled.div`
     background-color: ${theme.primary};
 	border-top: 5px solid ${theme.ebony};
 	border-right: 5px solid ${theme.ebony};
+    border-left: 5px solid ${theme.ebony};
 `;
 
 
@@ -154,7 +155,7 @@ export const IDCTitle = styled.p`
     justify-content: center;
     flex-direction: row;
     letter-spacing: .09em;
-	color: ${theme.highlightPrimary};
+	color: ${theme.textColor};
 	cursor: context-menu;
 `;
 
