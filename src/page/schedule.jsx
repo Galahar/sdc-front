@@ -61,7 +61,7 @@ export default class Schedulepage extends React.Component {
         range.from.setHours(0);
         range.to.setHours(23);
 		//loading cursor
-		document.body.style.cursor = "wait";
+		//document.body.style.cursor = "wait";
         this.getMatches(range);
 		//normal cursor
     }
