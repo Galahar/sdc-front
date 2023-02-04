@@ -100,6 +100,8 @@ export default class Schedulepage extends React.Component {
             }
         }
 
+		
+
 		return (
 		<>
 			<TopContainer>
@@ -124,9 +126,11 @@ export default class Schedulepage extends React.Component {
 						  modifiers={modifiers}
 						  onDayClick={this.handleDayClick.bind(this)}
 						/> 
+						
 						<FilterText>
                             Filter By Team: 
-                            <select className="" onChange={this.changeTeam.bind(this)} value={team}>
+							<div style={{width: '150px', paddingBottom: '5px'}}>
+                            <select onChange={this.changeTeam.bind(this)} value={team}>
                             {
                                 teams.map( (team) => (
                                 <>
@@ -135,6 +139,7 @@ export default class Schedulepage extends React.Component {
                                 ))
                             }
                             </select>
+							</div>
                         </FilterText>
 						<ScheduleVersusContainer>
 							{
