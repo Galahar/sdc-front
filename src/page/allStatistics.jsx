@@ -422,17 +422,19 @@ function FilterTableComponent() {
                     <StatisticsContainer className="loadInAnim">
                         <StatisticsLinkContainer>
                             <StatsLinkHeader>
-                                SDC SEASON 10 REGULAR SEASON STATS
+                                SDC SEASON 3 - 11 REGULAR SEASON STATS
                             </StatsLinkHeader>
                             <StatsLinkNormal>
-                                For All Time Stats
+                                For Google Sheet Format [Mobile Friendly] [Only Season 3-9]
                             </StatsLinkNormal>
-
                             <a className="linkHover" target="_blank" rel="noreferrer" href="https://docs.google.com/spreadsheets/d/1BWCMVF8cUp1eqjL8MJBuQKIm76WJNfGhVgFOf1xISvk/edit#gid=1325308529">
                             <StatsLinkNormal style={{ textDecoration: 'none' }}>
                                 Click here
                             </StatsLinkNormal>
                                 </a>
+                            <StatsLinkNormal className="mouseText">
+                                Use mouse scroll wheel below to scroll through stats (KDA, Vision, Wins, etc)
+                            </StatsLinkNormal>
                         </StatisticsLinkContainer>
                     </StatisticsContainer>
                     <GoogleSheetsContainer className="loadInAnim">
@@ -454,13 +456,13 @@ function FilterTableComponent() {
 		<>
 			<BackgroundContainer>
                 <TopContainer>
-                    <StatisticsContainer className="loadInAnim">
+                    <StatisticsContainer className="loadInAnim paddingBottom">
                         <StatisticsLinkContainer>
                             <StatsLinkHeader>
-                                SDC SEASON 10 REGULAR SEASON STATS
+                                SDC SEASON 3 - 11 REGULAR SEASON STATS
                             </StatsLinkHeader>
                             <StatsLinkNormal>
-                                For All Time Stats
+                                For Google Sheet Format [Mobile Friendly] [Only Season 3-9]
                             </StatsLinkNormal>
 
                             <a className="linkHover" target="_blank" rel="noreferrer" href="https://docs.google.com/spreadsheets/d/1BWCMVF8cUp1eqjL8MJBuQKIm76WJNfGhVgFOf1xISvk/edit#gid=1325308529">
@@ -468,6 +470,9 @@ function FilterTableComponent() {
                                 Click here
                             </StatsLinkNormal>
                                 </a>
+                                <StatsLinkNormal className="mouseText">
+                                Use mouse scroll wheel below to scroll through stats (KDA, Vision, Wins, etc)
+                            </StatsLinkNormal>
                         </StatisticsLinkContainer>
                     </StatisticsContainer>
                     <GoogleSheetsContainer className="loadInAnim">

@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { theme } from "../../themes.js";
 
 const ButtonWrapper = styled.button`
   padding: 0px 8px;
@@ -16,7 +17,7 @@ const ButtonWrapper = styled.button`
   cursor: pointer;
 
   &:hover {
-    background-color: #A1CDF1;
+    background-color: ${theme.lightBlue};
     color: #000;
   }
 `;

@@ -26,3 +26,15 @@
     :hover:after {
         width: 100%;
     }
+
+.paddingBottom {
+    padding-top: 50px;
+    padding: 40px 0;
+}
+
+.mouseText {
+    background-color: white;
+    border-style: double;
+}
+
+    

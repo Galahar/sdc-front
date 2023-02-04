@@ -6,12 +6,13 @@ export const Nav = styled.nav`
     overflow: hidden;
     position: fixed;
     width: 100%;
+    height: 80px;
     z-index: 9999;
     top: 0;
     transition: all 0.35s ease-in-out;
     :hover {
         transition: all 0.5s ease-in-out;
-        background-color: ${theme.primary};
+        background-color: ${theme.darkBlue};
         /*box-shadow: 0 1px 40px -8px rgb(0 0 0 / 50%);*/
 	}
 `;
@@ -97,8 +98,8 @@ export const NavMenu = styled.div`
         display: none;
     }
     :hover {
-        transition: all 0.5s ease-in-out;
-        background-color: ${theme.primary};
+/*         transition: all 0.5s ease-in-out;
+        background-color: ${theme.darkBlue}; */
         /*box-shadow: 0 1px 40px -8px rgb(0 0 0 / 50%);*/
 	}
 `;

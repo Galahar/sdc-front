@@ -2,13 +2,15 @@ import styled from "styled-components";
 import { theme } from "../themes.js";
 import { Element } from "react-scroll";
 
-import coolLeague2Image from "../assets/illustrations/coolLeague2.jpg";
-import Ruined2 from "../assets/illustrations/Ruined2.jpeg";
+/* import coolLeague2Image from "../assets/illustrations/coolLeague2.jpg"; */
+/* import Ruined2 from "../assets/illustrations/Ruined2.jpeg"; */
+import homepageImage from "../assets/illustrations/homepageBackground.jpg";
+import backgroundImage from "../assets/illustrations/homepageContentIMG.jpg";
 
 export const BackgroundFilter = styled.div`
     width: 100%;
     height: 100%;
-    background-color: rgba(55, 55, 55, 0.6);
+    background-color: rgba(55, 55, 55, 0.4);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,8 +25,8 @@ const pictureSelected = pictureArray[randomIndexPicture]; */
 
 export const TopContainer = styled.div`
     width: 100%;
-    height: 105vh;
-    background-image: url(${coolLeague2Image});
+    height: 110vh;
+    background-image: url(${homepageImage});
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -33,13 +35,13 @@ export const TopContainer = styled.div`
 
 export const TextContainer = styled.div`
     width: 50%;
-    height: 65%;
+    height: 58%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-top: 140px;
-    letter-spacing: .3em;
+    letter-spacing: .5em;
     /* outline: 5px solid green; */
     @media screen and (max-width: 650px) {
         margin-top: 30px;
@@ -51,7 +53,7 @@ export const TitleText = styled.h1`
     white-space: nowrap;
     margin-top: 0;
     margin-bottom: 0;
-    color: #f2d492;
+    color: ${theme.lightBlue};
     text-shadow: 3px 3px 0 black, 1px 1px 0 black, 2px 2px 0 black;
     @media screen and (max-width: 1024px) {
         display: none;
@@ -63,7 +65,7 @@ export const TitleTextResponsive = styled.h1`
     white-space: nowrap;
     margin-top: 0;
     margin-bottom: 0;
-    color: #f2d492;
+    color: ${theme.lightBlue};
     text-shadow: 3px 3px 0 black, 1px 1px 0 black, 2px 2px 0 black;
     @media screen and (min-width: 1024px) {
         display: none;
@@ -74,7 +76,7 @@ export const TitleTextResponsive = styled.h1`
 `;
 
 export const SeasonText = styled.h2`
-    font-size: 10vh;
+    font-size: 11vh;
     white-space: nowrap;
     color: #FFF;
     @media screen and (max-width: 650px) {
@@ -86,7 +88,7 @@ export const MoreInfoContainer = styled.div`
     font-size: 2.7vh;
     text-transform: uppercase;
     font-weight: 600;
-    color: #FFF;
+    color: ${theme.lightBlue};
     text-shadow: 1px 1px 0 black, 1px 1px 0 black, 2px 2px 0 black;
     @media screen and (max-width: 650px) {
         margin-bottom: 0px;
@@ -94,11 +96,9 @@ export const MoreInfoContainer = styled.div`
 `;
 
 export const DownArrowContainer = styled.div`
-    @media screen and (max-height: 800px) {
+    @media screen and (max-height: 600px) {
         display: none;
-    }
-    bottom: 25px;
-    left: 50%;
+    } 
 `;
 
 /* export const ContentContainer = styled(Element)`
@@ -133,7 +133,7 @@ export const ContentContainer = styled(Element)`
     justify-content: center;
     align-items: center;
     overflow-x: hidden;
-    background-image: url(${Ruined2});
+    background-image: url(${backgroundImage});
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

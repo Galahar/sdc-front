@@ -7,7 +7,7 @@ const IconContainer = styled.div`
     display: flex;
     flex-direction: row;
     padding: 0 25px;
-    padding-top: 10px;
+    padding-top: 30px;
 `;
 
 export function DiscIcon(props) {

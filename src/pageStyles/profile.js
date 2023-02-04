@@ -1,6 +1,7 @@
 import styled from "styled-components";
-import Ruined2 from "../assets/illustrations/Ruined2.jpeg";
 import { theme } from "../themes.js"; 
+import backgroundImage from "../assets/illustrations/homepageContentIMG.jpg";
+
 
 export const BackgroundContainer = styled.div`
     width: 100%;
@@ -9,13 +10,13 @@ export const BackgroundContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    break-inside: avoid;
+    break-inside: avoid;    
 `;
 
 export const TopContainer = styled.div`
     width: 100%;
     height: 100%;
-    background-image: url(${Ruined2});
+    background-image: url(${backgroundImage});
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

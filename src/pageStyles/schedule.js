@@ -14,7 +14,7 @@ export const BackgroundContainer = styled.div`
 `;
 
 export const TopContainer = styled.div`
-    /*width: 100%;
+/*     width: 100%;
     min-height: 500px;
 	display: flex;
 	flex-direction: column;
@@ -22,7 +22,7 @@ export const TopContainer = styled.div`
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    background-color: ${theme.primary};*/
+    background-color: ${theme.primary}; */
 `;
 
 

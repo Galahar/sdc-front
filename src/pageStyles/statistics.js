@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Ruined2 from "../assets/illustrations/Ruined2.jpeg";
+import backgroundImage from "../assets/illustrations/homepageContentIMG.jpg";
 import { theme } from "../themes.js"; 
 import { Link } from "react-router-dom";
 
@@ -17,7 +17,7 @@ export const BackgroundContainer = styled.div`
 export const TopContainer = styled.div`
     width: 100%;
     height: 100%;
-    background-image: url(${Ruined2});
+    background-image: url(${backgroundImage});
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -34,14 +34,14 @@ export const StatisticsContainer = styled.div`
     margin-top: 200px;
     ${'' /* margin-top: 250px; */}
     margin-left: 0px;
-    @media screen and (max-width: 800px) {
-        margin-left: 40px;
+    @media screen and (max-width: 1000px) {
+        height: 300px;
     }
 `;  
 
 export const StatisticsLinkContainer = styled.div`
     width: 80%;
-    height: 400px;
+    height: 800px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -60,7 +60,6 @@ export const StatsLinkHeader = styled.h2`
 
 export const StatsLinkNormal = styled.p`
     color: #f2d492;
-    text-transform: uppercase;
     text-align: center;
     text-decoration: none;
     font-size: 23px;

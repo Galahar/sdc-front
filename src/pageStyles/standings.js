@@ -11,6 +11,15 @@ export const BackgroundContainer = styled.div`
     break-inside: avoid;
 `;
 
+export const TopContainer = styled.div`
+/*     width: 100%;
+    height: 110vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: ${theme.primary}; */
+`;
+
 export const StandingsContainer = styled.div`
     width: 100%;
     height: 100%;

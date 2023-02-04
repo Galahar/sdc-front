@@ -39,7 +39,7 @@ const Homepage = () => {
                             Championship
                         </TitleTextResponsive>
                         <SeasonText style={{ fontFamily: 'Yusei Magic' }} className="glitch">
-                            Season 10
+                            Season 14
                         </SeasonText>
                     </TextContainer>
                     <MoreInfoContainer>
@@ -79,6 +79,7 @@ const Homepage = () => {
                         <div className="anim-typewriter2 line-1">your standard tournament</div>
                         <div className="anim-typewriter2 line-1">but is more similar to a franchise system</div>
                         <div className="anim-typewriter2 line-1">that varies from season to season.</div>
+                        
                     </ContentText>
                     <VideoContainer>
                         <iframe 

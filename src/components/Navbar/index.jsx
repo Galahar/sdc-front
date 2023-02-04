@@ -40,11 +40,11 @@ const Navbar = () => {
                             <NavLinkMobile to='/teams' activestyle="true">
                                 Teams
                             </NavLinkMobile>
-                            <NavLinkMobile to='/profile' activestyle="true">
-                                Profile 
-                            </NavLinkMobile>
                             <NavLinkMobile to='/standings' activestyle="true">
                                 Standings
+                            </NavLinkMobile>
+                            <NavLinkMobile to='/profile' activestyle="true">
+                                Profile 
                             </NavLinkMobile>
                             
                         </NavMenuMobile>
@@ -55,9 +55,9 @@ const Navbar = () => {
                             <NavLinkMobile to='/statistics' activestyle="true">
                                 Statistics
                             </NavLinkMobile>
-                            <NavLinkMobile to='/allStatistics' activestyle="true">
+{/*                             <NavLinkMobile to='/allStatistics' activestyle="true">
                                 All Statistics
-                            </NavLinkMobile>
+                            </NavLinkMobile> */}
                         </NavMenuMobile>
                     </NavMobileFour>
                     
@@ -84,17 +84,17 @@ const Navbar = () => {
                         <NavLink to='/teams' activestyle="true">
                             Teams
                         </NavLink>
-                        <NavLink to='/profile' activestyle="true">
-                            Profile
-                        </NavLink>
                         <NavLink to='/standings' activestyle="true">
                             Standings
                         </NavLink>
-                        <NavLink to='/statistics' activestyle="true">
-                            Statistics
+                        <NavLink to='/profile' activestyle="true">
+                            Profile
                         </NavLink>
+{/*                         <NavLink to='/statistics' activestyle="true">
+                            Statistics
+                        </NavLink> */}
                         <NavLink to='/allStatistics' activestyle="true">
-                            All Statistics
+                            Statistics
                         </NavLink>
                         
 {/*                         <NavLink to='/aboutus' activestyle="true">

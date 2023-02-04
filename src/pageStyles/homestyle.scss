@@ -21,7 +21,7 @@
   }
   @keyframes glow {
     40% {
-      text-shadow: 0 0 8px #fff;
+      text-shadow: 0 0 13px #fff;
     }
   }
 }
@@ -57,20 +57,21 @@ $base: 0.6rem;
 .chevron:after {
  content: '';
  position: absolute;
- top: 0;
  height: 100%;
- width: 50%;
+ width: 100%;
  background: #FFF;
 }
 
 .chevron:before {
- left: 0;
+ top: 10px;
+ left: -42px;
  transform: skewY(30deg);
 }
 
 .chevron:after {
- right: 0;
- width: 50%;
+ top: 10px;
+ right: -35px;
+ width: 100%;
  transform: skewY(-30deg);
 }
 
