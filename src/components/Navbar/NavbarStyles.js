@@ -132,7 +132,7 @@ export const NavLink = styled(Link)`
         position: relative;
         width: 0% ;
         padding-top: 18px;
-        border-bottom: 6px solid ${theme.highlightPrimary} ;
+        border-bottom: 6px solid ${theme.lightBlue} ;
         transition: width .5s ease, background-color .5s ease ;
     }
 

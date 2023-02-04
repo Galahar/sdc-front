@@ -21,3 +21,11 @@ body {
   min-height: 100vh;
   padding: 0;
 }
+
+.clickToCopy {
+  color: #FF9508;
+}
+
+.clickToCopy:hover {
+  color: #C36F00;
+}

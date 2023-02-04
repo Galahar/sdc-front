@@ -59,7 +59,7 @@ export const ITC = styled.div`
     width: 250px;
     height: 280px;
     background-color: #23292E;
-    outline: 2px solid ${theme.lightBlue};
+    outline: 2px solid gray;
     display: flex;
     flex-direction: column;
     align-items: center;

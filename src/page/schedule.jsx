@@ -135,22 +135,22 @@ export default class Schedulepage extends React.Component {
 			<Footer />
 			<style>{`
 				.Selectable .DayPicker-Day--selected:not(.DayPicker-Day--start):not(.DayPicker-Day--end):not(.DayPicker-Day--outside) {
-					background-color: #89D2DC !important;
+					background-color: #00A8E8 !important;
 					color: #f0f8ff;
 				}
 				.Selectable .DayPicker-Day {
 					border-radius: 4px !important;
 					border-color: #232ED1 !important;
 					border: solid;
-					background-color: #2B262A;
+					background-color: #141D24;
 				}
 				.Selectable .DayPicker-Day--start {
-					background-color: #00A8E8 !important;
+					background-color: #89D2DC !important;
 					/*border-top-left-radius: 50% !important;
 					border-bottom-left-radius: 50% !important;*/
 				}
 				.Selectable .DayPicker-Day--end {
-					background-color: #00A8E8 !important;
+					background-color: #89D2DC !important;
 					/*border-top-right-radius: 50% !important;
 					border-bottom-right-radius: 50% !important;*/
 				}
@@ -161,7 +161,7 @@ export default class Schedulepage extends React.Component {
 					background-color: #00A8E8 !important;
 				}
 				body {  
-					background-color: #FFF !important; 
+					background-color: #141D24 !important; 
 				}
 			`}</style>
 		</>

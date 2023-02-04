@@ -131,7 +131,7 @@ export const IDATC = styled(Link)`
 	text-align: center;
 	:hover {
 		cursor: pointer;
-		background-color: ${theme.highlightPrimary};
+		background-color: ${theme.lightBlue};
         transition: all 0.5s ease-in-out;
 	}
 `;
@@ -155,7 +155,7 @@ export const IDC = styled.div`
 export const IDATCBlueMarginer = styled.div`
     min-width: 2px;
     min-height: 80px;
-    background-color: ${theme.highlightPrimary};
+    background-color: ${theme.lightBlue};
     @media screen and (max-width: 768px) {
         min-width: 100%;
         min-height: 2px;

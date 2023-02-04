@@ -101,7 +101,7 @@ export default class Matchpage extends React.Component {
 								</IDC>
 									<IDATCBlueMarginer/>
 									<IDATC onClick={event => navigator.clipboard.writeText(game.tournamentCode)}>
-										<IDATCText>{game.tournamentCode} (click to copy)</IDATCText>
+										<IDATCText>{game.tournamentCode} <p className="clickToCopy">&nbsp;(click to copy)</p></IDATCText>
 									</IDATC>
 							</SVTIN>
 						</>
@@ -114,7 +114,7 @@ export default class Matchpage extends React.Component {
 			<Footer />
 			<style>{`
 			body {  
-				background-color: #1A191A !important; 
+				background-color: #141D24 !important; 
 			}
 			`}</style>
 		</>

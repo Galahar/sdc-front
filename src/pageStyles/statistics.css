@@ -17,9 +17,8 @@
         content: "";
         display: block;
         position: relative;
-        background-color: red !important;
         width: 0% ;
-        border-bottom: 5px solid #A379C9 !important;
+        border-bottom: 5px solid white !important;
         transition: width .5s ease, background-color .5s ease;
     }
 
@@ -40,7 +39,7 @@
     
 
 .infinite-scroll-component {
-    background-color: #ffff;
+    background-color: #000;
     scrollbar-color: rgba(0, 0, 0, 0.2) #ffff;
     scrollbar-face-color:rgba(0, 0, 0, 0.2);
     }
@@ -54,10 +53,15 @@
     }
 
     .infinite-scroll-component::-webkit-scrollbar-thumb {
-    background: #1F00FF;
+    background: #0060FF;
     border-radius: 10px;
     }
 
     .infinite-scroll-component::-webkit-scrollbar-thumb:hover {
-    background:#0060FF;
+    background:#3380ff;
     }
+
+
+a {
+    color: white;
+}

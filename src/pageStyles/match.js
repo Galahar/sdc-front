@@ -4,7 +4,7 @@ import { theme } from "../themes.js";
 export const BackgroundContainer = styled.div`
     width: 100%;
     height: 100%;
-    background-color: ${theme.primaryLight};
+    background-color: #141D24;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -69,9 +69,9 @@ export const ScheduleVersusContainer = styled.div`
     align-items: center;
     justify-content: center;
     background-color: ${theme.primary};
-	border-top: 5px solid ${theme.ebony};
-	border-right: 5px solid ${theme.ebony};
-    border-left: 5px solid ${theme.ebony};
+	border-top: 5px solid ${theme.mediumBlue};
+	border-right: 5px solid ${theme.mediumBlue};
+    border-left: 5px solid ${theme.mediumBlue};
 `;
 
 
@@ -86,10 +86,10 @@ export const SVTIN = styled.div`
     justify-content: center;
     font-size: 20px;
     font-weight: 600;
-    border-bottom: 5px solid ${theme.ebony};
+    border-bottom: 5px solid ${theme.mediumBlue};
     @media screen and (max-width: 768px) {
         flex-direction: column;
-		border-bottom: 0px solid ${theme.ebony};
+		border-bottom: 0px solid ${theme.mediumBlue};
     }
 `;
 
@@ -105,7 +105,7 @@ export const IDATC = styled.div`
     flex-direction: row;
 	:hover {
 		cursor: pointer;
-		background-color: ${theme.highlightPrimary};
+		background-color: ${theme.lightBlue};
         transition: all 0.5s ease-in-out;
 	}
 `;
@@ -119,7 +119,7 @@ export const IDC = styled.div`
     justify-content: center;
     flex-direction: row;
 	cursor: context-menu;
-	background-color: ${theme.ebony};
+	background-color: ${theme.darkBlue};
 	    @media screen and (max-width: 768px) {
         flex-direction: column;
 		min-width: 100%;
@@ -129,7 +129,7 @@ export const IDC = styled.div`
 export const IDATCBlueMarginer = styled.div`
     min-width: 2px;
     min-height: 80px;
-    background-color: ${theme.highlightPrimary};
+    background-color: ${theme.lightBlue};
     @media screen and (max-width: 768px) {
         min-width: 100%;
         min-height: 2px;

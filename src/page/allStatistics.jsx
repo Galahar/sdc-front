@@ -5,7 +5,7 @@ import { Footer } from "../components/Footer";
 import { useTable, useFilters, useGlobalFilter } from 'react-table'
 import InfiniteScroll from "react-infinite-scroll-component";
 import { BackgroundContainer, TopContainer, StatisticsContainer, StatisticsLinkContainer, 
-    StatsLinkNormal, StatsLinkHeader, GoogleSheetsContainer, GoogleSheetsContainerMobile, BottomMargin } from "../pageStyles/statistics.js";
+    StatsLinkNormal, StatsLinkLink, StatsLinkHeader, GoogleSheetsContainer, GoogleSheetsContainerMobile, BottomMargin } from "../pageStyles/statistics.js";
 
 import "../pageStyles/statistics.css";
 import "../pageStyles/standings.css";
@@ -428,9 +428,9 @@ function FilterTableComponent() {
                                 For Google Sheet Format [Mobile Friendly] [Only Season 3-9]
                             </StatsLinkNormal>
                             <a className="linkHover" target="_blank" rel="noreferrer" href="https://docs.google.com/spreadsheets/d/1BWCMVF8cUp1eqjL8MJBuQKIm76WJNfGhVgFOf1xISvk/edit#gid=1325308529">
-                            <StatsLinkNormal style={{ textDecoration: 'none' }}>
+                            <StatsLinkLink style={{ textDecoration: 'none' }}>
                                 Click here
-                            </StatsLinkNormal>
+                            </StatsLinkLink>
                                 </a>
                         </StatisticsLinkContainer>
                     </StatisticsContainer>
@@ -463,9 +463,9 @@ function FilterTableComponent() {
                             </StatsLinkNormal>
 
                             <a className="linkHover" target="_blank" rel="noreferrer" href="https://docs.google.com/spreadsheets/d/1BWCMVF8cUp1eqjL8MJBuQKIm76WJNfGhVgFOf1xISvk/edit#gid=1325308529">
-                            <StatsLinkNormal style={{ textDecoration: 'none' }}>
+                            <StatsLinkLink style={{ textDecoration: 'none' }}>
                                 Click here
-                            </StatsLinkNormal>
+                            </StatsLinkLink>
                                 </a>
                         </StatisticsLinkContainer>
                     </StatisticsContainer>

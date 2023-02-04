@@ -49,7 +49,7 @@ export const StatisticsLinkContainer = styled.div`
 `;
 
 export const StatsLinkHeader = styled.h2`
-    color: #f2d492;
+    color: #5CD1FF;
     text-transform: uppercase;
     text-align: center;
     text-decoration: none;
@@ -59,10 +59,19 @@ export const StatsLinkHeader = styled.h2`
 `;
 
 export const StatsLinkNormal = styled.p`
-    color: #f2d492;
+    color: #fff;
     text-align: center;
     text-decoration: none;
     font-size: 23px;
+    font-weight: 600;
+    letter-spacing: .08em;
+`;
+
+export const StatsLinkLink= styled.p`
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
     font-weight: 600;
     letter-spacing: .08em;
 `;
