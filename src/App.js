@@ -6,7 +6,7 @@ import Schedulepage from "./page/schedule";
 import Matchpage from "./page/match";
 import Gamepage from "./page/game";
 import Teamspage from "./page/teams";
-import Standingspage from "./page/standings";
+/* import Standingspage from "./page/standings"; */
 import Statisticspage from "./page/statistics";
 import AllStatisticspage from "./page/allStatistics";
 import Aboutuspage from "./page/aboutus";
