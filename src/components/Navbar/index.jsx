@@ -40,9 +40,9 @@ const Navbar = () => {
                             <NavLinkMobile to='/teams' activestyle="true">
                                 Teams
                             </NavLinkMobile>
-                            <NavLinkMobile to='/standings' activestyle="true">
+{/*                             <NavLinkMobile to='/standings' activestyle="true">
                                 Standings
-                            </NavLinkMobile>
+                            </NavLinkMobile> */}
                             <NavLinkMobile to='/profile' activestyle="true">
                                 Profile 
                             </NavLinkMobile>
@@ -84,9 +84,9 @@ const Navbar = () => {
                         <NavLink to='/teams' activestyle="true">
                             Teams
                         </NavLink>
-                        <NavLink to='/standings' activestyle="true">
+{/*                         <NavLink to='/standings' activestyle="true">
                             Standings
-                        </NavLink>
+                        </NavLink> */}
                         <NavLink to='/profile' activestyle="true">
                             Profile
                         </NavLink>

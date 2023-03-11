@@ -29,7 +29,7 @@ function App() {
           <Route path='/game' exact component={Gamepage} />
           <Route path='/profile' exact component={ProfileTry} />
           <Route path='/teams' exact component={Teamspage} />
-          <Route path='/standings' exact component={Standingspage} />
+          {/* <Route path='/standings' exact component={Standingspage} /> */}
           <Route path='/statistics' exact component={Statisticspage} />
           <Route path='/allStatistics' exact component={AllStatisticspage} />
 

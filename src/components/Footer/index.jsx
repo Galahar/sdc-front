@@ -107,9 +107,9 @@ export function Footer(props) {
                 <FooterLink to='/teams' activestyle="true">
                     Teams
                 </FooterLink>
-                <FooterLink to='/standings' activestyle="true">
+{/*                 <FooterLink to='/standings' activestyle="true">
                     Standings
-                </FooterLink>
+                </FooterLink> */}
                 <FooterLink to='/statistics' activestyle="true">
                     Statistics
                 </FooterLink>
@@ -120,6 +120,6 @@ export function Footer(props) {
             Games properties. Riot Games, and all associated properties are trademarks 
             or registered trademarks of Riot Games, Inc.
             </DisclaimerLinksContainer>
-        </FooterContainer>
+        </FooterContainer>  
     );
 }
