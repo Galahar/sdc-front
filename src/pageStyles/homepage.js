@@ -4,7 +4,7 @@ import { Element } from "react-scroll";
 
 /* import coolLeague2Image from "../assets/illustrations/coolLeague2.jpg"; */
 /* import Ruined2 from "../assets/illustrations/Ruined2.jpeg"; */
-import homepageImage from "../assets/illustrations/homepageBackground.jpg";
+import homepageImage from "../assets/illustrations/snow-moon.jpg";
 import backgroundImage from "../assets/illustrations/homepageContentIMG.jpg";
 
 export const BackgroundFilter = styled.div`

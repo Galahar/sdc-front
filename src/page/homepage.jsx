@@ -39,7 +39,7 @@ const Homepage = () => {
                             Championship
                         </TitleTextResponsive>
                         <SeasonText style={{ fontFamily: 'Yusei Magic' }} className="glitch">
-                            Season 14
+                            Season 15
                         </SeasonText>
                     </TextContainer>
                     <MoreInfoContainer>
