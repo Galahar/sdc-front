@@ -213,7 +213,7 @@ const Teamspage = () => {
                                 </CaptainViceCaptainText> */}
                             </ITC>
                             <ITC className="itcLoadIn">
-                                <TeamNameITCTextContainer style={{ backgroundImage: "linear-gradient(#ff7b00, #FFBE81)" }}>
+                                <TeamNameITCTextContainer style={{ backgroundImage: "linear-gradient(#e03c36, #ec9f9f)" }}>
                                     <TeamNameITCText>
                                         Chef Boyardee
                                     </TeamNameITCText>
@@ -231,7 +231,7 @@ const Teamspage = () => {
                                 </CaptainViceCaptainText> */}
                             </ITC>
                             <ITC className="itcLoadIn">
-                                <TeamNameITCTextContainer style={{ backgroundImage: "linear-gradient(#ff7b00, #FFBE81)" }}>
+                                <TeamNameITCTextContainer style={{ backgroundImage: "linear-gradient(#47fd5f, #b9f7c3)" }}>
                                     <TeamNameITCText>
                                         The Scouts
                                     </TeamNameITCText>
