@@ -4,13 +4,13 @@ import { Element } from "react-scroll";
 
 /* import coolLeague2Image from "../assets/illustrations/coolLeague2.jpg"; */
 /* import Ruined2 from "../assets/illustrations/Ruined2.jpeg"; */
-import homepageImage from "../assets/illustrations/snow-moon.jpg";
+import homepageImage from "../assets/illustrations/nunu.jpg";
 import backgroundImage from "../assets/illustrations/homepageContentIMG.jpg";
 
 export const BackgroundFilter = styled.div`
     width: 100%;
     height: 100%;
-    background-color: rgba(55, 55, 55, 0.4);
+    background-color: rgba(55, 55, 55, 0.5);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -71,7 +71,7 @@ export const TitleTextResponsive = styled.h1`
         display: none;
     }
     @media screen and (max-width: 650px) {
-        font-size: 6vh;
+        font-size: 5.5vh;
     }
 `;
 
