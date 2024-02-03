@@ -17,6 +17,7 @@ const Button = styled.button`
     &:hover {
         background-color: ${theme.highlightbright};
     }
+    color: ${theme.text};
 `;
 
 export default Button;

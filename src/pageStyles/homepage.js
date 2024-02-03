@@ -71,7 +71,7 @@ export const TitleText = styled.h1`
     text-transform: uppercase;
     color: ${theme.bright};
     font-family: 'Ubuntu', sans-serif;
-    text-shadow: 3px 3px 0 white, 1px 1px 0 white, 2px 2px 0 white;
+    text-shadow: 3px 3px 0 black, 1px 1px 0 black, 2px 2px 0 black;
     display: flex;
     align-items: center;
     justify-content: center;

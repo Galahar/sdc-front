@@ -19,6 +19,7 @@ const Button = styled.button`
         background-color: ${theme.bright};
     }
     text-wrap: nowrap;
+    color: ${theme.text};
 `;
 
 export default Button;

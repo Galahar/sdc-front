@@ -20,6 +20,7 @@ const LearnButton = styled.button`
         background-color: ${theme.bright};
     }
     margin-left: 300px;
+    color: ${theme.text};
 `;
 
 export default LearnButton;
