@@ -65,7 +65,7 @@ const DisclaimerLinksContainer = styled.div`
 `;
 
 const FooterLink = styled(Link)`
-    color: ${theme.textColor};
+    color: ${theme.text};
     text-transform: uppercase;
     text-align: center;
     text-decoration: none;

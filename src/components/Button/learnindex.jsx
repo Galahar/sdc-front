@@ -1,23 +1,25 @@
 import styled from "styled-components";
 import { theme } from "../../themes";
 
-const Button = styled.button`
-    margin-top: 30px;
-    margin-bottom: 50px;
+const LearnButton = styled.button`
+    margin-top: -10px;
+    padding: 10px 25px;
     border-radius: 5px;
-    background-color: ${theme.highlight};
+    background-color: transparent;
     font-weight: bold;
-    font-size: 19px;
+    font-size: 30px;
     font-family: 'Ubuntu', sans-serif;
     letter-spacing: .1em;
     text-transform: uppercase;
     outline: none;
     border: 2px solid transparent;
     cursor: pointer;
+    transition: all 220ms ease-in-out;
+    cursor: pointer;
     &:hover {
-        background-color: ${theme.highlightbright};
+        background-color: ${theme.bright};
     }
+    margin-left: 300px;
 `;
 
-export default Button;
-  
+export default LearnButton;

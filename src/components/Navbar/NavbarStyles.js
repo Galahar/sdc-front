@@ -10,11 +10,11 @@ export const Nav = styled.nav`
     z-index: 9999;
     top: 0;
     transition: all 0.35s ease-in-out;
-    :hover {
+/*     :hover {
         transition: all 0.5s ease-in-out;
-        background-color: ${theme.darkBlue};
-        /*box-shadow: 0 1px 40px -8px rgb(0 0 0 / 50%);*/
-	}
+        background-color: ${theme.primary};
+	} */
+
 `;
 
 export const NavMobile = styled.div`
@@ -32,7 +32,6 @@ export const NavMobile = styled.div`
         animation-fill-mode: forwards;
         display: block;
     }
-    
 `;
 
 export const NavMobileTwo = styled.div`
@@ -89,11 +88,28 @@ export const NavMobileFour = styled.div`
     left: 0px;
 `;
 
+export const NavMobileFourMobile = styled.div`
+    display: flex;
+    position: fixed;
+    z-index: 9999;
+    top: 400px;
+    width: 100%;
+    height: 100px;
+    background-color: ${theme.primary};
+    display: none;
+    @media screen and (max-width: 1024px) {
+        animation: fadeInAnimation ease 0.5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        display: block;
+    }
+    left: 0px;
+`;
+
 export const NavMenu = styled.div`
     display: flex;
     height: 80px;
     flex-direction: column;
-    align-items: center;
     @media screen and (max-width: 1024px) {
         display: none;
     }
@@ -116,7 +132,7 @@ export const NavMenuMobile = styled.div`
 
 export const NavLink = styled(Link)`
     height: 43px;
-    color: ${theme.textColor};
+    color: ${theme.text};
     text-transform: uppercase;
     text-align: center;
     text-decoration: none;
@@ -125,26 +141,35 @@ export const NavLink = styled(Link)`
     letter-spacing: .08em;
     padding: 0 20px;
     padding-top: 27px;
+    font-family: 'Ubuntu', sans-serif;
+    margin-left: 18px;
 
-    :after {
-        content: "";
-        display: block;
-        position: relative;
-        width: 0% ;
-        padding-top: 18px;
-        border-bottom: 6px solid ${theme.lightBlue} ;
-        transition: width .5s ease, background-color .5s ease ;
+    @media screen and (max-width: 1130px) {
+        margin-left: 0px;
     }
 
-    :hover:after {
-        width: 100%;
-    }
+`;
+
+export const NavLinkLogin = styled(Link)`
+    height: 43px;
+    color: ${theme.highlight};
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: .08em;
+    padding: 0 20px;
+    padding-top: 27px;
+    font-family: 'Ubuntu', sans-serif;
+    margin-left: 0px;
+
 `;
 
 export const NavLinkMobile = styled(Link)`
     height: 30px;
     width: 80px;
-    color: ${theme.textColor};
+    color: ${theme.text};
     text-transform: uppercase;
     text-align: center;
     text-decoration: none;
@@ -160,7 +185,7 @@ export const NavLinkMobile = styled(Link)`
         position: relative;
         width: 0% ;
         padding-top: 18px;
-        border-bottom: 6px solid ${theme.highlightPrimary};
+        border-bottom: 6px solid ${theme.highlightbright};
         transition: width .5s ease, background-color .5s ease;
     }
 
@@ -172,6 +197,6 @@ export const NavLinkMobile = styled(Link)`
 export const BottomNav = styled.div`
     display: flex;
     width: 100%;
-    align-items: center;
-    justify-content: center;
+    align-items: left;
+    justify-content: left;
 `;

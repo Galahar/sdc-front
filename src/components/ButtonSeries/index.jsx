@@ -7,17 +7,18 @@ const Button = styled.button`
     border-radius: 5px;
     background-color: ${theme.highlight};
     font-weight: bold;
-    font-size: 19px;
+    font-size: 15px;
     font-family: 'Ubuntu', sans-serif;
     letter-spacing: .1em;
     text-transform: uppercase;
     outline: none;
     border: 2px solid transparent;
     cursor: pointer;
+    transition: 0.5s;
     &:hover {
-        background-color: ${theme.highlightbright};
+        background-color: ${theme.bright};
     }
+    text-wrap: nowrap;
 `;
 
 export default Button;
-  

@@ -21,12 +21,10 @@
   }
   @keyframes glow {
     40% {
-      text-shadow: 0 0 13px #fff;
+      text-shadow: 0 0 8px #fff;
     }
   }
 }
-
-
 $base: 0.6rem;
 
 .container {
@@ -43,6 +41,7 @@ $base: 0.6rem;
   opacity: 0;
   transform: scale(0.3);
   animation: move-chevron 3s ease-out infinite;
+  margin-left: 395px;
 }
 
 .chevron:first-child {
@@ -59,7 +58,7 @@ $base: 0.6rem;
  position: absolute;
  height: 100%;
  width: 100%;
- background: #E0E0E0;
+ background: #5EB1FF;
 }
 
 .chevron:before {
@@ -78,7 +77,7 @@ $base: 0.6rem;
 @keyframes move-chevron {
  25% {
   opacity: 1;
-	}
+  }
  33.3% {
   opacity: 1;
   transform: translateY($base * 3.8);
@@ -176,4 +175,32 @@ div {
   animation: fadeInAnimation ease 1.2s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+}
+
+.series-resize-val {
+  width: 125px;
+  height: auto;
+}
+
+.series-resize-tft {
+  width: 90px;
+  height: auto;
+}
+
+.series-resize-osu {
+  width: 80px;
+  height: auto;
+}
+
+.series-resize-tekken8 {
+  width: 95px;
+  height: 30px;
+}
+
+.sett {
+  text-decoration: none;
+}
+
+.none {
+  text-decoration: none;
 }

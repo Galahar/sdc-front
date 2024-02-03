@@ -4,8 +4,11 @@ import { Element } from "react-scroll";
 
 /* import coolLeague2Image from "../assets/illustrations/coolLeague2.jpg"; */
 /* import Ruined2 from "../assets/illustrations/Ruined2.jpeg"; */
-import homepageImage from "../assets/illustrations/nunu.jpg";
+import homepageImage from "../assets/illustrations/background1.jpg";
 import backgroundImage from "../assets/illustrations/homepageContentIMG.jpg";
+import LearnButton from "../components/Button/learnindex";
+
+import background3 from "../assets/illustrations/background3.png"
 
 export const BackgroundFilter = styled.div`
     width: 100%;
@@ -48,7 +51,7 @@ export const TextContainer = styled.div`
     }
 `;
 
-export const TitleText = styled.h1`
+/* export const TitleText = styled.h1`
     font-size: 10vh;
     white-space: nowrap;
     margin-top: 0;
@@ -58,7 +61,32 @@ export const TitleText = styled.h1`
     @media screen and (max-width: 1024px) {
         display: none;
     }
+`; */
+
+export const TitleText = styled.h1`
+    height: 85px;
+    font-size: 90px;
+    letter-spacing: 5px;
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: ${theme.bright};
+    font-family: 'Ubuntu', sans-serif;
+    text-shadow: 3px 3px 0 white, 1px 1px 0 white, 2px 2px 0 white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 950px;
+    @media screen and (max-width: 1380px) {
+        font-size: 60px;
+        margin-left: -125px;
+    }
+    @media screen and (max-width: 850px) {
+        width: 400px;
+        font-size: 35px;
+        margin-left: 10px;
+    }
 `;
+
 
 export const TitleTextResponsive = styled.h1`
     font-size: 10vh;
@@ -75,16 +103,35 @@ export const TitleTextResponsive = styled.h1`
     }
 `;
 
-export const SeasonText = styled.h2`
+/* export const SeasonText = styled.h2`
     font-size: 11vh;
     white-space: nowrap;
     color: #FFF;
     @media screen and (max-width: 650px) {
         font-size: 6vh;
     }
+`; */
+
+
+export const SeasonText = styled.h1`
+    font-size: 120px;
+    letter-spacing: 10px;
+    white-space: nowrap;
+    color: ${theme.text};
+    padding-left: 150px;
+    margin-top: -25px;
+    font-family: 'Permanent Marker', cursive;
+    @media screen and (max-width: 1380px) {
+        font-size: 50px;
+        margin-left: 30px;
+    }
+    @media screen and (max-width: 850px) {
+        padding-left: 25px;
+    }
 `;
 
-export const MoreInfoContainer = styled.div`
+
+/* export const MoreInfoContainer = styled.div`
     font-size: 2.7vh;
     text-transform: uppercase;
     font-weight: 600;
@@ -99,6 +146,36 @@ export const DownArrowContainer = styled.div`
     @media screen and (max-height: 600px) {
         display: none;
     } 
+`; */
+export const MoreInfoContainer = styled.div`
+    width: 100%;
+    height: 50px;
+    margin-top: -40px;
+    text-wrap: nowrap;
+    @media screen and (max-width: 1380px) {
+        margin-top: 0px;
+        margin-left: -100px;
+    }
+    @media screen and (max-width: 850px) {
+        margin-left: -225px;
+    }
+    @media screen and (max-height: 780px) {
+        display: none;
+    }
+`;
+
+export const DownArrowContainer = styled.div`
+    width: 100%;
+    height: 120px;
+    @media screen and (max-width: 1380px) {
+        margin-left: -100px;
+    }
+    @media screen and (max-height: 780px) {
+        display: none;
+    }
+    @media screen and (max-width: 850px) {
+        margin-left: -225px;
+    }
 `;
 
 /* export const ContentContainer = styled(Element)`
@@ -124,7 +201,7 @@ export const ContentFilter = styled.div`
     background-color: rgba(55, 55, 55, 0.6);
 `;
 
-export const ContentContainer = styled(Element)`
+/* export const ContentContainer = styled(Element)`
     width: 100%;
     height: 1500px;
     display: flex;
@@ -134,6 +211,31 @@ export const ContentContainer = styled(Element)`
     align-items: center;
     overflow-x: hidden;
     background-image: url(${backgroundImage});
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: ${theme.primary};
+`; */
+
+export const ContentContainer = styled.div`
+    width: 100%;
+    height: 100%;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+`;
+
+export const ContentDIV = styled.div`
+    width: 100%;
+    height: 1500px;
+    display: flex;
+    flex-direction: row;
+    background-color: #27252D;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    background-image: url(${background3});
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -259,3 +361,118 @@ export const InfoTextTwo = styled.div`
     }
 `;
 
+export const TitleDiv = styled.div`
+    width: 100%;
+    height: 100%;
+    padding-top: 45px;
+    @media screen and (max-width: 1380px) {
+        width: 50%;
+    }
+`;
+
+export const SeriesContainer = styled.div`
+    width: 500px;
+    height: 740px;
+    background-color: ${theme.primary};
+    border-top: 3px solid ${theme.border};
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    @media screen and (max-width: 1200px) {
+        display: none;
+    }
+`;
+
+export const UpcomingContainer = styled.div`
+    height: 60px;
+    display: flex;
+    align-items: end;
+    padding-bottom: 10px;
+    justify-content: left;
+    padding-left: 10px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 14px;
+    border-bottom: 3px solid ${theme.border};
+`;
+
+export const SeriesDiv = styled.div`
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    transition: all 220ms ease-in-out;
+    cursor: pointer;
+    &:hover {
+        background-color: ${theme.primarylight};
+    }
+    padding-bottom: 10px;
+`;
+
+export const SeriesImage = styled.div`
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`;
+
+export const SeriesInfo = styled.div`
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+`;
+
+export const SeriesName = styled.div`
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: end;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+`;
+
+export const SeriesDateTime = styled.div`
+    width: 100%;
+    height: 80px;
+    display: flex;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    font-weight: 900;
+    color: ${theme.text};
+    letter-spacing: 1px;
+    text-wrap: nowrap;
+`;
+
+export const SeriesSignup = styled.div`
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: end;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    font-weight: 900;
+`;
+
+export const ViewAllContainer = styled.div`
+    height: 60px;
+    display: flex;
+    align-items: end;
+    margin-top: 50px;
+    padding-bottom: 10px;
+    justify-content: left;
+    padding-left: 10px;
+    font-weight: 00;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 14px;
+    transition: all 220ms ease-in-out;
+    cursor: pointer;
+    &:hover {
+        background-color: ${theme.primarylight};
+    }
+`;

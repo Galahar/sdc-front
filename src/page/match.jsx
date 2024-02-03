@@ -22,13 +22,16 @@ export default class Matchpage extends React.Component {
 
 	componentDidMount() {
 		let queries = queryString.parse(this.props.location.search);
-		//console.log(queries)
+		/* console.log(queries) */
 		let request1 = axios.get(baseURL + 'matchpage/?match=' + queries.id)
 		let request2 = axios.get(baseURL + 'matchteams/' + queries.id + '/')
 		axios.all([request1, request2]).then(axios.spread((...responses) => {
 			const responseOne = responses[0].data
 			const responseTwo = responses[1].data
 			this.setState({games: responseOne, match: responseTwo});
+			console.log("n");
+			console.log(responseOne);
+			console.log(responseTwo);
 			// use/access the results 
 		})).catch(errors => {
 			console.log("error loading match data")

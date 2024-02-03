@@ -14,3 +14,44 @@
 #navbar{
     z-index: 3 !important;
   }
+
+  .link {
+	display: block;
+	position: relative;
+	padding: 0.2em 0;
+}
+
+
+.link::after {
+	content: '';
+	position: absolute;
+	bottom: 10px;
+	left: 0;
+	width: 100%;
+	height: 0.2em;
+	background-color: #FC6600 !important;
+	opacity: 1;
+	transform: scale(0);
+	transform-origin: center;
+	transition: opacity 300ms, transform 300ms;
+	pointer-events: none
+}
+
+.link:hover::after,
+.link:focus::after {
+	opacity: 1;
+	transform: translate3d(0, 0em, 0);
+}
+
+.link:hover::after,
+li:nth-child(3) a:focus::after{
+	transform: scale(1);
+}
+
+.move {
+	position: absolute;
+	right: 0;
+    margin-top: -6px;
+    margin-left: 25px;
+	margin-right: 25px;
+}

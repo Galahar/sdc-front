@@ -3,10 +3,22 @@ import Navbar from "../components/Navbar";
 import { Footer } from "../components/Footer";
 import { BackgroundFilter, ContentContainer, TopContainer, TextContainer, TitleText, TitleTextResponsive,
     SeasonText, MoreInfoContainer, DownArrowContainer, ContentTextContainer, InfoContainer, 
-    ContentText, InfoContent, InfoText, InfoTextTwo, ContentFilter, VideoContainer, VideoContainerSmall, VideoContainerMobile } from "../pageStyles/homepage";
-import { Button } from "../components/Button";
+    ContentText, InfoContent, InfoText, InfoTextTwo, 
+    ContentFilter, VideoContainer, TitleDiv, SeriesContainer, UpcomingContainer,
+    SeriesDiv, SeriesImage, SeriesInfo, SeriesDateTime, 
+    SeriesSignup, SeriesName, VideoContainerSmall, ViewAllContainer,
+    ContentDIV, VideoContainerMobile } from "../pageStyles/homepage";
+import LearnButton from "../components/Button/learnindex";
 import { scroller } from "react-scroll";
 import "../pageStyles/homestyle.scss";
+
+import { Link } from 'react-router-dom';
+
+import valorant from "../assets/illustrations/SeriesImages/valorant.png"
+import tft from "../assets/illustrations/SeriesImages/tft.png"
+import osu from "../assets/illustrations/SeriesImages/osu.png"
+import tekken8 from "../assets/illustrations/SeriesImages/tekken8.png"
+
 
 import { C1Icon } from "../components/LogoSuites/indexc1";
 import { D1Icon } from "../components/LogoSuites/indexd1";
@@ -22,38 +34,136 @@ const Homepage = () => {
         <>
             <TopContainer>
                 <BackgroundFilter>
-                    <TextContainer className="loadInAnim">
-                        <TitleText style={{ fontFamily: 'Yusei Magic' }}>
-                            Seasonal Draft
-                        </TitleText>
-                        <TitleText style={{ fontFamily: 'Yusei Magic' }}>
-                            Championship
-                        </TitleText>
-                        <TitleTextResponsive style={{ fontFamily: 'Yusei Magic' }}>
-                            Seasonal
-                        </TitleTextResponsive>
-                        <TitleTextResponsive style={{ fontFamily: 'Yusei Magic' }}>
-                            Draft
-                        </TitleTextResponsive>
-                        <TitleTextResponsive style={{ fontFamily: 'Yusei Magic' }}>
-                            Championship
-                        </TitleTextResponsive>
-                        <SeasonText style={{ fontFamily: 'Yusei Magic' }} className="glitch">
-                            Season 16
-                        </SeasonText>
-                    </TextContainer>
-                    <MoreInfoContainer>
-                        <Button onClick={scrollToNextSection} style={{ fontFamily: 'Yusei Magic' }}>Learn more</Button>
-                    </MoreInfoContainer>
-                    <DownArrowContainer onClick={scrollToNextSection}>
-                        <div className="chevron"></div>
-                        <div className="chevron"></div>
-                        <div className="chevron"></div>
-                    </DownArrowContainer>
+                    <ContentContainer className="loadInAnim">
+                        <TitleDiv>
+                            <TitleText>
+                                Seasonal Draft
+                            </TitleText>
+                            <TitleText>
+                                Championship
+                            </TitleText>
+                            <SeasonText className="glitch">
+                                Season 17
+                            </SeasonText>
+                            <MoreInfoContainer>
+                                <LearnButton onClick={scrollToNextSection}>
+                                    LEARN MORE
+                                </LearnButton>
+                            </MoreInfoContainer>
+                            <DownArrowContainer onClick={scrollToNextSection}>
+                                <div className="chevron"></div>
+                                <div className="chevron"></div>
+                                <div className="chevron"></div>
+                            </DownArrowContainer>
+                        </TitleDiv>
+                        <SeriesContainer>
+                            <UpcomingContainer>
+                                UPCOMING SERIES
+                            </UpcomingContainer>
+
+                            {/* REFACTOR AND MAKE SERIES INFO INTO ITS OWN COMPONENT SINCE INFO IS INPUT FROM DB, 
+CLEARs CLUTTER ON HOMEPAGE.JSX TOO */}
+                            <Link to ="/game1" className="none">
+                            <SeriesDiv>
+                                <SeriesImage>
+                                    <img className="series-resize-tft" src={tft} alt="tft"></img>
+                                </SeriesImage>
+                                <SeriesInfo>
+                                    <SeriesName>
+                                        TFT
+                                    </SeriesName>
+                                    <SeriesDateTime>
+                                        Monday, Feb 5, 8 EST
+                                    </SeriesDateTime>
+                                    <SeriesSignup>
+                                        SIGN UPS : OPEN
+                                    </SeriesSignup>
+                                </SeriesInfo>
+                            </SeriesDiv>
+                            </Link>
+                            <Link to ="/game2" className="none">
+                            <SeriesDiv>
+                                <SeriesImage>
+                                    <img className="series-resize-tft" src={tft} alt="tft"></img>
+                                </SeriesImage>
+                                <SeriesInfo>
+                                    <SeriesName>
+                                        TFT
+                                    </SeriesName>
+                                    <SeriesDateTime>
+                                        Tuesday, Feb 6, 8 EST
+                                    </SeriesDateTime>
+                                    <SeriesSignup>
+                                        SIGN UPS : OPEN
+                                    </SeriesSignup>
+                                </SeriesInfo>
+                            </SeriesDiv>
+                            </Link>
+                            <Link to ="/game3" className="none">
+                            <SeriesDiv>
+                                <SeriesImage>
+                                    <img className="series-resize-osu" src={osu} alt="osu"></img>
+                                </SeriesImage>
+                                <SeriesInfo>
+                                    <SeriesName>
+                                        OSU
+                                    </SeriesName>
+                                    <SeriesDateTime>
+                                        Wednesday, Feb 7, 8 EST
+                                    </SeriesDateTime>
+                                    <SeriesSignup>
+                                        SIGN UPS : OPEN
+                                    </SeriesSignup>
+                                </SeriesInfo>
+                            </SeriesDiv>
+                            </Link>
+                            <Link to ="/game4" className="none">
+                            <SeriesDiv>
+                                <SeriesImage>
+                                    <img className="series-resize-tft" src={tft} alt="tft"></img>
+                                </SeriesImage>
+                                <SeriesInfo>
+                                    <SeriesName>
+                                        TFT
+                                    </SeriesName>
+                                    <SeriesDateTime>
+                                        Thursday, Feb 8, 8 EST
+                                    </SeriesDateTime>
+                                    <SeriesSignup>
+                                        SIGN UPS : OPEN
+                                    </SeriesSignup>
+                                </SeriesInfo>
+                            </SeriesDiv>
+                            </Link>
+                            <Link to ="/game5" className="none">
+                            <SeriesDiv>
+                                <SeriesImage>
+                                    <img className="series-resize-tekken8" src={tekken8} alt="tekken8"></img>
+                                </SeriesImage>
+                                <SeriesInfo>
+                                    <SeriesName>
+                                        TEKKEN 8
+                                    </SeriesName>
+                                    <SeriesDateTime>
+                                        Friday, Feb 9, 7 EST
+                                    </SeriesDateTime>
+                                    <SeriesSignup>
+                                        SIGN UPS : OPEN
+                                    </SeriesSignup>
+                                </SeriesInfo>
+                            </SeriesDiv>
+                            </Link>
+                            <Link to="/series" className="sett">
+                            <ViewAllContainer>
+                                VIEW ALL SERIES
+                            </ViewAllContainer>
+                            </Link>
+                        </SeriesContainer>
+                    </ContentContainer>
                 </BackgroundFilter>
             </TopContainer>
             <Navbar />
-            <ContentContainer name="contentSection">
+            <ContentDIV name="contentSection">
                 <ContentFilter>
                 <VideoContainerMobile>
                         <iframe 
@@ -167,7 +277,7 @@ const Homepage = () => {
                     </InfoContent>
                 </InfoContainer>
                 </ContentFilter>
-            </ContentContainer>
+            </ContentDIV>
             <Footer />
         </>
     );
