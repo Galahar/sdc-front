@@ -94,7 +94,7 @@ CLEARs CLUTTER ON HOMEPAGE.JSX TOO */}
                                         Tuesday, Feb 6, 8 EST
                                     </SeriesDateTime>
                                     <SeriesSignup>
-                                        SIGN UPS : OPEN
+                                        SIGN UPS : CLOSED
                                     </SeriesSignup>
                                 </SeriesInfo>
                             </SeriesDiv>
