@@ -15,11 +15,11 @@ const game1 = () => {
                 <BackgroundFilter>
                     <ContentContainer className="loadInAnim">
                         {/* If Singups closed, below component disspear */}
-                        <Link to={{ pathname: "https://challonge.com/tournaments/signup/gx60vXhSXP" }} target="_blank" className="none" >
+{/*                         <Link to={{ pathname: "https://challonge.com/tournaments/signup/gx60vXhSXP" }} target="_blank" className="none" >
                             <Button>
                                 Sign Up
                             </Button>
-                        </Link>
+                        </Link> */}
                         <TournamentDiv>
                             <iframe src="https://challonge.com/iviykxdb/module" width="100%" height="500" frameborder="0" scrolling="auto" allowtransparency="true"></iframe>
                         </TournamentDiv>
