@@ -12,10 +12,12 @@ export const theme = {
 	ebony: "#624604",
     highlightOrange: "#FF9508",
     primarylight: '#e9e9e9', // Bright Gray
-    text: '#FFFFFF', // White
+    text: '#FFFFFF', // Whitew
     boldtext: '#BBCDE5', //Beau Blue
     border: '#639FAB', // Moonstone
     highlight: '#FC6600', // Turquoise Blue
     highlightbright: '#ff7e00', // Amber
-    bright: '#5EB1FF' // Argentinian Blue
+    bright: '#5EB1FF', // Argentinian Blue
+    primaryhighlight: '#383838' //
+
 }

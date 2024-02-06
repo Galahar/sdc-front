@@ -316,7 +316,7 @@ export const SeriesDiv = styled.div`
     transition: all 220ms ease-in-out;
     cursor: pointer;
     &:hover {
-        background-color: ${theme.primarylight};
+        background-color: ${theme.primaryhighlight};
     }
     padding-bottom: 10px;
 `;
@@ -384,6 +384,6 @@ export const ViewAllContainer = styled.div`
     transition: all 220ms ease-in-out;
     cursor: pointer;
     &:hover {
-        background-color: ${theme.primarylight};
+        background-color: ${theme.primaryhighlight};
     }
 `;
