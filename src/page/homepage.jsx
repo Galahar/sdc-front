@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import { Footer } from "../components/Footer";
-import { BackgroundFilter, ContentContainer, TopContainer, TextContainer, TitleText, TitleTextResponsive,
+import { BackgroundFilter, ContentContainer, TopContainer, TitleText,
     SeasonText, MoreInfoContainer, DownArrowContainer, ContentTextContainer, InfoContainer, 
     ContentText, InfoContent, InfoText, InfoTextTwo, 
     ContentFilter, VideoContainer, TitleDiv, SeriesContainer, UpcomingContainer,

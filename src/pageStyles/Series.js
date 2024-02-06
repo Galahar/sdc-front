@@ -15,7 +15,7 @@ export const BackgroundFilter = styled.div`
 
 export const TopContainer = styled.div`
     width: 100%;
-    height: 150vh;
+    height: 1200px;
     background-image: url(${homepageImage});
     background-position: center;
     background-repeat: no-repeat;
