@@ -60,7 +60,6 @@ const Homepage = () => {
                             <UpcomingContainer>
                                 UPCOMING SERIES
                             </UpcomingContainer>
-
                             {/* REFACTOR AND MAKE SERIES INFO INTO ITS OWN COMPONENT SINCE INFO IS INPUT FROM DB, 
 CLEARs CLUTTER ON HOMEPAGE.JSX TOO */}
                             <Link to ="/game1" className="none">
@@ -112,7 +111,7 @@ CLEARs CLUTTER ON HOMEPAGE.JSX TOO */}
                                         Wednesday, Feb 7, 8 EST
                                     </SeriesDateTime>
                                     <SeriesSignup>
-                                        SIGN UPS : OPEN
+                                        SIGN UPS : CLOSED
                                     </SeriesSignup>
                                 </SeriesInfo>
                             </SeriesDiv>
@@ -189,7 +188,6 @@ CLEARs CLUTTER ON HOMEPAGE.JSX TOO */}
                         <div className="anim-typewriter2 line-1">your standard tournament</div>
                         <div className="anim-typewriter2 line-1">but is more similar to a franchise system</div>
                         <div className="anim-typewriter2 line-1">that varies from season to season.</div>
-                        
                     </ContentText>
                     <VideoContainer>
                         <iframe 

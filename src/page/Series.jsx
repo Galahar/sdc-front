@@ -102,7 +102,7 @@ CLEARs CLUTTER ON HOMEPAGE.JSX TOO */}
                                         Wednesday, Feb 7, 8 EST
                                     </SeriesDateTime>
                                     <SeriesSignup>
-                                        SIGN UPS : OPEN
+                                        SIGN UPS : CLOSED
                                         <Link to ="/game3" className="none">
                                         <Button>
                                             VIEW BRACKET
@@ -111,9 +111,9 @@ CLEARs CLUTTER ON HOMEPAGE.JSX TOO */}
                                         <div className="divider">
                                         </div>
                                         <Link to={{ pathname: "https://challonge.com/tournaments/signup/dSEXZGkFVr" }} target="_blank" className="none" >
-                                        <Button>
+                                        {/* <Button>
                                             SIGN UP
-                                        </Button>
+                                        </Button> */}
                                         </Link>
                                         <div className="divider">
                                         </div>
