@@ -60,9 +60,7 @@ const Homepage = () => {
                             <UpcomingContainer>
                                 UPCOMING SERIES
                             </UpcomingContainer>
-                            {/* REFACTOR AND MAKE SERIES INFO INTO ITS OWN COMPONENT SINCE INFO IS INPUT FROM DB, 
-CLEARs CLUTTER ON HOMEPAGE.JSX TOO */}
-                            <Link to ="/game1" className="none">
+                            {/* <Link to ="/game1" className="none">
                             <SeriesDiv>
                                 <SeriesImage>
                                     <img className="series-resize-tft" src={tft} alt="tft"></img>
@@ -151,7 +149,7 @@ CLEARs CLUTTER ON HOMEPAGE.JSX TOO */}
                                     </SeriesSignup>
                                 </SeriesInfo>
                             </SeriesDiv>
-                            </Link>
+                            </Link> */}
                             <Link to="/series" className="sett">
                             <ViewAllContainer>
                                 VIEW ALL SERIES
