@@ -18,6 +18,7 @@ import valorant from "../assets/illustrations/SeriesImages/valorant.png"
 import tft from "../assets/illustrations/SeriesImages/tft.png"
 import osu from "../assets/illustrations/SeriesImages/osu.png"
 import tekken8 from "../assets/illustrations/SeriesImages/tekken8.png"
+import pokemon from "../assets/illustrations/SeriesImages/pokemon.png"
 
 
 import { C1Icon } from "../components/LogoSuites/indexc1";
@@ -60,20 +61,20 @@ const Homepage = () => {
                             <UpcomingContainer>
                                 UPCOMING SERIES
                             </UpcomingContainer>
-                            {/* <Link to ="/game1" className="none">
+                            <Link to ="/game1" className="none">
                             <SeriesDiv>
                                 <SeriesImage>
-                                    <img className="series-resize-tft" src={tft} alt="tft"></img>
+                                    <img className="series-resize-tekken8" src={tekken8} alt="tekken8"></img>
                                 </SeriesImage>
                                 <SeriesInfo>
                                     <SeriesName>
-                                        TFT
+                                        TEKKEN 8
                                     </SeriesName>
                                     <SeriesDateTime>
-                                        Monday, Feb 5, 8 EST
+                                        Monday, Feb 19, 7 EST
                                     </SeriesDateTime>
                                     <SeriesSignup>
-                                        SIGN UPS : CLOSED
+                                        SIGN UPS : OPEN
                                     </SeriesSignup>
                                 </SeriesInfo>
                             </SeriesDiv>
@@ -88,33 +89,15 @@ const Homepage = () => {
                                         TFT
                                     </SeriesName>
                                     <SeriesDateTime>
-                                        Tuesday, Feb 6, 8 EST
+                                        Tuesday, Feb 20, 8 EST
                                     </SeriesDateTime>
                                     <SeriesSignup>
-                                        SIGN UPS : CLOSED
+                                        SIGN UPS : OPEN
                                     </SeriesSignup>
                                 </SeriesInfo>
                             </SeriesDiv>
                             </Link>
                             <Link to ="/game3" className="none">
-                            <SeriesDiv>
-                                <SeriesImage>
-                                    <img className="series-resize-osu" src={osu} alt="osu"></img>
-                                </SeriesImage>
-                                <SeriesInfo>
-                                    <SeriesName>
-                                        OSU
-                                    </SeriesName>
-                                    <SeriesDateTime>
-                                        Wednesday, Feb 7, 8 EST
-                                    </SeriesDateTime>
-                                    <SeriesSignup>
-                                        SIGN UPS : CLOSED
-                                    </SeriesSignup>
-                                </SeriesInfo>
-                            </SeriesDiv>
-                            </Link>
-                            <Link to ="/game4" className="none">
                             <SeriesDiv>
                                 <SeriesImage>
                                     <img className="series-resize-tft" src={tft} alt="tft"></img>
@@ -124,10 +107,28 @@ const Homepage = () => {
                                         TFT
                                     </SeriesName>
                                     <SeriesDateTime>
-                                        Thursday, Feb 8, 8 EST
+                                        Wednesday, Feb 21, 8 EST
                                     </SeriesDateTime>
                                     <SeriesSignup>
-                                        SIGN UPS : CLOSED
+                                        SIGN UPS : OPEN
+                                    </SeriesSignup>
+                                </SeriesInfo>
+                            </SeriesDiv>
+                            </Link>
+                            <Link to ="/game4" className="none">
+                            <SeriesDiv>
+                                <SeriesImage>
+                                    <img className="series-resize-pokemon" src={pokemon} alt="pokemon"></img>
+                                </SeriesImage>
+                                <SeriesInfo>
+                                    <SeriesName>
+                                        Pokemon (OU Format)
+                                    </SeriesName>
+                                    <SeriesDateTime>
+                                        Thursday, Feb 22, 8 EST
+                                    </SeriesDateTime>
+                                    <SeriesSignup>
+                                        SIGN UPS : OPEN
                                     </SeriesSignup>
                                 </SeriesInfo>
                             </SeriesDiv>
@@ -135,21 +136,21 @@ const Homepage = () => {
                             <Link to ="/game5" className="none">
                             <SeriesDiv>
                                 <SeriesImage>
-                                    <img className="series-resize-tekken8" src={tekken8} alt="tekken8"></img>
+                                    <img className="series-resize-tft" src={tft} alt="tft"></img>
                                 </SeriesImage>
                                 <SeriesInfo>
                                     <SeriesName>
-                                        TEKKEN 8
+                                        TFT
                                     </SeriesName>
                                     <SeriesDateTime>
-                                        Friday, Feb 9, 7 EST
+                                        Friday, Feb 23, 8 EST
                                     </SeriesDateTime>
                                     <SeriesSignup>
                                         SIGN UPS : OPEN
                                     </SeriesSignup>
                                 </SeriesInfo>
                             </SeriesDiv>
-                            </Link> */}
+                            </Link>
                             <Link to="/series" className="sett">
                             <ViewAllContainer>
                                 VIEW ALL SERIES

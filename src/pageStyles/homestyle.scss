@@ -63,7 +63,7 @@ $base: 0.6rem;
 
 .chevron:before {
  top: 10px;
- left: -42px;
+ left: -41px;
  transform: skewY(30deg);
 }
 
@@ -196,6 +196,12 @@ div {
   width: 95px;
   height: 30px;
 }
+
+.series-resize-pokemon {
+  width: 81px;
+  height: 81px;
+}
+
 
 .sett {
   text-decoration: none;
