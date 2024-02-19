@@ -122,7 +122,7 @@ const Homepage = () => {
                                 </SeriesImage>
                                 <SeriesInfo>
                                     <SeriesName>
-                                        Pokemon (OU Format)
+                                        Pokemon (OU Format: Gen 9, Singles)
                                     </SeriesName>
                                     <SeriesDateTime>
                                         Thursday, Feb 22, 8 EST
