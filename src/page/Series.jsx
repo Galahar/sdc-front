@@ -160,7 +160,7 @@ CLEARs CLUTTER ON HOMEPAGE.JSX TOO */}
                                         TFT
                                     </SeriesName>
                                     <SeriesDateTime>
-                                        Friday, Feb 23, 7 EST
+                                        Friday, Feb 23, 8 EST
                                     </SeriesDateTime>
                                     <SeriesSignup>
                                         SIGN UPS : OPEN
