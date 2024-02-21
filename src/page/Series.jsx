@@ -81,11 +81,11 @@ CLEARs CLUTTER ON HOMEPAGE.JSX TOO */}
                                         </Link>
                                         <div className="divider">
                                         </div>
-                                        <Link to={{ pathname: "https://challonge.com/tournaments/signup/biLjBguZxQ" }} target="_blank" className="none" >
+                                        {/* <Link to={{ pathname: "https://challonge.com/tournaments/signup/biLjBguZxQ" }} target="_blank" className="none" >
                                         <Button>
                                             SIGN UP
                                         </Button>
-                                        </Link>
+                                        </Link> */}
                                         <div className="divider">
                                         </div>
                                     </SeriesSignup>
