@@ -170,7 +170,7 @@ const Homepage = () => {
                             src="https://www.youtube.com/embed/vV9GS-CJZFI" 
                             title="YouTube video player" 
                             frameBorder="1" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                            allow="accelerometer; autoplay=0; clipboard-write; encrypted-media; 
                             gyroscope; picture-in-picture" 
                             allowFullScreen
                             >
