@@ -103,7 +103,7 @@ CLEARs CLUTTER ON HOMEPAGE.JSX TOO */}
                                         Wednesday, Feb 21, 8 EST
                                     </SeriesDateTime>
                                     <SeriesSignup>
-                                        SIGN UPS : OPEN
+                                        SIGN UPS : CLOSED
                                         <Link to ="/game3" className="none">
                                         <Button>
                                             VIEW BRACKET
