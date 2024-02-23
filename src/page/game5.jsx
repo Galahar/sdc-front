@@ -14,11 +14,11 @@ import { BackgroundFilter, TopContainer, ContentContainer, TournamentDiv } from 
                 <BackgroundFilter>
                     <ContentContainer className="loadInAnim">
                         {/* If Singups closed, below component disspear */}
-                        <Link to={{ pathname: "https://challonge.com/tournaments/signup/HGrvRf0Au3" }} target="_blank" className="none" >
+                        {/* <Link to={{ pathname: "https://challonge.com/tournaments/signup/HGrvRf0Au3" }} target="_blank" className="none" >
                             <Button>
                                 Sign Up
                             </Button>
-                        </Link>
+                        </Link> */}
                         <TournamentDiv>
                             <iframe src="https://challonge.com/rzmbvj1b/module" width="100%" height="500" frameborder="0" scrolling="auto" allowtransparency="true"></iframe>
                         </TournamentDiv>
