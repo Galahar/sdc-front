@@ -128,7 +128,7 @@ const Homepage = () => {
                                         Thursday, Feb 22, 8 EST
                                     </SeriesDateTime>
                                     <SeriesSignup>
-                                        SIGN UPS : OPEN
+                                        SIGN UPS : CLOSED
                                     </SeriesSignup>
                                 </SeriesInfo>
                             </SeriesDiv>
