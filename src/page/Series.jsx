@@ -134,18 +134,18 @@ CLEARs CLUTTER ON HOMEPAGE.JSX TOO */}
                                     </SeriesDateTime>
                                     <SeriesSignup>
                                         SIGN UPS : CLOSED
-                                        {/* <Link to ="/game4" className="none">
+                                        <Link to ="/game4" className="none">
                                         <Button>
                                             VIEW BRACKET
                                         </Button>
-                                        </Link> */}
+                                        </Link>
                                         <div className="divider">
                                         </div>
-                                        <Link to={{ pathname: "https://challonge.com/tournaments/signup/Icw667RZMT" }} target="_blank" className="none" >
+                                        {/* <Link to={{ pathname: "https://challonge.com/tournaments/signup/Icw667RZMT" }} target="_blank" className="none" >
                                         <Button>
                                             SIGN UP
                                         </Button>
-                                        </Link>
+                                        </Link> */}
                                         <div className="divider">
                                         </div>
                                     </SeriesSignup>
