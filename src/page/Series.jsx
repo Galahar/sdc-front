@@ -40,10 +40,10 @@ CLEARs CLUTTER ON HOMEPAGE.JSX TOO */}
                                         Tekken 8
                                     </SeriesName>
                                     <SeriesDateTime>
-                                        Monday, Feb 19, 7 EST
+                                        Monday, Feb 26, 7 EST
                                     </SeriesDateTime>
                                     <SeriesSignup>
-                                        SIGN UPS : CLOSED
+                                        SIGN UPS : OPEN
                                         <Link to ="/game1" className="none">
                                         <Button>
                                             VIEW BRACKET
@@ -51,11 +51,11 @@ CLEARs CLUTTER ON HOMEPAGE.JSX TOO */}
                                         </Link>
                                         <div className="divider">
                                         </div>
-                                        {/* <Link to={{ pathname: "https://challonge.com/tournaments/signup/wY67hpDLRq" }} target="_blank" className="none" >
+                                        <Link to={{ pathname: "https://challonge.com/tournaments/signup/FuzTMxCEIL" }} target="_blank" className="none" >
                                         <Button>
                                             SIGN UP
                                         </Button>
-                                        </Link> */}
+                                        </Link>
                                         <div className="divider">
                                         </div>
                                     </SeriesSignup>
@@ -70,10 +70,10 @@ CLEARs CLUTTER ON HOMEPAGE.JSX TOO */}
                                         TFT
                                     </SeriesName>
                                     <SeriesDateTime>
-                                        Tuesday, Feb 20, 8 EST
+                                        Wednesday, Feb 28, 8 EST
                                     </SeriesDateTime>
                                     <SeriesSignup>
-                                        SIGN UPS : CLOSED
+                                        SIGN UPS : OPEN
                                         <Link to ="/game2" className="none">
                                         <Button>
                                             VIEW BRACKET
@@ -81,17 +81,17 @@ CLEARs CLUTTER ON HOMEPAGE.JSX TOO */}
                                         </Link>
                                         <div className="divider">
                                         </div>
-                                        {/* <Link to={{ pathname: "https://challonge.com/tournaments/signup/biLjBguZxQ" }} target="_blank" className="none" >
+                                        <Link to={{ pathname: "https://challonge.com/tournaments/signup/DRJk2odJy6" }} target="_blank" className="none" >
                                         <Button>
                                             SIGN UP
                                         </Button>
-                                        </Link> */}
+                                        </Link>
                                         <div className="divider">
                                         </div>
                                     </SeriesSignup>
                                 </SeriesInfo>
                             </SeriesDiv>
-                            <SeriesDiv>
+                            {/* <SeriesDiv>
                                 <SeriesImage>
                                     <img className="series-resize-tft" src={tft} alt="tft"></img>
                                 </SeriesImage>
@@ -111,17 +111,17 @@ CLEARs CLUTTER ON HOMEPAGE.JSX TOO */}
                                         </Link>
                                         <div className="divider">
                                         </div>
-                                        {/* <Link to={{ pathname: "https://challonge.com/tournaments/signup/sRc6qQo5bP" }} target="_blank" className="none" >
+                                        <Link to={{ pathname: "https://challonge.com/tournaments/signup/sRc6qQo5bP" }} target="_blank" className="none" >
                                         <Button>
                                             SIGN UP
                                         </Button>
-                                        </Link> */}
+                                        </Link>
                                         <div className="divider">
                                         </div>
                                     </SeriesSignup>
                                 </SeriesInfo>
-                            </SeriesDiv>
-                            <SeriesDiv>
+                            </SeriesDiv> */}
+                            {/* <SeriesDiv>
                                 <SeriesImage>
                                     <img className="series-resize-pokemon" src={pokemon} alt="pokemon"></img>
                                 </SeriesImage>
@@ -141,17 +141,17 @@ CLEARs CLUTTER ON HOMEPAGE.JSX TOO */}
                                         </Link>
                                         <div className="divider">
                                         </div>
-                                        {/* <Link to={{ pathname: "https://challonge.com/tournaments/signup/Icw667RZMT" }} target="_blank" className="none" >
+                                        <Link to={{ pathname: "https://challonge.com/tournaments/signup/Icw667RZMT" }} target="_blank" className="none" >
                                         <Button>
                                             SIGN UP
                                         </Button>
-                                        </Link> */}
+                                        </Link>
                                         <div className="divider">
                                         </div>
                                     </SeriesSignup>
                                 </SeriesInfo>
-                            </SeriesDiv>
-                            <SeriesDiv>
+                            </SeriesDiv> */}
+                            {/* <SeriesDiv>
                                 <SeriesImage>
                                     <img className="series-resize-tft" src={tft} alt="tft"></img>
                                 </SeriesImage>
@@ -171,16 +171,16 @@ CLEARs CLUTTER ON HOMEPAGE.JSX TOO */}
                                         </Link>
                                         <div className="divider">
                                         </div>
-                                        {/* <Link to={{ pathname: "https://challonge.com/tournaments/signup/HGrvRf0Au3" }} target="_blank" className="none" >
+                                        <Link to={{ pathname: "https://challonge.com/tournaments/signup/HGrvRf0Au3" }} target="_blank" className="none" >
                                         <Button>
                                             SIGN UP
                                         </Button>
-                                        </Link> */}
+                                        </Link>
                                         <div className="divider">
                                         </div>
                                     </SeriesSignup>
                                 </SeriesInfo>
-                            </SeriesDiv>
+                            </SeriesDiv> */}
                             <ViewAllContainer>
                                 
                             </ViewAllContainer>

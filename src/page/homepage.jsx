@@ -71,10 +71,10 @@ const Homepage = () => {
                                         TEKKEN 8
                                     </SeriesName>
                                     <SeriesDateTime>
-                                        Monday, Feb 19, 7 EST
+                                        Monday, Feb 26, 7 EST
                                     </SeriesDateTime>
                                     <SeriesSignup>
-                                        SIGN UPS : CLOSED
+                                        SIGN UPS : OPEN
                                     </SeriesSignup>
                                 </SeriesInfo>
                             </SeriesDiv>
@@ -89,15 +89,15 @@ const Homepage = () => {
                                         TFT
                                     </SeriesName>
                                     <SeriesDateTime>
-                                        Tuesday, Feb 20, 8 EST
+                                        Wednesday, Feb 28, 8 EST
                                     </SeriesDateTime>
                                     <SeriesSignup>
-                                        SIGN UPS : CLOSED
+                                        SIGN UPS : OPEN
                                     </SeriesSignup>
                                 </SeriesInfo>
                             </SeriesDiv>
                             </Link>
-                            <Link to ="/game3" className="none">
+                            {/* <Link to ="/game3" className="none">
                             <SeriesDiv>
                                 <SeriesImage>
                                     <img className="series-resize-tft" src={tft} alt="tft"></img>
@@ -114,8 +114,8 @@ const Homepage = () => {
                                     </SeriesSignup>
                                 </SeriesInfo>
                             </SeriesDiv>
-                            </Link>
-                            <Link to ="/game4" className="none">
+                            </Link> */}
+                            {/* <Link to ="/game4" className="none">
                             <SeriesDiv>
                                 <SeriesImage>
                                     <img className="series-resize-pokemon" src={pokemon} alt="pokemon"></img>
@@ -132,8 +132,8 @@ const Homepage = () => {
                                     </SeriesSignup>
                                 </SeriesInfo>
                             </SeriesDiv>
-                            </Link>
-                            <Link to ="/game5" className="none">
+                            </Link> */}
+                            {/* <Link to ="/game5" className="none">
                             <SeriesDiv>
                                 <SeriesImage>
                                     <img className="series-resize-tft" src={tft} alt="tft"></img>
@@ -150,7 +150,7 @@ const Homepage = () => {
                                     </SeriesSignup>
                                 </SeriesInfo>
                             </SeriesDiv>
-                            </Link>
+                            </Link> */}
                             <Link to="/series" className="sett">
                             <ViewAllContainer>
                                 VIEW ALL SERIES
