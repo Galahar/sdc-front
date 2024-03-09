@@ -61,7 +61,7 @@ const Homepage = () => {
                             <UpcomingContainer>
                                 UPCOMING SERIES
                             </UpcomingContainer>
-                            <Link to ="/game1" className="none">
+                            {/* <Link to ="/game1" className="none">
                             <SeriesDiv>
                                 <SeriesImage>
                                     <img className="series-resize-tekken8" src={tekken8} alt="tekken8"></img>
@@ -78,8 +78,8 @@ const Homepage = () => {
                                     </SeriesSignup>
                                 </SeriesInfo>
                             </SeriesDiv>
-                            </Link>
-                            <Link to ="/game2" className="none">
+                            </Link> */}
+                            {/* <Link to ="/game2" className="none">
                             <SeriesDiv>
                                 <SeriesImage>
                                     <img className="series-resize-tft" src={tft} alt="tft"></img>
@@ -96,7 +96,7 @@ const Homepage = () => {
                                     </SeriesSignup>
                                 </SeriesInfo>
                             </SeriesDiv>
-                            </Link>
+                            </Link> */}
                             {/* <Link to ="/game3" className="none">
                             <SeriesDiv>
                                 <SeriesImage>
