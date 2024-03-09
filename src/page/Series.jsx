@@ -31,7 +31,7 @@ const Series = () => {
                             {/* REFACTOR AND MAKE SERIES INFO INTO ITS OWN COMPONENT SINCE INFO IS INPUT FROM DB, 
 CLEARs CLUTTER ON HOMEPAGE.JSX TOO */}
 
-                            <SeriesDiv>
+                            {/* <SeriesDiv>
                                 <SeriesImage>
                                     <img className="series-resize-tft" src={tekken8} alt="tekken8"></img>
                                 </SeriesImage>
@@ -60,8 +60,8 @@ CLEARs CLUTTER ON HOMEPAGE.JSX TOO */}
                                         </div>
                                     </SeriesSignup>
                                 </SeriesInfo>
-                            </SeriesDiv>
-                            <SeriesDiv>
+                            </SeriesDiv> */}
+                            {/* <SeriesDiv>
                                 <SeriesImage>
                                     <img className="series-resize-tft" src={tft} alt="tft"></img>
                                 </SeriesImage>
@@ -90,7 +90,7 @@ CLEARs CLUTTER ON HOMEPAGE.JSX TOO */}
                                         </div>
                                     </SeriesSignup>
                                 </SeriesInfo>
-                            </SeriesDiv>
+                            </SeriesDiv> */}
                             {/* <SeriesDiv>
                                 <SeriesImage>
                                     <img className="series-resize-tft" src={tft} alt="tft"></img>
